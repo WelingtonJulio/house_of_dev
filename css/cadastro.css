@@ -1,0 +1,18 @@
+@font-face{
+    font-family: 'Imprima', sans-serif;
+}
+
+h1 {
+    color: 8C65A4;
+}
+
+button{
+    width: 400px;
+    height: 30px;
+    background-color: #ede9e9;
+    text-decoration: #5c5a5a99;
+    border: none;
+    border-radius: 10px 10px;
+    box-sizing: content-box;
+ 
+}
