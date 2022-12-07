@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon"><!--link para icone na barra de navegação-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/cadastreSe.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/faleconosco.css">
+    <link rel="stylesheet" href="/politicasPrivacidade.css">
+    <title>Login Dev</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <div id="card-container">
+                    <a href="/inicio.html" id="logo_house">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="105px" height="70px">
+                    </a>
+                </div>
+
+                <div id="buttom-buscar">
+                    <form action="/buscar.html" method="get" id="buscador">
+                        <input type="text" id="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    </form>
+                </div>
+                        
+                    <div>
+                        <button class="buttom-buscador">
+                            <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px" height="30px" viewBox="0 0 16 16">
+                        </button>     
+                    </div>      
+                                                        
+                    <div id="card-login">
+                        <img src="/img/icon/conecte-se.png" alt="logo_login" width="50px" height="50px">
+                    </div>
+
+                    <div>
+                        <span id="text-login"> Olá, faça  
+                            <a href="/login.html" 
+                            class="login" target="_blank" rel="login">LOGIN</a> <br> 
+                        </span>
+                    </div>
+
+                    <div>
+                        <span id="cadastro">
+                        ou <a href="/cadastreSe.html" 
+                        class="cadastro" target="_blank" rel="cadastro">CADASTRE-SE</a> 
+                     </span>   
+                    </div>
+                                         
+                    <div id="card-carrinho">
+                        <a href="/carrinho.html" id="link_carrinho">
+                        <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+                           </a>
+                    </div>
+
+                    <div id="card-gostar">
+                        <button id="gostar">
+                            <a href="#">
+                                <img src="/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                            </a>
+                        </button>
+                    </div> 
+                    
+                    <div id="card-menu">
+                        <button class="menu-login">
+                            <a href="#">
+                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                            </a>
+                        </button >
+                    </div>
+                                 
+            </section>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="card-login-total">
+            <br>
+            <h2>Login</h2>
+
+            <div class="car-login"  id="caixa-login">
+                <label for="login"></label>
+                <input type="text" id="nome" placeholder="E-mail, CPF ou CNPJ" autocomplete="on">
+            </div>
+
+            <div class="card_senha">
+                <br>
+                <label for="senha" maxlength="256"></label>
+                <input type="password" id="senha" placeholder="Senha" autocomplete="on">
+                <img src="/img/icon/trancar.png" alt="cadeado" alt="cadeado" width="15px" height="10px">
+            </div>
+
+            <div class="link-esquecisenha" id="esqueci-senha">
+                <input type="submit" value="login" class="submit">
+                <a href="#" class="recuperar_senha">Esqueci minha senha</a>
+            </div>
+   
+            <div class="link-footer">
+                <p>Siga-nos em nossas Redes Sociais:</p>
+                    
+            <div id="link-face-footer">
+                <a href="https://www.facebook.com/" target="_blank"></a>
+            </div>
+        
+            <div id="img-footer-face"></div>
+                <img src="/img/icon/facebook.png" alt="Facebook" width="1.5%">
+            </div>
+                    
+            <div id="link-insta-footer">
+                <a href="https://www.instagram.com/" target="_blank"></a>
+            </div>
+                                                    
+            <div id="img-footer-insta">
+                <img src="/img/icon/instagram.png" alt="Instagram" width="1.5%">
+            </div>
+                    
+            <div id="link-linke-footer">
+                <a href="https://www.linkedin.com/" target="_blank"></a>
+            </div>
+                    
+            <div id="img-footer-linke">
+                <img src="/img/icon/linkedin.png" alt="LinkedIn" width="1.5%">
+            </div>
+                    
+            <div id="link-twitter">
+                <a href="https://www.twitter.com/" target="_blank"></a>
+            </div>
+
+            <div id="img-footer-twitter">
+                <img src="/img/icon/twitter.png" alt="Twitter" width="1.5%">
+            </div>
+                    
+            <div id="link-youtube-footer">
+                <a href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+        
+            <div id="img-footer-youtube">
+                <img src="/img/icon/youtube.png" alt="YouTube" width="1.5%"></a>
+            </div>                                                                                
+        
+            <div id="rodapé">
+                <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
+            </div>
+            
+            <div class="button" id="button-entrar">
+                <img src="/img/icon/entrar_2.png" alt="entrar_2" width="20px" height="20px">
+            <button>Entrar</button>
+            </div>
+
+            <div class="rede-sociais" id="acesso-redesociais">
+               
+                <h3>Quero acessar com minha rede sociais</h3>
+
+                <div class="link-face"> 
+                    <a href="http://https://www.facebook.com/"></a>
+                </div>
+
+                <div id="img-facebook">
+                    <img src="/img/icon/facebook _1.png" alt="facebook" width="30px" height="30px">
+                </div>
+
+                <div class="link-insta">
+                    <a href="http://https://www.instagram.com//"></a>
+                </div>
+
+                <div id="img-instagram">
+                    <img src="/img/icon/instagram_1.png" alt="instagram" width="30px" height="30px">
+                </div>
+
+                <div class="link-linke">
+                    <a href="http://https://www.linkedin.com/"></a>
+                </div>
+
+                <div id="img-linkedin">
+                    <img src="/img/icon/linkedin_1.png" alt="twiter" width="30px" height="30px">
+                </div>
+                            
+                <div class="link-gmail">
+                    <a href="http://https://www.gmail.com/"></a>
+
+                <div id="img-gmail">
+                    <img src="/img/agradecimentos/gmail.png" alt="gmail" width="30px" height="30px">
+                </div>
+            </div>
+                     
+    </section>
+</main>
+
+    <div id="inscrevaSe">
+        <p>Inscreva-se para receber mais notícias:</p>
+        <form method="post">
+            <input type="text" name="nome" placeholder="Digite seu Nome">
+            <input type="email" name="email" placeholder="Digite seu Email">
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    </div>
+
+<footer>
+
+    <div id="endereco">
+        <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
+    </div>
+
+    <div id="link-faleconsoco-footer">
+        <a href="/faleconosco.html">Fale Conosco</a> | <a
+        href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+    </div>
+
+    <div class="card-footer">
+        <p>Siga-nos em nossas Redes Sociais:</p>
+        <div>
+            <p>Siga-nos nas nossas Redes Sociais:</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook.png" alt="Facebook"
+                    width="1.5%"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram.png" alt="Instagram"
+                    width="1.5%"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin.png" alt="LinkedIn"
+                    width="1.5%"></a>
+
+            <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter.png" alt="Twitter"
+                    width="1.5%"></a>
+
+            <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube.png" alt="YouTube"
+                    width="1.5%"></a>
+        </div>
+
+    <div id="rodapé">
+        <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
+    </div>
+
+</footer>
+
+</html>

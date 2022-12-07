@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon"><!--link para icone na barra de navegação-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/cadastreSe.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/faleconosco.css">
+    <link rel="stylesheet" href="/politicasPrivacidade.css">
+    <title>Cadastro Dev</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <div id="card-container">
+                    <a href="/inicio.html" id="logo_house">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="90px" height="60px">
+                    </a>
+                </div>
+
+                <div id="buttom-buscar">
+                    <form action="/buscar.html" method="get" id="buscador">
+                        <input type="text" id="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    </form>
+                </div>
+                        
+                    <div>
+                        <button class="buttom-buscador">
+                            <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px" height="30px" viewBox="0 0 16 16">
+                        </button>     
+                    </div>      
+                                                        
+                    <div id="card-login">
+                        <img src="/img/icon/conecte-se.png" alt="logo_login" width="40px" height="40px">
+                    </div>
+
+                    <div>
+                        <span id="text-login"> Olá, faça  
+                            <a href="/login.html" 
+                            class="login" target="_blank" rel="login">LOGIN</a> <br> 
+                        </span>
+                    </div>
+
+                    <div>
+                        <span id="cadastro">
+                        ou <a href="/cadastreSe.html" 
+                        class="cadastro" target="_blank" rel="cadastro">CADASTRE-SE</a> 
+                     </span>   
+                    </div>
+                                         
+                    <div id="card-carrinho">
+                        <a href="/carrinho.html" id="link_carrinho">
+                        <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+                           </a>
+                    </div>
+
+                    <div id="card-gostar">
+                        <button id="gostar">
+                            <a href="#">
+                                <img src="/img/icon/gostar.png" alt="logo_gostar" width="28px" height="28px">
+                            </a>
+                        </button>
+                    </div> 
+                    
+                    <div id="card-menu">
+                        <button class="menu-login">
+                            <a href="#">
+                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                            </a>
+                        </button >
+                    </div>
+                                 
+            </section>
+        </nav>
+    </header>
+
+    <main>
+
+       <section>
+
+        <div id="parag-conta"> 
+            <p>Tipo de Conta: </p>
+
+            <div class="cx-pessoaFisica">
+                <input type="radio" name="pessoaFisica" id="pesFisica">
+                <label for="pessoaFisica">Pessoa Física</label>
+            </div>
+        </div>
+        
+        <div class="cx-pessoaJuridica">
+            <input type="radio" name="pessoaJuridica" id="pesJuridica">
+            <label for="pessoaJuridica">Pessoa Jurídica</label>
+            <br>
+        </div>
+
+        <div>
+            <h2>Criar Conta</h2>
+
+            <div class="cx-nomeCompleto"> 
+                <label for="nome"></label>
+                <input type="text" id="nome" placeholder="Nome completo*" autocomplete="on">
+            </div>
+
+            <div class="cx-cpf">
+                <label for="cpf"></label>
+                <input type="number" id="cpf" maxlength="15" placeholder="CPF*" autocomplete="on">
+            </div>
+
+            <div class="cx-dataNascimento">
+                <label for="dataNascimento"></label>
+                <input type="date" id="data" placeholder="Data de nascimento*" autocomplete="on">
+            </div>
+
+            <div class="cx-telefone">
+                <label for="telefone"></label>
+                <input type="tel" id="tel" placeholder="Telefone celular*" autocomplete="on">
+            </div>
+
+            <div class="cx-email">
+                <input type="email" id="email" placeholder="E-mail*">
+                <label for="email" maxlength="256" autocomplete="on"></label >
+            </div>
+
+            <div class="cx-senha">
+                <label for="senha"></label>
+                <input type="password" id="senha" placeholder="Crie sua senha*">
+            </div>
+
+            <div class="cx-confirmasenha">
+                <label for="confirmasenha"></label>
+                <input type="password" id="confiSenha" placeholder="Confirme sua senha*">
+            </div>
+
+            <div class="cx-ondehouse">
+                <input type="text" id="ondeHouse" placeholder="Onde você conheceu a House of Dev!*">
+                <label for="ondeConheceuHouse"></label>
+            </div>
+       
+        <small>(*) Campos obrigatórios</small>
+       
+        <input type="checkbox" name="queroOfertas" id="Ofertas">Quero receber ofertas e novidades por e-mail, SMS,
+        Whatsapp ou mensagens.
+        <br>
+
+        <input type="checkbox" name="LiAcordo" id="Acordo">Li e estou de acordo com as <a
+            href="/politicasPrivacidade.html">políticas da empresa e políticas de privacidade.*</a>
+    </section>
+
+    </body>
+</main>
+
+<div id="inscrevaSe">
+    <p>Inscreva-se para receber mais notícias:</p>
+    <form method="post">
+        <input type="text" name="nome" placeholder="Digite seu Nome">
+        <input type="email" name="email" placeholder="Digite seu Email">
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+</div>
+
+<footer>
+
+<div id="endereco">
+    <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
+</div>
+
+<div id="link-faleconsoco-footer">
+    <a href="/faleconosco.html">Fale Conosco</a> | <a
+    href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+</div>
+
+<div class="card-footer">
+    <p>Siga-nos em nossas Redes Sociais:</p>
+    <div>
+        <p>Siga-nos nas nossas Redes Sociais:</p>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook.png" alt="Facebook"
+                width="1.5%"></a>
+
+        <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram.png" alt="Instagram"
+                width="1.5%"></a>
+
+        <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin.png" alt="LinkedIn"
+                width="1.5%"></a>
+
+        <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter.png" alt="Twitter"
+                width="1.5%"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube.png" alt="YouTube"
+                width="1.5%"></a>
+    </div>
+
+    <div id="rodapé">
+        <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
+    </div>
+
+</footer>
+
+</html>
