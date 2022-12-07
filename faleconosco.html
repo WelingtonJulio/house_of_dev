@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon"><!--link para icone na barra de navegação-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/cadastreSe.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/faleconosco.css">
+    <link rel="stylesheet" href="/politicasPrivacidade.css">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <div id="card-container">
+                    <a href="/inicio.html" id="logo_house">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="90px" height="60px">
+                    </a>
+                </div>
+
+                <div id="buttom-buscar">
+                    <form action="/buscar.html" method="get" id="buscador">
+                        <input type="text" id="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    </form>
+                </div>
+                        
+                    <div>
+                        <button class="buttom-buscador">
+                            <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px" height="30px" viewBox="0 0 16 16">
+                        </button>     
+                    </div>      
+                                                        
+                    <div id="card-login">
+                        <img src="/img/icon/conecte-se.png" alt="logo_login" width="40px" height="40px">
+                    </div>
+
+                    <div>
+                        <span id="text-login"> Olá, faça  
+                            <a href="/login.html" 
+                            class="login" target="_blank" rel="login">LOGIN</a> <br> 
+                        </span>
+                    </div>
+
+                    <div>
+                        <span id="cadastro">
+                        ou <a href="/cadastreSe.html" 
+                        class="cadastro" target="_blank" rel="cadastro">CADASTRE-SE</a> 
+                     </span>   
+                    </div>
+                                         
+                    <div id="card-carrinho">
+                        <a href="/carrinho.html" id="link_carrinho">
+                        <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+                           </a>
+                    </div>
+
+                    <div id="card-gostar">
+                        <button id="gostar">
+                            <a href="#">
+                                <img src="/img/icon/gostar.png" alt="logo_gostar" width="28px" height="28px">
+                            </a>
+                        </button>
+                    </div> 
+                    
+                    <div id="card-menu">
+                        <button class="menu-login">
+                            <a href="#">
+                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                            </a>
+                        </button >
+                    </div>
+                                 
+            </section>
+        </nav>
+    </header>
+
+        <main>
+           
+            <section>
+                 
+                    <div class="card-radio">
+
+                        <form action="">
+                        <p>Escolha: </p>
+        
+                        <div class="elogio"> 
+                            <input type="radio" name="elogio" id="elogio">
+                            <label for="elogio">Elogio</label>
+                        </div>
+            
+                        <div class="sugestão">
+                            <input type="radio" name="sugestão" id="suguestão">
+                            <label for="outro">Sugestão</label>
+                        </div>
+            
+                        <div class="duvida">
+                            <input type="radio" name="dúvida" id="dúvida">
+                            <label for="elogio">Dúvida</label>
+                        </div>
+            
+                        <div class="critica">
+                            <input type="radio" name="crítica" id="crítica">
+                            <label for="outro">Crítica</label>
+                        </div>
+            
+                        <div class="troca-canc">
+                            <input type="radio" name="troc/canc" id="troc/canc">
+                            <label for="elogio">Troca/Cancelamento</label>
+                        </div>   
+
+               
+            </section>
+                    
+           <div id="texto-h3">
+            <h3>
+            Use o formulário abaixo para tirar suas dúvidas, dar sugestões ou registrar sua crítica, lembrando sempre de
+                indicar o assunto e o destino da mesnsagem.
+            </h3>
+        </div>
+
+    <section>
+   
+        <div class="card-criar-cadastro">
+
+            <form action="">
+                <div class="criar-nomecomp">
+                    <label for="pesquisar">Nome Completo: </label>
+                    <input type="text" id="nome" placeholder="digite seu nome">
+                </div>
+        
+                <div class="criar-email">
+                    <label for="pesquisar" >E-mail: </label >
+                    <input type="email" id="e-mail" placeholder="digite seu e-mail" maxlength="256">
+                </div>
+
+                <div id="criar-telefone">
+                    <label for="pesquisar">Telefone: </label>
+                    <input type="tel" id="telefone" placeholder="(xx) 00000 - 0000">
+                </div>
+        
+                <div class="criar-assunto">
+                    <label for="pesquisar">Assunto: </label>
+                    <input type="text" id="assunto" placeholder="ex: produto com defeito" maxlength="150">
+                </div>
+        
+                <div class="criar-msg">
+                    <label for="pesquisar">Mensagem: </label>
+                    <input type="text" id="msg" placeholder="">
+                </div>
+        
+                <div id="buttom-enviar">
+                    <buttom>Enviar</buttom>
+                </div>
+              
+            </form>
+         
+        
+    </section>
+
+    <section>
+        <h3>
+            Veja onde estamos localizados
+        </h3>
+      
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.431938578649!2d-43.18731888540064!3d-22.89743384329304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5b2d6bd19f%3A0x1cd01dc92bad8fa6!2sR.%20Sacadura%20Cabral%2C%20102%20-%20Sa%C3%BAde%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020081-261!5e0!3m2!1spt-BR!2sbr!4v1669661642316!5m2!1spt-BR!2sbr"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</body>
+
+</main>
+<div id="inscrevaSe">
+    <p>Inscreva-se para receber mais notícias:</p>
+    <form method="post">
+        <input type="text" name="nome" placeholder="Digite seu Nome">
+        <input type="email" name="email" placeholder="Digite seu Email">
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+</div>
+
+<footer>
+
+<div id="endereco">
+    <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
+</div>
+
+<div id="link-faleconsoco-footer">
+    <a href="/faleconosco.html">Fale Conosco</a> | <a
+    href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+</div>
+
+<div class="card-footer">
+    <p>Siga-nos em nossas Redes Sociais:</p>
+    <div>
+        <p>Siga-nos nas nossas Redes Sociais:</p>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook.png" alt="Facebook"
+                width="1.5%"></a>
+
+        <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram.png" alt="Instagram"
+                width="1.5%"></a>
+
+        <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin.png" alt="LinkedIn"
+                width="1.5%"></a>
+
+        <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter.png" alt="Twitter"
+                width="1.5%"></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube.png" alt="YouTube"
+                width="1.5%"></a>
+    </div>
+
+    <div id="rodapé">
+        <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
+    </div>
+
+</footer>
+
+</footer>
+
+</html>  
