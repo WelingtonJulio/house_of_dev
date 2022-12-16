@@ -9,75 +9,72 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/css/cadastreSe.css">
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css/faleconosco.css">
-    <link rel="stylesheet" href="/politicasPrivacidade.css">
-    <title>Login Dev</title>
+   
+    <title>Dev Login</title>
 </head>
 
 <body>
     <header>
         <nav>
             <section>
-                <div id="card-container">
+                <div class="card-container">
                     <a href="/inicio.html" id="logo_house">
-                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="105px" height="70px">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="130px" height="85px">
                     </a>
                 </div>
 
-                <div id="buttom-buscar">
+                <div class="button-buscar">
                     <form action="/buscar.html" method="get" id="buscador">
-                        <input type="text" id="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                        <input type="text" class="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
                     </form>
                 </div>
                         
                     <div>
-                        <button class="buttom-buscador">
+                        <button class="button-buscador">
                             <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px" height="30px" viewBox="0 0 16 16">
                         </button>     
                     </div>      
                                                         
-                    <div id="card-login">
+                    <div class="login">
                         <img src="/img/icon/conecte-se.png" alt="logo_login" width="50px" height="50px">
                     </div>
 
-                    <div>
+                    <div class="login-header">
                         <span id="text-login"> Olá, faça  
                             <a href="/login.html" 
-                            class="login" target="_blank" rel="login">LOGIN</a> <br> 
+                            class="login-link" target="_blank" rel="login">LOGIN</a> <br> 
                         </span>
                     </div>
 
-                    <div>
+                    <div class="card-cadastro">
                         <span id="cadastro">
                         ou <a href="/cadastreSe.html" 
-                        class="cadastro" target="_blank" rel="cadastro">CADASTRE-SE</a> 
+                        class="cadastro-link" target="_blank" rel="cadastro">CADASTRE-SE</a> 
                      </span>   
                     </div>
                                          
-                    <div id="card-carrinho">
+                    <div class="card-carrinho">
                         <a href="/carrinho.html" id="link_carrinho">
                         <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
                            </a>
                     </div>
 
-                    <div id="card-gostar">
-                        <button id="gostar">
+                    <div class="button-gostar">
+                        <button  class="gostar">
                             <a href="#">
                                 <img src="/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
                             </a>
                         </button>
                     </div> 
                     
-                    <div id="card-menu">
-                        <button class="menu-login">
+                    <div class="card-menu">
+                        <button class="menu">
                             <a href="#">
                             <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
                             </a>
                         </button >
                     </div>
-                                 
             </section>
         </nav>
     </header>
@@ -86,166 +83,112 @@
 
         <section>
             <div class="card-login-total">
-            <br>
-            <h2>Login</h2>
+            
+            <h2>LOGIN</h2>
 
-            <div class="car-login"  id="caixa-login">
-                <label for="login"></label>
+            <div class="card-login">
+                <label for="Entrar"></label>
                 <input type="text" id="nome" placeholder="E-mail, CPF ou CNPJ" autocomplete="on">
             </div>
 
-            <div class="card_senha">
-                <br>
+            <div class="card-senha">
+                
                 <label for="senha" maxlength="256"></label>
                 <input type="password" id="senha" placeholder="Senha" autocomplete="on">
-                <img src="/img/icon/trancar.png" alt="cadeado" alt="cadeado" width="15px" height="10px">
+
+                <button class="button-cadeado">
+                    <img src="/img/icon/trancar.png" alt="cadeado" alt="cadeado" width="20px" height="20px">
+                </button>
             </div>
 
-            <div class="link-esquecisenha" id="esqueci-senha">
-                <input type="submit" value="login" class="submit">
-                <a href="#" class="recuperar_senha">Esqueci minha senha</a>
-            </div>
-   
-            <div class="link-footer">
-                <p>Siga-nos em nossas Redes Sociais:</p>
-                    
-            <div id="link-face-footer">
-                <a href="https://www.facebook.com/" target="_blank"></a>
-            </div>
-        
-            <div id="img-footer-face"></div>
-                <img src="/img/icon/facebook.png" alt="Facebook" width="1.5%">
-            </div>
-                    
-            <div id="link-insta-footer">
-                <a href="https://www.instagram.com/" target="_blank"></a>
-            </div>
-                                                    
-            <div id="img-footer-insta">
-                <img src="/img/icon/instagram.png" alt="Instagram" width="1.5%">
-            </div>
-                    
-            <div id="link-linke-footer">
-                <a href="https://www.linkedin.com/" target="_blank"></a>
-            </div>
-                    
-            <div id="img-footer-linke">
-                <img src="/img/icon/linkedin.png" alt="LinkedIn" width="1.5%">
-            </div>
-                    
-            <div id="link-twitter">
-                <a href="https://www.twitter.com/" target="_blank"></a>
+            <div class="link-esqueciSenha">
+                 <a href="#">Esqueci minha senha</a>
             </div>
 
-            <div id="img-footer-twitter">
-                <img src="/img/icon/twitter.png" alt="Twitter" width="1.5%">
+            <div class="button-entrar">
+                <button id="entrar">Entrar</button>
+                <img id="img-entrar" src="/img/icon/entrar_2.png" alt="entrar_2" width="40px" height="35px">
             </div>
-                    
-            <div id="link-youtube-footer">
-                <a href="https://www.youtube.com/" target="_blank"></a>
-            </div>
-        
-            <div id="img-footer-youtube">
-                <img src="/img/icon/youtube.png" alt="YouTube" width="1.5%"></a>
-            </div>                                                                                
-        
-            <div id="rodapé">
-                <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
-            </div>
-            
-            <div class="button" id="button-entrar">
-                <img src="/img/icon/entrar_2.png" alt="entrar_2" width="20px" height="20px">
-            <button>Entrar</button>
-            </div>
-
-            <div class="rede-sociais" id="acesso-redesociais">
+                
+            <div class="rede-sociais" >
                
                 <h3>Quero acessar com minha rede sociais</h3>
 
-                <div class="link-face"> 
-                    <a href="http://https://www.facebook.com/"></a>
-                </div>
+            </div>  
+            
+            <div id="acesso-redeSociais">
+                <a href="https://www.facebook.com/" target="_blank">
+                <img src="/img/icon/facebook _1.png" alt="Facebook" width="8.5%">
+                </a>
 
-                <div id="img-facebook">
-                    <img src="/img/icon/facebook _1.png" alt="facebook" width="30px" height="30px">
-                </div>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img src="/img/icon/instagram-footer.png" alt="Instagram" width="8.5%">
+                </a>
 
-                <div class="link-insta">
-                    <a href="http://https://www.instagram.com//"></a>
-                </div>
+                <a href="https://www.linkedin.com/" target="_blank">
+                <img src="/img/icon/linkedin-footer.png" alt="LinkedIn" width="8.5%">
+                </a>
 
-                <div id="img-instagram">
-                    <img src="/img/icon/instagram_1.png" alt="instagram" width="30px" height="30px">
-                </div>
+                <a href="https://www.twitter.com/" target="_blank">
+                <img src="/img/icon/twitter-footer.png" alt="Twitter" width="8.5%">
+                </a>
 
-                <div class="link-linke">
-                    <a href="http://https://www.linkedin.com/"></a>
-                </div>
-
-                <div id="img-linkedin">
-                    <img src="/img/icon/linkedin_1.png" alt="twiter" width="30px" height="30px">
-                </div>
-                            
-                <div class="link-gmail">
-                    <a href="http://https://www.gmail.com/"></a>
-
-                <div id="img-gmail">
-                    <img src="/img/agradecimentos/gmail.png" alt="gmail" width="30px" height="30px">
-                </div>
+                <a href="https://www.youtube.com/" target="_blank">
+                <img src="/img/icon/youtube-footer.png" alt="YouTube" width="8.5%">
+                </a>
             </div>
                      
     </section>
 </main>
 
-    <div id="inscrevaSe">
+    <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
-        <form class="card-inscrevaSe" method="post">
-            
-            <div id="nome-inscreva"> 
+        
+            <div class="nome-inscreva"> 
                 <input  type="text" name="nome" placeholder="Digite seu Nome" >
             </div>
             
-            </div id="e-mail-inscreva">
+            <div class="e-mail-inscreva">
                 <input  type="email" name="email" placeholder="Digite seu E-mail">
-            <div>
+            </div>
                 
             <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
-        </form>
     </div>
-
+  
 <footer>
 
-    <div id="endereco">
-        <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
-    </div>
+        <div class="endereco">
+            <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
+        </div>
 
-    <div id="link-faleconsoco-footer">
-        <a href="/faleconosco.html">Fale Conosco</a> | <a
-        href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
-    </div>
+        <div class="link-faleconsoco-footer">
+            <a href="/faleconosco.html">Fale Conosco - </a> 
+            <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+        </div>
+       
+        <div id="card-sigaNos">
+            <p id="text-sigaNos">Siga-nos nas nossas Redes Sociais:</p>
+        </div>
 
-    <div id="card-footer">
-        
-        <div>
-            <p>Siga-nos nas nossas Redes Sociais:</p>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook.png" alt="Facebook"
-                    width="1.5%"></a>
+        <div class="card-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook-footer.png" alt="Facebook"
+                    width="2.5%"></a>
 
-            <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram.png" alt="Instagram"
-                    width="1.5%"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram-footer.png" alt="Instagram"
+                    width="2.5%"></a>
 
-            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin.png" alt="LinkedIn"
-                    width="1.5%"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin-footer.png" alt="LinkedIn"
+                    width="2.5%"></a>
 
-            <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter.png" alt="Twitter"
-                    width="1.5%"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter-footer.png" alt="Twitter"
+                    width="2.5%"></a>
 
-            <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube.png" alt="YouTube"
-                    width="1.5%"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube-footer.png" alt="YouTube"
+                    width="2.5%"></a>
         </div>
 
     <div id="rodapé">
-        <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
+        <p>Todos os direitos reservados para House of Dev! &#169</p>
     </div>
 
 </footer>

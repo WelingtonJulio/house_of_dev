@@ -209,7 +209,7 @@ main {
     border-radius: 30px 30px;
     box-shadow: 3px 5px 3px var(--grey-shadow);
     width: 50%;
-    height: 550px;
+    height: 705px;
     align-content: center;
     text-align: justify;
     margin: 13% 25%;
@@ -261,7 +261,7 @@ p {
     margin-bottom: 20px;
 }
 
-.cx-nomeCompleto input {
+.cx-NomeFantasia input {
     background-color:var(--white);
     text-decoration:var(--grey);
     text-align: left;
@@ -279,7 +279,7 @@ p {
     justify-content: left;
     align-items: center;
     box-sizing: border-box;
-    width: 275px;
+    width: 557px;
     height: 35px;
     margin-top: 8%;
     margin-left: 0%;
@@ -288,7 +288,38 @@ p {
     list-style: none;
 }
 
-.cx-cpf input {
+.cx-razaoSocial input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 557px;
+    height: 35px;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-bottom: -50px;
+    margin-right: 350%;
+    list-style: none;
+}
+
+.cx-cnpj input {
     background-color:var(--white);
     text-decoration:var(--grey);
     border: 1px solid var(--purple);
@@ -305,15 +336,15 @@ p {
     box-sizing: border-box;
     width: 275px;
     height: 35px;
-    margin-top: 2.8%;
-    margin-left: 51%;
+    margin-top: 10%;
+    margin-left: 0%;
     margin-bottom: -150%;
-    margin-right: 330%;
+    margin-right: 0%;
     padding: 1%;
     list-style: none;
 }
 
-.cx-dataNascimento input{
+.cx-dataAbertura input{
     background-color:var(--white);
     text-decoration:var(--grey);
     text-align: left;
@@ -333,14 +364,99 @@ p {
     box-sizing: border-box;
     width: 275px;
     height: 35px;
-    margin-top: 152%;
-    margin-left: 0%;
+    margin-top: 143.9%;
+    margin-left: 50%;
     margin-bottom: -50px;
+    margin-right: 0%;
+    list-style: none;  
+}
+
+.cx-incricaoEstadual input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 557px;
+    height: 35px;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+    margin-right: 50%;
+    list-style: none;
+}
+
+.cx-nomeResponsavel input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 275px;
+    height: 35px;
+    margin-top: 1.2%;
+    margin-left: 0%;
+    margin-bottom: 0px;
     margin-right: 350%;
     list-style: none;
 }
 
-.cx-telefone input{   
+.cx-cargoResponsavel input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 275px;
+    height: 35px;
+    margin-top: -6.2%;
+    margin-left: 49.9%;
+    margin-bottom: 0px;
+    margin-right: 350%;
+    list-style: none;
+}
+
+.cx-telefoneCelular input {
     background-color:var(--white);
     text-decoration:var(--grey);
     border: 1px solid var(--purple);
@@ -357,69 +473,15 @@ p {
     box-sizing: border-box;
     width: 275px;
     height: 35px;
-    margin-top: 2.5%;
-    margin-left: 51%;
-    margin-bottom: -150%;
+    margin-top: 1.3%;
+    margin-left: 0%;
+    margin-bottom: 0%;
     margin-right: 330%;
     padding: 1%;
     list-style: none;
 }
 
-.cx-email input {
-    background-color:var(--white);
-    text-decoration:var(--grey);
-    text-align: left;
-    padding-left: 10px;
-    padding: 1px 10px;
-    border: 1px solid var(--purple);
-    border-radius: 5px 5px;
-    box-shadow: 3px 3px 3px var(--grey-shadow);
-    background-position: inherit;
-    box-sizing: border-box;
-    border-radius: 5px 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: left;
-    align-items: center;
-    box-sizing: border-box;
-    width: 562px;
-    height: 35px;
-    margin-top: 152%;
-    margin-left: 0%;
-    margin-bottom: -50px;
-    margin-right: 350%;
-    list-style: none;
-}
-
-.cx-senha input { 
-    background-color:var(--white);
-    text-decoration:var(--grey);
-    text-align: left;
-    padding-left: 10px;
-    padding: 1px 10px;
-    border: 1px solid var(--purple);
-    border-radius: 5px 5px;
-    box-shadow: 3px 3px 3px var(--grey-shadow);
-    background-position: inherit;
-    box-sizing: border-box;
-    border-radius: 5px 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: left;
-    align-items: center;
-    box-sizing: border-box;
-    width: 275px;
-    height: 35px;
-    margin-top: 10.8%;
-    margin-left: 0%;
-    margin-bottom: -50px;
-    margin-right: 350%;
-    list-style: none;
-}
-
-.cx-confirmasenha input{
+.cx-telefoneContato input {
     background-color:var(--white);
     text-decoration:var(--grey);
     border: 1px solid var(--purple);
@@ -436,17 +498,98 @@ p {
     box-sizing: border-box;
     width: 275px;
     height: 35px;
-    margin-top: 2.8%;
-    margin-left: 51%;
-    margin-bottom: -190%;
+    margin-top: -6.2%;
+    margin-left: 50%;
+    margin-bottom: 0%;
     margin-right: 330%;
     padding: 1%;
     list-style: none;
 }
 
+.cx-Email input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 557px;
+    height: 35px;
+    margin-top: 1.2%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+    margin-right: 350%;
+    list-style: none;
+}
+
+.cx-senha input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    width: 275px;
+    height: 35px;
+    margin-top: 1.3%;
+    margin-left: 0%;
+    margin-bottom: 0px;
+    margin-right: 350%;
+    list-style: none; 
+}
+
+.cx-confirmasenha input {
+    background-color:var(--white);
+    text-decoration:var(--grey);
+    text-align: left;
+    padding-left: 10px;
+    padding: 1px 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    background-position: inherit;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 275px;
+    height: 35px;
+    margin-top: -6.2%;
+    margin-left: 50%;
+    margin-bottom: 0%;
+    margin-right: 330%;
+    padding: 1%;
+    list-style: none;
+}
 
 .campoObg {
-    margin: 1070px 0 20px 3px;
+    margin: 3px 0 20px 3px;
 }
 
 .ofertas {

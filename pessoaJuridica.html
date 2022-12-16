@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/css/cadastreSe.css">
+    <link rel="stylesheet" href="/css/pessoaJuridica.css">
   
-    <title>Dev Cadastro</title>
+    <title>Dev Juridico</title>
 </head>
 
 <body>
@@ -104,30 +104,54 @@
                 </div>
             </div>
         
-           <div class="cx-nomeCompleto">
-            <label for="nome"></label>
-            <input type="text" id="nomeCompleto" placeholder="Nome Completo*" autocomplete="on">
-           </div>
-
-
-            <div class="cx-cpf">
-                <label for="cpf"></label>
-                <input type="text" id="cpf" maxlength="15" placeholder="CPF 000.000.000-00*" autocomplete="on">
+            <div class="cx-NomeFantasia"> 
+                <label for="nome"></label>
+                <input type="text" class="nomeFantasia" placeholder="Nome fantasia*" autocomplete="on">
             </div>
 
-            <div class="cx-dataNascimento">
-                <label for="dataNascimento"></label>
-                <input type="date" id="data" placeholder="Data de nascimento*" autocomplete="on">
+            <div class="cx-razaoSocial">
+                <label for="nome"></label>
+                <input type="text" id="razaoSocial" placeholder="Razão social*" autocomplete="on">
             </div>
 
-            <div class="cx-telefone">
-                <label for="telefone"></label>
-                <input type="tel" id="tel" placeholder="Telefone celular*" autocomplete="on">
+            <div class="cx-cnpj">
+                <label for="nome"></label>
+                <input type="number" id="cnpj" placeholder="CNPJ*" autocomplete="on">
             </div>
 
-            <div class="cx-email">
-                <input type="email" id="email" placeholder="E-mail*">
-                <label for="email" maxlength="256" autocomplete="on"></label >
+            <div class="cx-dataAbertura">
+               <label for="data"></label>
+               <input type="date" id="dataabertura" placeholder="Data de abertura da empresa*">
+            </div>
+
+            <div class="cx-incricaoEstadual">
+                <label for="text"></label>
+                <input type="tel" id="incricaoEstadual" placeholder="Inscrição Estadual*" autocomplete="on">
+            </div>
+
+            <div class="cx-nomeResponsavel">
+                <input type="email" id="email" placeholder="Nome do responsável pela compra*">
+                <label for="email"  autocomplete="on"></label >
+            </div>
+
+            <div class="cx-cargoResponsavel">
+                <input type="email" id="email" placeholder="Cargo do responsável pela compra*">
+                <label for="text" maxlength="256" autocomplete="on"></label >
+            </div>
+
+            <div class="cx-telefoneCelular">
+                <input type="tel" id="telcelular" placeholder="Telefone celular*">
+                <label for="text" autocomplete="on"></label >
+            </div>
+
+            <div class="cx-telefoneContato">
+                <input type="tel" id="telcontato" placeholder="Telefone para contato*">
+                <label for="text" autocomplete="on"></label >
+            </div>
+
+            <div class="cx-Email">
+                <input type="email" id="emailEmpresa" placeholder="Email*">
+                <label for="text" autocomplete="on"></label >
             </div>
 
             <div class="cx-senha">
