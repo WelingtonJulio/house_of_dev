@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon">
-    <!--link para icone na barra de navegação-->
-
+    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon"><!--link para icone na barra de navegação-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="/css/departamentos.css">
+   
     <title>Departamentos</title>
 </head>
 
@@ -20,55 +18,68 @@
     <header>
         <nav>
             <section>
-                <a href="/inicio.html">
-                    <img src="/img/Logo.jfif" alt="logo" width="90px" height="60px">
-                </a>
+                <div class="card-container">
+                    <a href="/inicio.html" id="logo_house">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="130px" height="85px">
+                    </a>
+                </div>
+
+                <div class="button-buscar">
+                    <form action="/buscar.html" method="get" id="buscador">
+                        <input type="text" class="buscar-menu" placeholder="o que você procura?" maxlength="256" aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    </form>
+                </div>
+                        
+                    <div>
+                        <button class="button-buscador">
+                            <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px" height="30px" viewBox="0 0 16 16">
+                        </button>     
+                    </div>      
+                                                        
+                    <div class="login">
+                        <img src="/img/icon/conecte-se.png" alt="logo_login" width="50px" height="50px">
+                    </div>
+
+                    <div class="login-header">
+                        <span id="text-login"> Olá, faça  
+                            <a href="/login.html" 
+                            class="login-link" target="_blank" rel="login">LOGIN</a> <br> 
+                        </span>
+                    </div>
+
+                    <div class="card-cadastro">
+                        <span id="cadastro">
+                        ou <a href="/cadastreSe.html" 
+                        class="cadastro-link" target="_blank" rel="cadastro">CADASTRE-SE</a> 
+                     </span>   
+                    </div>
+                                         
+                    <div class="card-carrinho">
+                        <a href="/carrinho.html" id="link_carrinho">
+                        <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+                           </a>
+                    </div>
+
+                    <div class="button-gostar">
+                        <button  class="gostar">
+                            <a href="#">
+                                <img src="/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                            </a>
+                        </button>
+                    </div> 
+                    
+                    <div class="card-menu">
+                        <button class="menu">
+                            <a href="#">
+                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                            </a>
+                        </button >
+                    </div>
             </section>
-
-            <center>
-                <section>
-                    <input type="text" id="buscar" placeholder="o que você procura?" maxlength="256">
-                    <input type="button" value="buscar">
-
-                    <a href="/cadastro.html">
-                        <img src="/img/icon/conecte-se.png" alt="logo_login" width="40px" height="40px">
-                        <span>Olá, faça <b>LOGIN</b> ou <b>CADASTRE-SE</b></b></span>
-                    </a>
-
-                    <a href="/carrinho.html">
-                        <img src="/img/icon/carrinho.png" alt="logo_carrinho" width="20px" height="20px">
-                    </a>
-
-                    <a href="#">
-                        <img src="/img/icon/gostar.png" alt="logo_gostar" width="20px" height="20px">
-                    </a>
-                </section>
-
-                <br>
-
-                <section>
-                    <img src="/img/icon/menu (2).png" alt="menu" width="30px" height="30px">
-
-                    <a href="inicio.html" style="text-decoration: none"> Início / </a>
-
-                    <a href="sobreNos.html" style="text-decoration: none"> Sobre Nós / </a>
-
-                    <a href="departamentos.html" style="text-decoration: none"> Departamentos /</a>
-
-                    <a href="contatos.html" style="text-decoration: none"> Contato /</a>
-
-                    <a href="carrinho.html" style="text-decoration: none"> Carrinho /</a>
-
-                    <a href="cadastro.html" style="text-decoration: none"> Cadastro /</a>
-
-                    <a href="agradecimentos.html" style="text-decoration: none"> Agradecimentos </a>
-                </section>
-            </center>
         </nav>
     </header>
 
     <main>
-        <center>
             <div>
                 <br>
                 <h1>Departamentos</h1>
@@ -99,7 +110,7 @@
                         de trabalho e as interações entre o homem e as máquinas ou equipamentos. <br>
                         Temos o intuito de trazer conforto aos Devs, prevenindo as doenças ocupacionais e realizar uma boa interação entre <br>
                         o ambiente de trabalho, as capacidades físicas e psicológicas dos programadores e a eficiência de tempo.
-                        <br>
+                    
                     </p>
                     
                   
@@ -107,13 +118,13 @@
                         Profissionais organizados conseguem distribuir melhor as tarefas, sabem dividir o trabalho em relação <br>
                         aos horários  e o nível de prioridade, são mestres em atender prazos e ainda mantêm o local de trabalho <br>
                          mais limpo e organizado.
-                        <br>
+                        
                     </p>
                   
                     <p>Venha conhecer nossos produtos e descubra seu estilo.</p>
                     
                     <h3>Estilo na hora de programar e Eficiência.</h3>
-                    <br>
+                   
                    
                 <iframe width="760" height="315" src="https://www.youtube.com/embed/aRgqQe-8zYk?controls=0&amp;start=1"
                     title="YouTube video player" frameborder="0"
@@ -122,55 +133,56 @@
        
     </main>
 
+    <div class="inscrevaSe">
+        <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
+        
+            <div class="nome-inscreva"> 
+                <input  type="text" name="nome" placeholder="Digite seu Nome" >
+            </div>
+            
+            <div class="e-mail-inscreva">
+                <input  type="email" name="email" placeholder="Digite seu E-mail">
+            </div>
+                
+            <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
+    </div>
+
     <footer>
-        
-            <div>
-                <p>Inscreva-se para receber mais notícias:</p>
-                <form method="post">
-                    <input type="text" name="nome" placeholder="Digite seu Nome">
-                    <input type="email" name="email" placeholder="Digite seu Email">
-                    <input type="submit" name="enviar" value="Enviar">
-                </form>
-            </div>
 
-            <div>
-                <p> House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua Sacadura Cabral, 102, CEP: 20081-902, Rio de
-                    Janeiro - RJ</p>
-            </div>
+        <div class="endereco">
+            <p>House of Dev / CNPJ: 00.000.000/0000-00 /  Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902 </p>
+        </div>
 
-            <div>
-                <a href="contatos.html">Fale Conosco</a> | <a
-                    href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
-            </div>
+        <div class="link-faleconsoco-footer">
+            <a href="/faleconosco.html">Fale Conosco - </a> 
+            <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+        </div>
+       
+        <div id="card-sigaNos">
+            <p id="text-sigaNos">Siga-nos nas nossas Redes Sociais:</p>
+        </div>
 
-            <div>
-                <p>Siga-nos nas nossas Redes Sociais:</p>
-                <a href="https://www.facebook.com/" id="face-footer" target="_blank"><img src="/img/icon/facebook.png" alt="Facebook"
-                        width="1.5%"></a>
-                </a>
+        <div class="card-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook-footer.png" alt="Facebook"
+                    width="2.5%"></a>
 
-                <a href="https://www.instagram.com/" id="insta-footer" target="_blank"><img src="/img/icon/instagram.png" alt="Instagram"
-                        width="1.5%"></a>
-                </a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram-footer.png" alt="Instagram"
+                    width="2.5%"></a>
 
-                <a href="https://www.linkedin.com/" id="linke-footer" target="_blank"><img src="/img/icon/linkedin.png" alt="LinkedIn"
-                        width="1.5%"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin-footer.png" alt="LinkedIn"
+                    width="2.5%"></a>
 
-                <a href="https://www.twitter.com/" id="twiter-footer" target="_blank"><img src="/img/icon/twitter.png" alt="Twitter"
-                        width="1.5%"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter-footer.png" alt="Twitter"
+                    width="2.5%"></a>
 
-                <a href="https://www.youtube.com/" id="youtube-footer" target="_blank"><img src="/img/icon/youtube.png" alt="YouTube"
-                        width="1.5%"></a>
-            </div>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube-footer.png" alt="YouTube"
+                    width="2.5%"></a>
+        </div>
 
-            <div>
-                <p>Todos os direitos reservados para <b>House of Dev! &#169</b></p>
-            </div>
-        
-    </footer>
+    <div id="rodapé">
+        <p>Todos os direitos reservados para House of Dev! &#169</p>
+    </div>
 
-    <script src="./js/script.js"></script>
-
-</body>
+</footer>
 
 </html>
