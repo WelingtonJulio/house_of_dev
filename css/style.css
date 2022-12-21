@@ -51,11 +51,11 @@ nav {
 
 .buscar-menu {
   float: left;
-  margin-right: 1%;
+  margin-right: -200%;
   margin-bottom: -200%;
   margin-top: 4.8%;
-  margin-left: -15%;
-  padding: 20px;
+  margin-left: -9%;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,7 @@ nav {
   box-sizing: border-box;
   width: 600px;
   height: 30px;
-  background-color: var(--white);
+  background-color: var(--white-body);
   text-decoration: var(--grey);
   border: none;
   border-radius: 5px 5px;
@@ -86,13 +86,13 @@ nav {
   background-color: transparent;
   border: none;
   top: 34px;
-  left: 470px;
+  left: 510px;
   bottom: unset;
   flex: 1 1 auto;
 }
 
 .login {
-  margin: -11px 0px 0px 540px;
+  margin: -11px 0px 0px 560px;
   font-size: 13px;
   border: none;
   display: inline-flex;
@@ -111,9 +111,9 @@ nav {
   align-items: center;
   position: relative;
   background-color: transparent;
-  top: -1px;
+  top: -48px;
   bottom: 20px;
-  left: -45px;
+  left: 40px;
   z-index: 3;
 }
 
@@ -122,7 +122,7 @@ nav {
   line-height: 3px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white-text);
   text-decoration: none;
 }
 
@@ -136,8 +136,8 @@ nav {
   position: relative;
   background-color: transparent;
   z-index: 3;
-  bottom: 25px;
-  left: -50px;
+  bottom: 28px;
+  left: 139.3px;
 }
 
 .cadastro-link {
@@ -145,7 +145,7 @@ nav {
   line-height: 3px;
   letter-spacing: 1.2px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white-text);
   text-decoration: none;
   float: right;
   display: inline-flex;
@@ -165,7 +165,7 @@ nav {
   z-index: 3;
   background-color: transparent;
   bottom: 45px;
-  left: 160px;
+  left: 330px;
 }
 
 .card-carrinho {
@@ -177,7 +177,7 @@ nav {
   z-index: 3;
   float: right;
   bottom: 46px;
-  left: 190px;
+  left: 340px;
 }
 
 .menu {
@@ -189,7 +189,7 @@ nav {
   position: relative;
   z-index: 3;
   bottom: 50px;
-  left: 350px;
+  left: 480px;
 }
 
 body {
@@ -233,14 +233,14 @@ h2 {
 #text-inscreva {
   font-size: 20px;
   font-weight: 550;
-  color: var(--white-text);
+  color: var(--white-body);
   text-align: center;
   margin-top: 1%;
   right: 25px;
 }
 
 .nome-inscreva {
-  background-color: var(--white);
+  background-color: var(--white-body);
   box-sizing: border-box;
   border-radius: 5px 5px;
   display: flex;
@@ -259,7 +259,7 @@ h2 {
 }
 
 .e-mail-inscreva {
-  background-color: var(--white);
+  background-color: var(--white-body);
   box-sizing: border-box;
   border-radius: 5px 5px;
   display: flex;

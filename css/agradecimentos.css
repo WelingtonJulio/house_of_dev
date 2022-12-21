@@ -17,53 +17,35 @@
   box-sizing: border-box;
 }
 
-h5 {
-  font-size: 36px;
-  color: #a193af;
-  margin: 140px 0 0 0;
-  text-align: center;
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+h5 {
+  color:var(--purple);
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 10% 0% 3% 0%;
+} 
 
 .text-introducao {
   text-align: center;
-  margin: 20px;
-}
-
-.container {
-  height: 100%;
-  margin: -140px 5px 5px 0px;
-}
-
-.img-1 {
-  border-radius: 80px 80px;
-  align-items: center;
-  margin: 40px 50px;
-}
-
-.card-title {
-  font-size: 16px;
-  text-align: center;
-  color: var(--black-text);
-  margin: 10px 0px;
-  padding: 2px ;
-}
-
-.card-text {
-  text-align: center;
-  align-content: center;
-  color: var(--black-text);
-  margin: 10px 10px;
-  padding: 2px ;
+  margin: 40px ;
+  padding: 0 20px;
 }
 
 .card-equipe {
- 
   position: relative;
-  height: 400px;
-  width: 300px;
-  margin: 145px 1px 1px 10px;
+  margin: 5px 0 140px 5px;
+  width: 180px;
+  height: 280px;
   perspective: 1000px;
-  
 }
 
 .card-equipe .flip {
@@ -76,13 +58,22 @@ h5 {
 }
 
 .front-card, .back-card {
-  width: 20px;
-  height: 60px;
   position: absolute;
   backface-visibility: hidden;
-  
 }
 
 .back-card {
   transform: rotateY(180deg);
+}
+
+.front-card img, .back-card img {
+  border-radius: 10px 15px;
+  box-shadow: 0 5px 5px var(--grey-shadow);
+}
+
+.card-agradecimento img {
+  margin-top: -90%;
+  margin-bottom: 35%;
+  margin-left: 1%;
+  margin-right: 4%;
 }

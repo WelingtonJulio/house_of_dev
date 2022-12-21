@@ -3,7 +3,7 @@
     --purple-button: #a193af;
     --purple-link: #19022e;
     --blue-button: #3f2083;
-    --white: #ede9e9;
+    --white: #edae9e9;
     --grey: #5c5a5a99;
     --grey-shadow: #938f93;
     --white-text: #fff7f7;
@@ -26,46 +26,50 @@
 h1 {
     font-size: 28px;
     text-align: left;
-    margin: 100px 0 0 00;
+    margin: 120px 0 -250px 0;
 }
 
 h2 {
     color: var(--black-text);
 }
 
-.img-1 {
+.img-1, .img-2, .img-3 {
    border: 2px solid var(--purple);
-   width: 6%;
+   width: 4.4%;
    height: 10%;
-   padding: 5px;
+   padding: 1px;
    display: flex;
-   margin: -100px 10px -30px 10px;
+   margin: -45px 0px 55px 10px;
+   align-items: center;
+   justify-items: center;
+}
+
+.img-principal {
+    margin-top: -215px;
+    margin-left: 120px;
+    margin-right: 20px;
+    margin-bottom: 500px;
 }
 
 h3 { 
     font-size: 35px;
     text-align: left;
     color: var(--blue-button);
-    margin-top: -750px;
-    margin-left: 600px;
+    margin-top: -748px;
+    margin-left: 555px;
 }
 
 .icons {
-    margin: 130px 10px 150px 785px;
+    align-items: flex-end;
+    margin: 32% 0% 0% 65%;
+    display: flex;
 }
 
 .text-preco p {
-    margin-top: 5px;
-    margin-left: 600px;
+    margin-top: 4px;
+    margin-left: 555px;
 }
-  
-.img-principal {
-    margin-top: -80px;
-    margin-left: 180px;
-    margin-right: 20px;
-    margin-bottom: 400px;
-}
-
+ 
 .btn-comprar {
     font-size: 18px;
     background-color: var(--purple-button);
@@ -80,7 +84,7 @@ h3 {
     box-sizing: border-box;
     box-shadow: 3px 3px 3px var(--grey-shadow);
     margin-top: 4%;
-    margin-left: 54%;
+    margin-left: 51%;
     margin-bottom: 8%;
   }
   
@@ -116,7 +120,7 @@ h3 {
     (--purple-button);
     display: flex;
     width: 30%;
-    margin: 50px 0px 0px 300px;
+    margin: 70px 0px 0px 300px;
 }
 
 .descricao img {
@@ -141,5 +145,9 @@ h3 {
 } 
 
 .informacao p {
-    margin: -5px 3
+    margin: -5px 30px;
+}
+
+.informacao {
+    margin-bottom: 120px;
 }
