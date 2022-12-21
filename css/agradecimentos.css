@@ -1,80 +1,88 @@
-.titulo-texto {
+:root {
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-size: 36px;
+  color: #a193af;
+  margin: 140px 0 0 0;
   text-align: center;
 }
 
-.titulo-texto p {
+.text-introducao {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  height: 100%;
+  margin: -140px 5px 5px 0px;
+}
+
+.img-1 {
+  border-radius: 80px 80px;
+  align-items: center;
+  margin: 40px 50px;
+}
+
+.card-title {
   font-size: 16px;
-}
-
-.container-pessoas .box-pessoas {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 5px 20px 20px;
-}
-
-.box-pessoas {
-  margin: 30px 0 0;
-}
-
-.box-pessoas p {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-h3 {
-  padding-top: 10px;
-}
-
-#edgar {
   text-align: center;
-  width: 20%;
-  height: 250px;
-  padding: 30px 0 230px;
-  margin-right: 30px;
-  background-color: var(--white-body);
-  border: 3px solid var(--purple);
-  border-radius: 20px;
+  color: var(--black-text);
+  margin: 10px 0px;
+  padding: 2px ;
 }
 
-#karen {
+.card-text {
   text-align: center;
-  width: 20%;
-  height: 250px;
-  padding: 30px 0 230px;
-  margin-right: 30px;
-  background-color: var(--white-body);
-  border: 3px solid var(--purple);
-  border-radius: 20px;
+  align-content: center;
+  color: var(--black-text);
+  margin: 10px 10px;
+  padding: 2px ;
 }
 
-#hikaru {
-  text-align: center;
-  width: 20%;
-  height: 250px;
-  padding: 30px 0 230px;
-  margin-right: 20px;
-  background-color: var(--white-body);
-  border: 3px solid var(--purple);
-  border-radius: 30px;
+.card-equipe {
+ 
+  position: relative;
+  height: 400px;
+  width: 300px;
+  margin: 145px 1px 1px 10px;
+  perspective: 1000px;
+  
 }
 
-#marieve {
-  text-align: center;
-  width: 20%;
-  height: 250px;
-  padding: 30px 0 230px;
-  margin-right: 30px;
-  background-color: var(--white-body);
-  border: 3px solid var(--purple);
-  border-radius: 20px;
+.card-equipe .flip {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
 }
 
-#welington {
-  text-align: center;
-  width: 20%;
-  height: 250px;
-  padding: 30px 0 230px;
-  background-color: var(--white-body);
-  border: 3px solid var(--purple);
-  border-radius: 20px;
+.card-equipe:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.front-card, .back-card {
+  width: 20px;
+  height: 60px;
+  position: absolute;
+  backface-visibility: hidden;
+  
+}
+
+.back-card {
+  transform: rotateY(180deg);
 }

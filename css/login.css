@@ -11,19 +11,22 @@
   --black-text: #0c0c0c;
 }
 
-body {
-  overflow: hidden;
-}
+
 
 main {
-  width: 50%;
-  height: auto;
+  color: var(--black-text);
+  font-size: 16px;
+  background-color: var(--white-body);
+  border: 3px solid var(--purple);
+  border-radius: 30px 30px;
+  box-shadow: 3px 5px 3px var(--grey-shadow);
+  width: 45%;
+  height: 450px;
   align-content: center;
   text-align: justify;
-  margin: 10% 25% 5%;
+  margin: 13% 28%;
 }
 
-<<<<<<< HEAD
 input {
     background-color: transparent;
     text-decoration:var(--grey);
@@ -40,8 +43,6 @@ h2 {
     margin: 4% 10% 14% 14%;
 }
 
-=======
->>>>>>> 16de3ef3cac2e9bbda3ff1311f32aed712b9e012
 .card-login {
   float: left;
   margin-top: -5.3%;
@@ -107,7 +108,7 @@ h2 {
   background-color: transparent;
   z-index: 3;
   top: 8px;
-  left: -1.7%;
+  left: -7.2%;
 }
 
 .button-entrar {
@@ -170,4 +171,5 @@ h2 {
   justify-content: space-around;
   margin-top: -12%;
   margin-left: 35%;
+  margin-bottom: 20%;
 }
