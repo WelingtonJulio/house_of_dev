@@ -192,6 +192,61 @@ nav {
   left: 480px;
 }
 
+.menu {
+  background-color: transparent;
+  border: none;
+  margin-left: 300px;
+  display: inline-flex;
+  position: relative;
+  z-index: 3;
+  bottom: 50px;
+  left: 350px;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  background-color: #8c65a4;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 14px;
+  transition: background 0.3s;
+  text-align: start;
+}
+
+.dp-menu ul li a:hover {
+  background-color: #d3a7ef;
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+  display: none;
+  position: fixed;
+  text-align: center;
+  padding-right: 3px;
+  width: 100px;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul li a {
+  font-size: x-small;
+  display: block;
+}
+
 body {
   background-color: var(--white-body);
   width: 100%;
@@ -375,4 +430,3 @@ a {
   margin-left: 40px;
   margin-right: 30px;
 }
-

@@ -48,14 +48,13 @@
 
                 <div class="login-header">
                     <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a>
+                        <a href="/login.html" class="login-link" rel="login">LOGIN</a>
                     </span>
                 </div>
 
                 <div class="card-cadastro">
                     <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
-                            rel="cadastro">CADASTRE-SE</a>
+                        ou <a href="/cadastreSe.html" class="cadastro-link" rel="cadastro">CADASTRE-SE</a>
                     </span>
                 </div>
 
@@ -75,9 +74,22 @@
 
                 <div class="card-menu">
                     <button class="menu">
-                        <a href="#">
-                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
-                        </a>
+                        <div class="dp-menu">
+                            <ul class="btn-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li><a href="/inicio.html">INÍCIO</a></li>
+                                        <li><a href="/sobreNos.html">SOBRE NÓS</a></li>
+                                        <li><a href="/departamentos.html">DEPARTAMENTOS</a></li>
+                                        <li><a href="/faleConosco.html">CONTATO</a></li>
+                                        <li><a href="/agradecimentos.html">AGRADECIMENTOS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </button>
                 </div>
             </section>
@@ -85,45 +97,78 @@
     </header>
 
     <main>
-        <center>
-            <article>
-                <h1>Sobre Nós</h1>
+        <article>
+            <h1 class="title">Sobre Nós</h1>
+            <p class="text">Somos uma empresa de e-commerce, voltando para todas as necessidades de um Desenvolvedor, ou
+                um
+                futuro Dev.
+                <br>
+                Apostando na qualidade e variedade dos produtos, agilidade na entrega, infraestrutura e equipe
+                profissional treinada, sempre pronta para atender 100% de suas necessidades.
+                <br>
+                Para mostrar a nossa eficiência e qualidade a House of Dev tem números.
+                <br>
+                São mais de 150 marcas, entre as melhores do mercado e temos armazenagem em várias regiões do
+                Brasil.
+            </p>
+        </article>
 
-                <p>Somos uma empresa de e-commerce, voltando para todas as necessidades de um Desenvolvedor, ou um
-                    futuro Dev.
-                    <br>
-                    Apostando na qualidade e variedade dos produtos, agilidade na entrega, infraestrutura e equipe
-                    profissional treinada, sempre pronta para atender 100% de suas necessidades.
-                    <br>
-                    Para mostrar a nossa eficiência e qualidade a House of Dev tem números.
-                    <br>
-                    São mais de 150 marcas, entre as melhores do mercado e temos armazenagem em várias regiões do
-                    Brasil.
-                </p>
-            </article>
+        <section class="face">
+            <div class="container">
+                <div class="card">
+                    <div class="mage1">
+                        <div class="content">
+                            <h3>Missão</h3>
+                        </div>
+                    </div>
 
-            <section>
-                <h2>Missão </h2>
+                    <div class="mage2">
+                        <div class="content">
+                            <p>Comercializar produtos e serviços de qualidade que atendam ás necessidades, os desejos e
+                                as
+                                expectativas de nossos clientes desenvolvedores.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <p>
-                    Comercializar produtos e serviços de qualidade que atendam ás necessidades, os desejos e as
-                    expectativas de nossos clientes desenvolvedores.
-                </p>
+                <div class="card">
+                    <div class="mage1">
+                        <div class="content">
+                            <h3>Visão</h3>
+                        </div>
+                    </div>
 
-                <h2>Visão</h2>
-                <p>
-                    Somos uma empresa comercial de tecnologia de ponta. Queremos ser uma empresa competitiva, confiável,
-                    e com responsabilidade social e ambiental,
-                    com foco em crescimento contínuo e sustentável do negócio,
-                    de que todos nos orgulhamos de ser colaboradores, clientes e fornecedores.
-                </p>
+                    <div class="mage2">
+                        <div class="content">
+                            <p>
+                                Somos uma empresa comercial de tecnologia de ponta. Queremos ser uma empresa
+                                competitiva, confiável,
+                                e com responsabilidade social e ambiental,
+                                com foco em crescimento contínuo e sustentável do negócio,
+                                de que todos nos orgulhamos de ser colaboradores, clientes e fornecedores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>Valores</h2>
-                <p>
-                    Compromisso com os clientes desenvolvedores. Respeito às pessoas. Ética nos negócios
-                </p>
-            </section>
-        </center>
+                <div class="card">
+                    <div class="mage1">
+                        <div class="content">
+                            <h3>Valores</h3>
+                        </div>
+                    </div>
+
+                    <div class="mage2">
+                        <div class="content">
+                            <p>
+                                Compromisso com os clientes desenvolvedores. <br> Respeito às pessoas. <br> Ética nos
+                                negócios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div class="inscrevaSe">
@@ -178,7 +223,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>

@@ -48,14 +48,13 @@
 
                 <div class="login-header">
                     <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a>
+                        <a href="/login.html" class="login-link" rel="login">LOGIN</a>
                     </span>
                 </div>
 
                 <div class="card-cadastro">
                     <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
-                            rel="cadastro">CADASTRE-SE</a>
+                        ou <a href="/cadastreSe.html" class="cadastro-link" rel="cadastro">CADASTRE-SE</a>
                     </span>
                 </div>
 
@@ -75,9 +74,23 @@
 
                 <div class="card-menu">
                     <button class="menu">
-                        <a href="#">
-                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
-                        </a>
+                        <div class="dp-menu">
+                            <ul class="btn-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                                    </a>
+
+                                    <ul class="menu-list">
+                                        <li><a href="/inicio.html">INÍCIO</a></li>
+                                        <li><a href="/sobreNos.html">SOBRE NÓS</a></li>
+                                        <li><a href="/departamentos.html">DEPARTAMENTOS</a></li>
+                                        <li><a href="/faleConosco.html">CONTATO</a></li>
+                                        <li><a href="/agradecimentos.html">AGRADECIMENTOS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </button>
                 </div>
             </section>
@@ -85,56 +98,24 @@
     </header>
 
     <main>
-        <center>
-            <section>
-                <h1>Carrinho de Compras</h1>
+        <section>
+            <h1>Meu Carrinho</h1>
+            <hr>
+            <div class="carrinho-vazio">
+                <h2>OPS! Seu Carrinho de Compras está vazio.</h2>
                 <p>
-                    <img src="/img/icon/entrega-rapida_1.png" alt="caminHão de entrega" height="60px" width="80px">
-                <h3>Selecione o Endereço:</h3>
+                    Insira já produtos ao
+                    seu
+                    Carrinho.</p>
+                <p>
+                    Navegue pelas categorias ou utilize a busca do site, ao encontrar os produtos desejados,
+                    clique no botão comprar.
                 </p>
-                <form action="#" onsubmit="return false">
-                    CEP: <input type="text" id="cep" maxlength="9" placeholder="Digite seu CEP" autofocus>
-                </form>
-            </section>
 
-            <div>
-                <a href="">
-                    <p><img src="/img/icon/lixeira.png" alt="lixeira" height="20px" width="20px"><b> REMOVER TODOS OS
-                            PRODUTOS</b></p>
-                </a>
+                <img src="/img/icon/entrega-logistica.png" alt="">
+                <button type="button"><a href="inicio.html">Continuar Comprando</a> </button>
             </div>
-
-            <br><br>
-
-            <div>
-
-                <h2>Não há produto aqui!</h2>
-            </div>
-
-            <br><br>
-
-            <div>
-                <p><img src="/img/icon/lupa doc.png" alt="lupa" height="20px" width="20px"><b> RESUMO </b><img
-                        src="/img/icon/dinheiro.png" alt="dinheiro" height="20px" width="20px"></p>
-                <span>Valor dos Produtos:</span><br>
-                <hr>
-                <span>Frete:</span><br>
-                <hr>
-                <span>Total à prazo:</span><br>
-                <span>(em até 10x de R$ xxxxxx sem juros)</span>
-            </div>
-
-            <div>
-                <p>Valor à vista no <b>Pix:</b></p>
-            </div>
-
-            <div>
-                <button>IR PARA O PAGAMENTO</button><br><br>
-                <button>CONTINUAR COMPRANDO</button>
-
-            </div>
-
-        </center>
+        </section>
     </main>
 
     <div class="inscrevaSe">
@@ -183,7 +164,7 @@
                     width="2.5%"></a>
         </div>
 
-        <div id="rodapé">
+        <div class="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div>
     </footer>
