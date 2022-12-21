@@ -1,0 +1,88 @@
+:root {
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-size: 36px;
+  color: #a193af;
+  margin: 140px 0 0 0;
+  text-align: center;
+}
+
+.text-introducao {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  height: 100%;
+  margin: -140px 5px 5px 0px;
+}
+
+.img-1 {
+  border-radius: 80px 80px;
+  align-items: center;
+  margin: 40px 50px;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: center;
+  color: var(--black-text);
+  margin: 10px 0px;
+  padding: 2px ;
+}
+
+.card-text {
+  text-align: center;
+  align-content: center;
+  color: var(--black-text);
+  margin: 10px 10px;
+  padding: 2px ;
+}
+
+.card-equipe {
+ 
+  position: relative;
+  height: 400px;
+  width: 300px;
+  margin: 145px 1px 1px 10px;
+  perspective: 1000px;
+  
+}
+
+.card-equipe .flip {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-equipe:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.front-card, .back-card {
+  width: 20px;
+  height: 60px;
+  position: absolute;
+  backface-visibility: hidden;
+  
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}

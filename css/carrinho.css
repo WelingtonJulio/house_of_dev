@@ -1,0 +1,13 @@
+main {
+    font-size: 16px;
+    background-color: var(--white-body);
+    border: 3px solid var(--purple);
+    border-radius: 30px 30px;
+    box-shadow: 3px 5px 3px var(--grey-shadow);
+    width: 90%;
+    height: auto;
+    align-content: center;
+    text-align: justify;
+    margin: 12% 5% 5%;
+    padding: 1.8%;
+  }

@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/departamentos.css">
+    <link rel="stylesheet" href="/css/cadastreSe.css">
 
-    <title>Departamentos</title>
-
+    <title>Cadastro</title>
+    
 </head>
 
 <body>
@@ -85,61 +85,81 @@
     </header>
 
     <main>
-        
-        
+        <section>
+            <h2>Criar Conta</h2>
+            <p>Tipo de Conta: </p>
+            <div class="parag-conta">
+                <div class="tipoConta">
+                    <a href="/cadastreSe.html">
+                        <img src="/img/icon/pessoa.png" alt="img-pessoa" width="25px" height="25px">
+                    </a>
+                    <label for="pessoaFisica">Pessoa Física</label>
+                </div>
 
-            <h1>Departamentos</h1>
-         
+                <div>
+                    <a href="/pessoaJuridica.html">
+                        <img src="/img/icon/empresa.png" alt="img-pessoa" width="25px" height="25px">
+                    </a>
+                    <label for="pessoaFisica">Pessoa Jurídica</label>
+                </div>
+            </div>
+
+            <div class="cx-nomeCompleto">
+                <label for="nome"></label>
+                <input type="text" id="nomeCompleto" placeholder="Nome Completo*" autocomplete="on">
+            </div>
 
 
-        <div>
-            <h2>
-                <a href="" class="dep-op"> Eletrônicos </a>
-                <a href="" class="dep-op"> Periféricos </a>
-                <a href="" class="dep-op"> Ergonomia </a>
-                <a href="" class="dep-op"> Acessórios </a>
-            </h2>
-        </div>
+            <div class="cx-cpf">
+                <label for="cpf"></label>
+                <input type="text" id="cpf" maxlength="15" placeholder="CPF 000.000.000-00*" autocomplete="on">
+            </div>
 
-        <div class="depart-fot">
+            <div class="cx-dataNascimento">
+                <label for="dataNascimento"></label>
+                <input type="date" id="data" placeholder="Data de nascimento*" autocomplete="on">
+            </div>
 
-            <img src="img/icon/eletro.png" alt="eletronicos" class="foto" >
-            <img src="img/icon/perife.png" alt="perifericos" class="foto" >
+            <div class="cx-telefone">
+                <label for="telefone"></label>
+                <input type="tel" id="tel" placeholder="Telefone celular*" autocomplete="on">
+            </div>
 
-            <img src="img/icon/ergo.png" alt="ergonomia" class="foto" >
-            <img src="img/icon/deco.png" alt="perifericos" class="foto">
+            <div class="cx-email">
+                <input type="email" id="email" placeholder="E-mail*">
+                <label for="email" maxlength="256" autocomplete="on"></label>
+            </div>
 
-        </div>
+            <div class="cx-senha">
+                <label for="senha"></label>
+                <input type="password" id="senha" placeholder="Crie sua senha*">
+            </div>
 
-        <div>
-            <h2>Estilo e Praticidade</h2>
-            <p>
-                Os nossos produtos são pensandos na sáude e qualidade de trabalho dos desenvolvedores, com organização
-                no ambiente
-                de trabalho e as interações entre o homem e as máquinas ou equipamentos.
-                Temos o intuito de trazer conforto aos Devs, prevenindo as doenças ocupacionais e realizar uma boa
-                interação entre
-                o ambiente de trabalho, as capacidades físicas e psicológicas dos programadores e a eficiência de tempo.
-            </p>
+            <div class="cx-confirmasenha">
+                <label for="confirmasenha"></label>
+                <input type="password" id="confiSenha" placeholder="Confirme sua senha*">
+            </div>
 
-            <p>
-                Profissionais organizados conseguem distribuir melhor as tarefas, sabem dividir o trabalho em relação
+            <div class="campoObg">
+                <small>(*) Campos obrigatórios</small>
+            </div>
 
-                aos horários e o nível de prioridade, são mestres em atender prazos e ainda mantêm o local de trabalho
+            <div class="ofertas">
+                <input type="checkbox" name="queroOfertas"> Quero receber ofertas e novidades por e-mail, SMS, Whatsapp
+                ou mensagens.
+                <br>
+            </div>
 
-                mais limpo e organizado.
-            </p>
+            <div class="politica">
+                <input type="checkbox" name="LiAcordo"> Li e estou de acordo com as
+                <a href="/politicasPrivacidade.html">políticas da empresa e políticas de privacidade.*</a>
+            </div>
 
-            <p>Venha conhecer nossos produtos e descubra seu estilo.</p>
-
-            <h3>Estilo na hora de programar e Eficiência.</h3>
-
-            <iframe width="1085" height="515" src="https://www.youtube.com/embed/aRgqQe-8zYk?controls=0&amp;start=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+            <div class="button-cadastrar">
+                <button id="cadastrar"></button>
+                <a href="/inicio.html">Cadastrar</a>
+            </div>
+        </section>
     </main>
 
     <div class="inscrevaSe">

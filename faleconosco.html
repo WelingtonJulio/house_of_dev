@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/departamentos.css">
+    <link rel="stylesheet" href="./css/faleConosco.css">
 
-    <title>Departamentos</title>
+    <title>Fale Conosco</title>
 
 </head>
 
@@ -85,61 +85,100 @@
     </header>
 
     <main>
-        
-        
+        <section>
+            <div class="card-radio">
+                <form action="">
+                    <h3>Escolha uma das opções: </h3>
+                    <input type="radio" name="opcao" id="elogio">
+                    <label for="elogio">Elogio</label><br>
 
-            <h1>Departamentos</h1>
-         
+                    <input type="radio" name="opcao" id="sugestão">
+                    <label for="outro">Sugestão</label><br>
 
+                    <input type="radio" name="opcao" id="dúvida">
+                    <label for="elogio">Dúvida</label><br>
 
-        <div>
-            <h2>
-                <a href="" class="dep-op"> Eletrônicos </a>
-                <a href="" class="dep-op"> Periféricos </a>
-                <a href="" class="dep-op"> Ergonomia </a>
-                <a href="" class="dep-op"> Acessórios </a>
-            </h2>
+                    <input type="radio" name="opcao" id="critica">
+                    <label for="outro">Crítica</label><br>
+
+                    <input type="radio" name="opcao" id="troc-canc">
+                    <label for="elogio">Troca/Cancelamento</label>
+                </form>
+            </div>
+        </section>
+
+        <div id="texto-h3">
+            <h3>
+                Use o formulário abaixo para tirar suas dúvidas, dar sugestões ou registrar sua crítica, lembrando
+                sempre de
+                indicar o assunto e o destino da mensagem.
+            </h3>
         </div>
 
-        <div class="depart-fot">
+        <section>
+            <form>
+                <fieldset class="grupo">
+                    <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    </div>
 
-            <img src="img/icon/eletro.png" alt="eletronicos" class="foto" >
-            <img src="img/icon/perife.png" alt="perifericos" class="foto" >
+                    <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                    </div>
+                </fieldset>
 
-            <img src="img/icon/ergo.png" alt="ergonomia" class="foto" >
-            <img src="img/icon/deco.png" alt="perifericos" class="foto">
+                <!-- Campo de email com-->
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" placeholder="name@example.com" required>
+                </div>
 
-        </div>
+                <!-- Campo de telefone com-->
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="telNo" id="telefone" name="telefone" placeholder="(xx) 00000-0000">
+                </div>
 
-        <div>
-            <h2>Estilo e Praticidade</h2>
-            <p>
-                Os nossos produtos são pensandos na sáude e qualidade de trabalho dos desenvolvedores, com organização
-                no ambiente
-                de trabalho e as interações entre o homem e as máquinas ou equipamentos.
-                Temos o intuito de trazer conforto aos Devs, prevenindo as doenças ocupacionais e realizar uma boa
-                interação entre
-                o ambiente de trabalho, as capacidades físicas e psicológicas dos programadores e a eficiência de tempo.
-            </p>
+                <div class="campo">
+                    <label for="assunto"><strong>Assunto</strong></label>
+                    <input type="text" id="assunto" name="assunto" placeholder="ex: produto com defeito"
+                        maxlength="150">
+                </div>
 
-            <p>
-                Profissionais organizados conseguem distribuir melhor as tarefas, sabem dividir o trabalho em relação
+                <div class="">
+                    <div class="campo">
+                        <label for="assunto"><strong>Escolha um ou mais arquivos:</strong></label>
+                        <input type="file" multiple>
+                    </div>
+                </div>
 
-                aos horários e o nível de prioridade, são mestres em atender prazos e ainda mantêm o local de trabalho
+                <div class="campo">
+                    <label for="texto"><strong>Mensagem: </strong></label>
+                    <textarea rows="6" style="width: 26em" id="texto" name="texto"
+                        placeholder="Digite aqui a sua mensagem"></textarea>
+                </div>
 
-                mais limpo e organizado.
-            </p>
+                <div class="button">
+                    <button type="submit">Enviar sua mensagem</button>
+                </div>
+            </form>
+        </section>
 
-            <p>Venha conhecer nossos produtos e descubra seu estilo.</p>
+        <section>
+            <h3>
+                Veja onde estamos localizados:
+            </h3>
 
-            <h3>Estilo na hora de programar e Eficiência.</h3>
-
-            <iframe width="1085" height="515" src="https://www.youtube.com/embed/aRgqQe-8zYk?controls=0&amp;start=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.431938578649!2d-43.18731888540064!3d-22.89743384329304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5b2d6bd19f%3A0x1cd01dc92bad8fa6!2sR.%20Sacadura%20Cabral%2C%20102%20-%20Sa%C3%BAde%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020081-261!5e0!3m2!1spt-BR!2sbr!4v1669661642316!5m2!1spt-BR!2sbr"
+                width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </div>
+        </section>
     </main>
 
     <div class="inscrevaSe">

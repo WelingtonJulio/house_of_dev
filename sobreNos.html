@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon">
+    <!--link para icone na barra de navegação-->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sobreNos.css">
+
     <title>Sobre Nós</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <section>
+                <div class="card-container">
+                    <a href="/inicio.html" id="logo_house">
+                        <img src="/img/icon/logo oficial_1.png" alt="logo" width="130px" height="85px">
+                    </a>
+                </div>
+
+                <div class="button-buscar">
+                    <form action="/buscar.html" method="get" id="buscador">
+                        <input type="text" class="buscar-menu" placeholder="o que você procura?" maxlength="256"
+                            aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    </form>
+                </div>
+
+                <div>
+                    <button class="button-buscador">
+                        <img src="/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px"
+                            height="30px" viewBox="0 0 16 16">
+                    </button>
+                </div>
+
+                <div class="login">
+                    <img src="/img/icon/conecte-se.png" alt="logo_login" width="50px" height="50px">
+                </div>
+
+                <div class="login-header">
+                    <span id="text-login"> Olá, faça
+                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a>
+                    </span>
+                </div>
+
+                <div class="card-cadastro">
+                    <span id="cadastro">
+                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
+                            rel="cadastro">CADASTRE-SE</a>
+                    </span>
+                </div>
+
+                <div class="card-carrinho">
+                    <a href="/carrinho.html" id="link_carrinho">
+                        <img src="/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+                    </a>
+                </div>
+
+                <div class="button-gostar">
+                    <button class="gostar">
+                        <a href="#">
+                            <img src="/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                        </a>
+                    </button>
+                </div>
+
+                <div class="card-menu">
+                    <button class="menu">
+                        <a href="#">
+                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                        </a>
+                    </button>
+                </div>
+            </section>
+        </nav>
+    </header>
+
     <main>
-
      <article>
-
             <h1 class="title">Sobre Nós</h1>
-
             <p class="text">Somos uma empresa de e-commerce, voltando para todas as necessidades de um Desenvolvedor, ou um
                 futuro Dev.
                 <br>
@@ -28,10 +101,8 @@
      </article>
 
     <section class="face">
-
        <div class="container">
           <div class="card">
-
             <div class="mage1">
                 <div class="content">
                     <h3>Missão</h3>
@@ -44,7 +115,6 @@
                         expectativas de nossos clientes desenvolvedores.</p>
                 </div>
             </div>
-
         </div>
         
         <div class="card">
@@ -63,8 +133,7 @@
                         de que todos nos orgulhamos de ser colaboradores, clientes e fornecedores.
                     </p>
                 </div>
-            </div>
-
+           </div>
         </div>
 
         <div class="card">
@@ -84,8 +153,60 @@
         </div>
      </div>
    </section>
-
  </main>
     
+    <div class="inscrevaSe">
+        <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
+
+        <div class="nome-inscreva">
+            <input type="text" name="nome" placeholder="Digite seu Nome">
+        </div>
+
+        <div class="e-mail-inscreva">
+            <input type="email" name="email" placeholder="Digite seu E-mail">
+        </div>
+
+        <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
+    </div>
+
+    <footer>
+        <div class="endereco">
+            <p>House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ -
+                20081-902 </p>
+        </div>
+
+        <div class="link-faleconosco-footer">
+            <a href="/faleConosco.html">Fale Conosco - </a>
+            <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+        </div>
+
+        <div id="card-sigaNos">
+            <p id="text-sigaNos">Siga-nos nas nossas Redes Sociais:</p>
+        </div>
+
+        <div class="card-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon/facebook-footer.png" alt="Facebook"
+                    width="2.5%"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon/instagram-footer.png"
+                    alt="Instagram" width="2.5%"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/icon/linkedin-footer.png" alt="LinkedIn"
+                    width="2.5%"></a>
+
+            <a href="https://www.twitter.com/" target="_blank"><img src="/img/icon/twitter-footer.png" alt="Twitter"
+                    width="2.5%"></a>
+
+            <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon/youtube-footer.png" alt="YouTube"
+                    width="2.5%"></a>
+        </div>
+
+        <div id="rodapé">
+            <p>Todos os direitos reservados para House of Dev! &#169</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

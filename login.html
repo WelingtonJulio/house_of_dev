@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/departamentos.css">
+    <link rel="stylesheet" href="./css/login.css">
 
-    <title>Departamentos</title>
-
+    <title>Login</title>
+    
 </head>
 
 <body>
@@ -48,13 +48,13 @@
 
                 <div class="login-header">
                     <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a>
+                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a> <br>
                     </span>
                 </div>
 
                 <div class="card-cadastro">
                     <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
+                        ou <a href="/cadastreSe.html" class="cadastro-link"
                             rel="cadastro">CADASTRE-SE</a>
                     </span>
                 </div>
@@ -85,61 +85,63 @@
     </header>
 
     <main>
-        
-        
+        <section>
+            <div class="card-login-total">
+                <h2>LOGIN</h2>
 
-            <h1>Departamentos</h1>
-         
+                <div class="card-login">
+                    <label for="Entrar"></label>
+                    <input type="text" id="nome" placeholder="E-mail, CPF ou CNPJ" autocomplete="on">
+                </div>
 
+                <div class="card-senha">
 
-        <div>
-            <h2>
-                <a href="" class="dep-op"> Eletrônicos </a>
-                <a href="" class="dep-op"> Periféricos </a>
-                <a href="" class="dep-op"> Ergonomia </a>
-                <a href="" class="dep-op"> Acessórios </a>
-            </h2>
-        </div>
+                    <label for="senha" maxlength="256"></label>
+                    <input type="password" id="senha" placeholder="Senha" autocomplete="on">
 
-        <div class="depart-fot">
+                    <button class="button-cadeado">
+                        <img src="/img/icon/trancar.png" alt="cadeado" alt="cadeado" width="20px" height="20px">
+                    </button>
+                </div>
 
-            <img src="img/icon/eletro.png" alt="eletronicos" class="foto" >
-            <img src="img/icon/perife.png" alt="perifericos" class="foto" >
+                <div class="link-esqueciSenha">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
 
-            <img src="img/icon/ergo.png" alt="ergonomia" class="foto" >
-            <img src="img/icon/deco.png" alt="perifericos" class="foto">
+                <div class="button-entrar">
+                    <button id="entrar">Entrar</button>
+                    <img id="img-entrar" src="/img/icon/entrar_2.png" alt="entrar_2" width="40px" height="35px">
+                </div>
 
-        </div>
+                <div class="rede-sociais">
 
-        <div>
-            <h2>Estilo e Praticidade</h2>
-            <p>
-                Os nossos produtos são pensandos na sáude e qualidade de trabalho dos desenvolvedores, com organização
-                no ambiente
-                de trabalho e as interações entre o homem e as máquinas ou equipamentos.
-                Temos o intuito de trazer conforto aos Devs, prevenindo as doenças ocupacionais e realizar uma boa
-                interação entre
-                o ambiente de trabalho, as capacidades físicas e psicológicas dos programadores e a eficiência de tempo.
-            </p>
+                    <h3>Quero acessar com minha rede sociais</h3>
 
-            <p>
-                Profissionais organizados conseguem distribuir melhor as tarefas, sabem dividir o trabalho em relação
+                </div>
 
-                aos horários e o nível de prioridade, são mestres em atender prazos e ainda mantêm o local de trabalho
+                <div id="acesso-redeSociais">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="/img/icon/facebook _1.png" alt="Facebook" width="8.5%">
+                    </a>
 
-                mais limpo e organizado.
-            </p>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="/img/icon/instagram-footer.png" alt="Instagram" width="8.5%">
+                    </a>
 
-            <p>Venha conhecer nossos produtos e descubra seu estilo.</p>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="/img/icon/linkedin-footer.png" alt="LinkedIn" width="8.5%">
+                    </a>
 
-            <h3>Estilo na hora de programar e Eficiência.</h3>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="/img/icon/twitter-footer.png" alt="Twitter" width="8.5%">
+                    </a>
 
-            <iframe width="1085" height="515" src="https://www.youtube.com/embed/aRgqQe-8zYk?controls=0&amp;start=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="/img/icon/youtube-footer.png" alt="YouTube" width="8.5%">
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div class="inscrevaSe">
