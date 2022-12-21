@@ -1,3 +1,14 @@
+/* CSS do titulo  */
+.title {
+  font-family: inconsolata;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  color: #000000;
+}
+
 /* CSS do paragrafo */
 .text {
   font-family: inter;
@@ -93,13 +104,4 @@
   transform: translateY(0);
 }
 
-/* CSS do titulo  */
-.title {
-  font-family: inconsolata;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 90px;
-  text-align: center;
-  color: #000000;
-}
+
