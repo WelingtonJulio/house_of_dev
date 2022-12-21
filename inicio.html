@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/inicio.css">
 
     <title>Início</title>
-    
+
 </head>
 
 <body>
@@ -48,13 +48,13 @@
 
                 <div class="login-header">
                     <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a>
+                        <a href="/login.html" class="login-link" rel="login">LOGIN</a>
                     </span>
                 </div>
 
                 <div class="card-cadastro">
                     <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
+                        ou <a href="/cadastreSe.html" class="cadastro-link"
                             rel="cadastro">CADASTRE-SE</a>
                     </span>
                 </div>
@@ -75,9 +75,22 @@
 
                 <div class="card-menu">
                     <button class="menu">
-                        <a href="#">
-                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
-                        </a>
+                        <div class="dp-menu">
+                            <ul class="btn-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li><a href="/inicio.html">INÍCIO</a></li>
+                                        <li><a href="/sobreNos.html">SOBRE NÓS</a></li>
+                                        <li><a href="/departamentos.html">DEPARTAMENTOS</a></li>
+                                        <li><a href="/faleConosco.html">CONTATO</a></li>
+                                        <li><a href="/agradecimentos.html">AGRADECIMENTOS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </button>
                 </div>
             </section>
@@ -85,40 +98,143 @@
     </header>
 
     <main>
-        <center>
-            <section>
-                <h1> Devs! Aqui você encontra tudo o que precisa...</h1>
-                <img src="/img/icon/44444.png" alt="Prancheta">
-            </section>
+        <section> <!--depart-->
+            <h1> Devs! Aqui você encontra tudo o que precisa...</h1>
+            <div class="container-card-1">
+                <div class="cards">
+                    <a href="/departamentos.html">
+                        <img src="img/icon/eletro.png" alt="Eletrônicos">
+                    </a>
+                </div>
 
-            <section>
-                <img src="img/icon/cadeira.png" alt="cadeira" width="100">
-                <h3>Cadeira Gamer Dazz Marvel <br> Homem de Ferro</h3>
-                <p><s>R$ 1.999,90</s></p>
-                <p><b>R$ 1.299,90</b></p>
+                <div class="cards">
+                    <a href="/departamentos.html">
+                        <img src="/img/icon/perife.png" alt="Periféricos">
+                    </a>
+                </div class="cards">
 
-                <img src="img/icon/aces.png" alt="acessorio" width="100" height="145px">
-                <h3>Combo Gamer 4 em 1 ELG<br>Headset Mouse e Teclado</h3>
-                <p><s>R$ 499,90</s></p>
-                <p><b>R$ 319,90</b></p>
+                <div class="cards">
+                    <a href="/departamentos.html">
+                        <img src="/img/icon/ergo.png" alt="Ergonomia">
+                    </a>
+                </div>
 
-                <img src="img/icon/suport.png" alt="suport" width="100">
-                <h3>Suporte Aticulado ELG para<br>Monitor 17" até 29"</h3>
-                <p><s>R$ 199,90</s></p>
-                <p><b>R$ 134,90</b></p>
+                <div class="cards">
+                    <a href="/departamentos.html">
+                        <img src="/img/icon/deco.png" alt="Decoração">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                <img src="img/icon/monit.png" alt="monitor" width="100" height="145px">
-                <h3>Monitor 49" Gamer Samsung<br>Curvo DQHD</h3>
-                <p><s>R$ 5.999,90</s></p>
-                <p><b>R$ 4.499,90</b></p>
+        <section> <!--Destaques-->
+            <h2>DESTAQUES</h2>
+            <div class="container-produtos-destaque">
+                <div>
+                    <img src="/img/icon/back.png" alt="">
+                </div>
 
-                <img src="img/icon/pes.png" alt="apoio de pé" width="100" height="130">
-                <h3>Apoio Ergonômico Stalo<br>Pés Preto</h3>
-                <p><s>R$ 159,90</s></p>
-                <p><b>R$ 84,90</b></p>
-            </section>
-        </center>
+                <div class="produtos">
+                    <img src="img/icon/cadeira.png" alt="cadeira">
+                    <p>Cadeira Gamer Dazz Marvel <br> Homem de Ferro</p>
+                    <h5>R$ 1.999,90</h5>
+                    <h3>R$ 1.299,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/aces.png" alt="acessorio">
+                    <p>Combo Gamer 4 em 1 ELG<br>Headset Mouse e Teclado</p>
+                    <h5>R$ 499,90</h5>
+                    <h3>R$ 319,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/suport.png" alt="suport">
+                    <p>Suporte Aticulado ELG para<br>Monitor 17" até 29"</p>
+                    <h5>R$ 199,90</h5>
+                    <h3>R$ 134,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/monit.png" alt="monitor" height="145px">
+                    <p>Monitor 49" Gamer Samsung<br>Curvo DQHD</p>
+                    <h5>R$ 5.999,90</h5>
+                    <h3>R$ 4.499,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/pes.png" alt="apoio de pé">
+                    <p>Apoio Ergonômico Stalo<br>Pés Preto</p>
+                    <h5>R$ 159,90</h5>
+                    <h3>R$ 84,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/alexia.png" alt="echo dot">
+                    <p>Echo Dot 3a Geração Amazon Com Alexa, Smart Speaker, Preto</p>
+                    <h5>R$ 349,00</h5>
+                    <h3>R$ 251,10</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div>
+                    <img src="/img/icon/next.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section> <!--prod-->
+            <h2>MAIS PROCURADOS</h2>
+            <div class="container-produtos">
+                <div class="produtos">
+                    <img src="img/icon/cadeira.png" alt="cadeira">
+                    <p>Cadeira Gamer Dazz Marvel <br> Homem de Ferro</p>
+                    <h3>R$ 1.999,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/aces.png" alt="acessorio">
+                    <p>Combo Gamer 4 em 1 ELG <br> Headset Mouse e Teclado</p>
+                    <h3>R$ 499,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/suport.png" alt="suport">
+                    <p>Suporte Aticulado ELG para<br>Monitor 17" até 29"</p>
+                    <h3>R$ 199,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/monit.png" alt="monitor">
+                    <p>Monitor 49" Gamer Samsung<br>Curvo DQHD</p>
+                    <h3>R$ 5.999,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/pes.png" alt="apoio de pé">
+                    <p>Apoio Ergonômico Stalo<br>Pés Preto</p>
+                    <h3>R$ 159,90</h3>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="produtos">
+                    <img src="img/icon/alexia.png" alt="echo dot">
+                    <p>Echo Dot 3a Geração Amazon<br>Com Alexa, Smart Speaker</p>
+                    <h3>R$ 349,00</h3>
+                    <button class="button">Comprar</button>
+                </div>
+        </section>
     </main>
+    
     <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
 
@@ -169,7 +285,7 @@
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div>
     </footer>
-    
+
     <script src="./js/script.js"></script>
 
 </body>

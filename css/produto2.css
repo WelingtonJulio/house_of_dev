@@ -1,0 +1,146 @@
+:root {
+    --purple: #8c65a4;
+    --purple-button: #a193af;
+    --purple-link: #19022e;
+    --blue-button: #3f2083;
+    --white: #edae9e9;
+    --grey: #5c5a5a99;
+    --grey-shadow: #938f93;
+    --white-text: #fff7f7;
+    --white-body: #f9f6f6;
+    --black-text: #0c0c0c;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: baseline;
+    margin: 10px 70px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: left;
+    margin: 120px 0 -230px 0;
+}
+
+h2 {
+    color: var(--black-text);
+}
+
+.img-1, .img-2, .img-3 {
+   border: 2px solid var(--purple);
+   width: 5%;
+   height: 10%;
+   padding: 5px;
+   display: flex;
+   margin: 5px 250px 0px 5px;
+}
+
+.img-principal {
+    margin-top: -175px;
+    margin-left: 120px;
+    margin-right: 20px;
+    margin-bottom: 500px;
+}
+
+h3 { 
+    font-size: 35px;
+    text-align: left;
+    color: var(--blue-button);
+    margin-top: -740px;
+    margin-left: 555px;
+}
+
+.icons {
+    margin: 30% 0% 0% 82%;
+    display: flex;
+}
+
+.text-preco p {
+    margin-top: 5px;
+    margin-left: 555px;
+}
+ 
+.btn-comprar {
+    font-size: 18px;
+    background-color: var(--purple-button);
+    color: var(--white-text);
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    border: 1px solid var(--purple-button);
+    padding: 2.9px 3px;
+    line-height: 1.5rem;
+    border-radius: 18px 18px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    margin-top: 4%;
+    margin-left: 51%;
+    margin-bottom: 8%;
+  }
+  
+  #comprar {
+    font-size: 22px;
+    font-weight: 550;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: -75px;
+    bottom: -5px;
+    flex: 1 1 auto;
+    width: 10%;
+  }
+  
+  #img-comprar {
+    border: none;
+    margin-top: 3.8px;
+    margin-bottom: 3px;
+    bottom: 3.5px;
+    left: -78px;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index: 3;
+    float: right;
+  }
+
+.linha {
+    border-top: 20px solid var
+    (--purple-button);
+    display: flex;
+    width: 30%;
+    margin: 200px 0px 0px 300px;
+}
+
+.descricao img {
+    margin: 30px 0px 50px;
+    display: flex;
+}
+
+.descricao h2 {
+    font-size: 25px;
+    margin: -75px 30px 20px;
+    display: flex;
+} 
+
+.descricao p {
+    margin: -5px 30px 20px;
+} 
+
+.informacao h2 {
+    font-size: 25px;
+    margin: -35px 30px 20px;
+    display: flex;
+} 
+
+.informacao p {
+    margin: -5px 3
+}

@@ -1,37 +1,9 @@
-:root {
-    --purple: #8c65a4;
-    --purple-button:  #a193af;
-    --purple-link: #19022e;
-    --blue-button: #3f2083;
-    --white: #ede9e9;
-    --grey:  #5c5a5a99;
-    --grey-shadow: #938f93;
-    --white-text: #fff7f7;
-    --white-body: white;
-    --black-text:  #0c0c0c;
-}
-
-main {
-    font-size: 16px;
-    background-color: var(--white-body);
-    border: 3px solid var(--purple);
-    border-radius: 30px 30px;
-    box-shadow: 3px 5px 3px var(--grey-shadow);
-    width: 90%;
-    height: auto;
-    align-content: center;
-    text-align: justify;
-    margin: 12% 5% 5%;
-    padding: 1.8%;
-  }
-
 h1 {
     text-align: center;
-    color: #4c3759;
 }
 
 h2 {
-    color:var(--purple);
+    color: var(--purple);
     text-align: center;
     font-weight: 100;
     line-height: 1;
@@ -47,15 +19,19 @@ h2 {
     flex-wrap: wrap;
     align-content: center;
     row-gap: 10px;
-
 }
 
-.sub-container {
-    
+/* .sub-container {
+} */
+
+.dep-op {
+    color: #8c65a4;
+    margin: 60px;
 }
 
 .depart-fot {
     position: relative;
+    display: flex;
     justify-content: center;
     margin: 18px;
     padding: 18px;
@@ -85,8 +61,8 @@ h3 {
     box-sizing: border-box;
     width: 500px;
     height: 45px;
-    background-color:var(--white);
-    text-decoration:var(--grey);
+    background-color: var(--white);
+    text-decoration: var(--grey);
     border: 1px solid var(--purple);
     border-radius: 5px 5px;
     box-shadow: 3px 3px 3px var(--grey-shadow);
@@ -106,8 +82,8 @@ h3 {
     box-sizing: border-box;
     width: 500px;
     height: 45px;
-    background-color:var(--white);
-    text-decoration:var(--grey);
+    background-color: var(--white);
+    text-decoration: var(--grey);
     border: 1px solid var(--purple);
     border-radius: 5px 5px;
     box-shadow: 3px 3px 3px var(--grey-shadow);
@@ -135,19 +111,19 @@ h3 {
     display: inline-flex;
     position: relative;
     background-color: transparent;
-    z-index:3;
+    z-index: 3;
     top: 8px;
     left: -1.7%;
 }
 
 .button-entrar {
     font-size: 18px;
-    background-color:  var(--purple-button);
+    background-color: var(--purple-button);
     color: var(--white-text);
     width: 125px;
     height: 42px;
     text-align: center;
-    border: 1px solid  var(--purple-button);
+    border: 1px solid var(--purple-button);
     padding: 2.9px 3px;
     line-height: 1.5rem;
     border-radius: 18px 18px;
@@ -159,7 +135,7 @@ h3 {
 }
 
 #entrar {
-    font-size: 22px ;
+    font-size: 22px;
     font-weight: 550;
     float: right;
     display: inline-flex;
@@ -183,9 +159,9 @@ h3 {
     display: inline-flex;
     position: relative;
     background-color: transparent;
-    z-index:3;
+    z-index: 3;
     float: right;
-   
+
 }
 
 .rede-sociais {
@@ -202,7 +178,7 @@ h3 {
     margin-top: -12%;
     margin-left: 35%;
     margin-bottom: 5%;
-    
+
 }
 
 main {

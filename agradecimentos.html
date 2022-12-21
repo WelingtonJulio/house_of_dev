@@ -48,14 +48,13 @@
 
                 <div class="login-header">
                     <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" target="_blank" rel="login">LOGIN</a> <br>
+                        <a href="/login.html" class="login-link" rel="login">LOGIN</a>
                     </span>
                 </div>
 
                 <div class="card-cadastro">
                     <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link" target="_blank"
-                            rel="cadastro">CADASTRE-SE</a>
+                        ou <a href="/cadastreSe.html" class="cadastro-link" rel="cadastro">CADASTRE-SE</a>
                     </span>
                 </div>
 
@@ -75,9 +74,22 @@
 
                 <div class="card-menu">
                     <button class="menu">
-                        <a href="#">
-                            <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
-                        </a>
+                        <div class="dp-menu">
+                            <ul class="btn-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li><a href="/inicio.html">INÍCIO</a></li>
+                                        <li><a href="/sobreNos.html">SOBRE NÓS</a></li>
+                                        <li><a href="/departamentos.html">DEPARTAMENTOS</a></li>
+                                        <li><a href="/faleConosco.html">CONTATO</a></li>
+                                        <li><a href="/agradecimentos.html">AGRADECIMENTOS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </button>
                 </div>
             </section>
@@ -85,115 +97,242 @@
     </header>
 
     <main>
-        <section class="titulo-texto">
-            <h1> Agradecimentos / Desenvolvedores </h1>
+        <h5 class="title h1">Agradecimentos / Desenvolvedores</h5>
+        <div class="text-introducao">
             <p>Gostaríamos de agradecer a <b>Proz</b>, aos <b>Instrutores</b> e aos outros <b>Participantes</b>, que
-                veio avaliar o nosso projeto e a oportunidade de fazer parte deste programa. E ao <b>Grupo</b> do
+                veio avaliar o nosso projeto e a oportunidade de fazer parte deste programa. <br>E ao <b>Grupo</b> do
                 projeto, onde veio se dedicando todo esse tempo e dando seu melhor para construir esse projeto
                 integrador!
             </p>
-        </section>
+        </div>
 
-        <div class="container-pessoas">
-            <div class="box-pessoas">
-                <div id="edgar">
-                    <img src="/img/agradecimentos/edgar.jpg" alt="Foto Edgar" width="100" height="110">
-                    <h3>Edgar W. Brabo</h3>
-                    <p><b>Desenvolvedor Front-end</b></p>
+        <div class="container">
 
-                    <a href="https://www.linkedin.com/in/edgar-brabo-73b15194/" target="_blank"> <img
-                            src="/img/agradecimentos/linkedin.png" alt="LinkedIn" width="25px"></a>
+            <article class="card-equipe">
+                <div class="flip">
+                    <section class="front-card">
+                        <div class="card">
+                            <div class="card-frente">
+                                <p><img class=" img-1" src="/img/agradecimentos/edgar.jpg" alt="foto-edgar" width="150"
+                                        height="160"></p>
+                                <h4 class="card-title">Edgar W. Brabo</h4>
+                                <p class="card-text">Desenvolvedor Front-end</p>
+                                <a href="#" class="btn-primary"><i class="card-edgar"></i></a>
+                            </div>
+                        </div>
+                    </section>
 
-                    <a href="https://github.com/EdgarBrabo" target="_blank">
-                        <img src="/img/agradecimentos/github.png" alt="GitHub" width="25px"></a>
-
-                    <a href=mailto:wallacebrabo21@gmail.com target="_blank">
-                        <img src="/img/agradecimentos/gmail.png" alt="Email" width="27px"></a>
+                    <section class="back-card">
+                        <div class="card">
+                            <div class="card-verso">
+                                <h4 class="card-title">Sobre</h4>
+                                <p class="card-text">Estudante de análise e desenvolvimento de sistemas, atuei durante
+                                    um ano em uma empresa de telecomunicações em Belém do Pará, quando estava começando
+                                    na área, onde consegui me destacar com muito empenho, logo buscando novos rumos, fui
+                                    para o Rio de Janeiro, onde atuei durante quase quatro anos como suporte de campo,
+                                    na RioCardTi, atendia equipamentos de automação e infra.</p>
+                                <ul class="edgar-linkedin">
+                                    <li class="list-item">
+                                        <a class="social-linkedin" target="_blank" href="#">
+                                            <i class="linkedin-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="edgar-git">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="github"></i>
+                                        </a>
+                                    </li>
+                                    <li cclass="edgar-email">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </article>
 
-                <div id="karen">
-                    <img src="/img/agradecimentos/karen.jpg" alt="Foto Karen" width="100" height="110">
-                    <h3>Karen Reis</h3>
-                    <p><b>Desenvolvedora Front-end</b></p>
+            <article class="card-equipe">
+                <div class="flip">
+                    <section class="front-card">
+                        <div class="card">
+                            <div class="card-frente">
+                                <p><img class=" img-1" src="/img/agradecimentos/karen.jpg" alt="foto-karen" width="150"
+                                        height="160"></p>
+                                <h4 class="card-title">Karen Reis</h4>
+                                <p class="card-text">Desenvolvedora Front-end</p>
+                                <a href="#" class="btn-primary"><i class="card-karen"></i></a>
+                            </div>
+                        </div>
+                    </section>
 
-                    <a href="https://www.linkedin.com/in/karen-reis-de-menezes-809334211/" target="_blank"> <img
-                            src="/img/agradecimentos/linkedin.png" alt="LinkedIn" width="25px"></a>
-
-                    <a href="https://github.com/reiskaren0228" target="_blank">
-                        <img src="/img/agradecimentos/github.png" alt="GitHub" width="25px"></a>
-
-                    <a href=mailto:kreisdemenezes@gmail.com target="_blank">
-                        <img src="/img/agradecimentos/gmail.png" alt="Email" width="27px"></a>
-
-                    <a href="https://wa.me/558194073370" target="_blank">
-                        <img src="/img/agradecimentos/whatsapp.png" alt="WhatsApp" width="29px">
-                    </a>
+                    <section class="back-card">
+                        <div class="flip">
+                            <div class="card-verso">
+                                <h4 class="card-title">Sobre</h4>
+                                <p class="card-text">Estudante de análise e desenvolvimento de sistemas, tenho interesse
+                                    em trabalhar na área, para poder aplicar todo o meu conhecimento em um projeto.</p>
+                                <ul class="karen-linkedin">
+                                    <li class="list-item">
+                                        <a class="social-linkedin" target="_blank" href="#">
+                                            <i class="linkedin-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="karen-git">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="github"></i>
+                                        </a>
+                                    </li>
+                                    <li cclass="karen-email">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </article>
 
-                <div id="hikaru">
-                    <img src="/img/agradecimentos/hikaru.png" alt="Foto Hikaru" width="100" height="110">
-                    <h3>Marcel H. Yamanaka</h3>
-                    <p><b>Desenvolvedor Front-end</b></p>
+            <article class="card-equipe">
+                <div class="flip">
+                    <section class="front-card">
+                        <div class="card">
+                            <div class="card-frente">
+                                <p><img class=" img-1" src="/img/agradecimentos/hikaru.png" alt="foto-hikaru"
+                                        width="150" height="160"></p>
+                                <h4 class="card-title">Marcel H. Yamanaka</h4>
+                                <p class="card-text">Desenvolvedor Front-end</p>
+                                <a href="#" class="btn-primary"><i class="card-hikaru"></i></a>
+                            </div>
+                        </div>
+                    </section>
 
-                    <a href="https://www.linkedin.com/in/hikaruyamanaka/" target="_blank"> <img
-                            src="/img/agradecimentos/linkedin.png" alt="LinkedIn" width="25px"></a>
-
-                    <a href="https://github.com/Hikaruyamanaka" target="_blank">
-                        <img src="/img/agradecimentos/github.png" alt="GitHub" width="25px"></a>
-
-                    <a href=mailto:hikaru.yamanaka@outlook.com target="_blank">
-                        <img src="/img/agradecimentos/outlook.png" alt="Email" width="28px"></a>
-
-                    <a href="https://wa.me/5511948436466" target="_blank">
-                        <img src="/img/agradecimentos/whatsapp.png" alt="WhatsApp" width="29px">
-                    </a>
+                    <section class="back-card">
+                        <div class="flip">
+                            <div class="card-verso">
+                                <h4 class="card-title">Sobre</h4>
+                                <p class="card-text">Desenvolvedor Java Fullstack Jr | Desenvolvedor Web | Java | Python
+                                    | MySQL | SpringBoot | HTML | CSS | JavaScript | Bootstrap | Angular | Scrum | Git e
+                                    GitHub</p>
+                                <ul class="hikaru-linkedin">
+                                    <li class="list-item">
+                                        <a class="social-linkedin" target="_blank" href="#">
+                                            <i class="linkedin-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="hikaru-git">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="github"></i>
+                                        </a>
+                                    </li>
+                                    <li cclass="hikaru-email">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </article>
 
-                <div id="marieve">
-                    <img src="https://media-exp1.licdn.com/dms/image/D4D03AQEoptXddh68oA/profile-displayphoto-shrink_200_200/0/1637653028702?e=1675296000&v=beta&t=jdfNXsqR0MBErYcfsE4K8jCzJY1eHhXppnzgsMKchyc"
-                        alt="Foto Marieve" width="100" height="110">
-                    <h3>Marieve Lima</h3>
-                    <p><b>Desenvolvedora Front-end</b></p>
+            <article class="card-equipe">
+                <div class="flip">
+                    <section class="front-card">
+                        <div class="card">
+                            <div class="card-frente">
+                                <p><img class=" img-1" src="/img/agradecimentos/marieve.png" alt="foto-marieve"
+                                        width="150" height="160"></p>
+                                <h4 class="card-title">Marieve Lima</h4>
+                                <p class="card-text">Desenvolvedora Front-end</p>
+                                <a href="#" class="btn-primary"><i class="card-Marieve"></i></a>
+                            </div>
+                        </div>
+                    </section>
 
-                    <a href="https://www.linkedin.com/in/marieve-lima-74a96a1ba/" target="_blank"> <img
-                            src="/img/agradecimentos/linkedin.png" alt="LinkedIn" width="25px"></a>
-
-                    <a href="https://github.com/--------" target="_blank">
-                        <img src="/img/agradecimentos/github.png" alt="GitHub" width="25px"></a>
-
-                    <a href=mailto:marievelima@gmail.com target="_blank">
-                        <img src="/img/agradecimentos/gmail.png" alt="Email" width="27px"></a>
-
-                    <a href="https://wa.me/----------" target="_blank">
-                        <img src="/img/agradecimentos/whatsapp.png" alt="WhatsApp" width="29px">
-                    </a>
+                    <section class="back-card">
+                        <div class="flip">
+                            <div class="card-verso">
+                                <h4 class="card-title">Sobre</h4>
+                                <p class="card-text">Estudante de Sistema de Informação, apaixonada por tecnologia, sou
+                                    muito curiosa, adoro aprender coisa novas e realizar desafios.</p>
+                                <ul class="Marieve-linkedin">
+                                    <li class="list-item">
+                                        <a class="social-linkedin" target="_blank" href="#">
+                                            <i class="linkedin-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="Marieve-git">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="github"></i>
+                                        </a>
+                                    </li>
+                                    <li cclass="Marieve-email">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </article>
 
-                <div id="welington">
-                    <img src="/img/agradecimentos/welington.jpg" alt="Foto Welington" width="100" height="110">
-                    <h3>Welington Júlio</h3>
-                    <p><b>Desenvolvedor Front-end</b></p>
+            <article class="card-equipe">
+                <div class="flip">
+                    <section class="front-card">
+                        <div class="card">
+                            <div class="card-frente">
+                                <p><img class=" img-1" src="/img/agradecimentos/welington.jpg" alt="foto-hikaru"
+                                        width="150" height="160"></p>
+                                <h4 class="card-title">Welington Júlio</h4>
+                                <p class="card-text">Desenvolvedor Front-end</p>
+                                <a href="#" class="btn-primary"><i class="card-Welington"></i></a>
+                            </div>
+                        </div>
+                    </section>
 
-                    <a href="https://www.linkedin.com/in/welingtonjulio/" target="_blank"> <img
-                            src="/img/agradecimentos/linkedin.png" alt="LinkedIn" width="25px"></a>
-
-                    <a href="https://github.com/W3l1n6t0n" target="_blank">
-                        <img src="/img/agradecimentos/github.png" alt="GitHub" width="25px"></a>
-
-                    <a href=mailto:welington.julio.rodrigues@gmail.com target="_blank">
-                        <img src="/img/agradecimentos/gmail.png" alt="Email" width="27px"></a>
-
-                    <a href="https://wa.me/556284154528" target="_blank">
-                        <img src="/img/agradecimentos/whatsapp.png" alt="WhatsApp" width="29px">
-                    </a>
+                    <section class="back-card">
+                        <div class="flip">
+                            <div class="card-verso">
+                                <h4 class="card-title">Sobre</h4>
+                                <p class="card-text"> Student Technologist in Information Technology Management, MBA in
+                                    Technology, Governance and Digital Transformation.</p>
+                                <ul class="Welington-linkedin">
+                                    <li class="list-item">
+                                        <a class="social-linkedin" target="_blank" href="#">
+                                            <i class="linkedin-1"></i>
+                                        </a>
+                                    </li>
+                                    <li class="Welington-git">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="github"></i>
+                                        </a>
+                                    </li>
+                                    <li cclass="Welington-email">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
+            </article>
         </div>
     </main>
 
+
     <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
-
+        
         <div class="nome-inscreva">
             <input type="text" name="nome" placeholder="Digite seu Nome">
         </div>
