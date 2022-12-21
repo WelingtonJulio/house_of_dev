@@ -11,6 +11,11 @@
   --black-text: #0c0c0c;
 }
 
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
 html {
   font-family: "Imprima", sans-serif;
   font-size: 18px;
@@ -95,7 +100,6 @@ nav {
   bottom: 35px;
   margin-left: 550px;
   letter-spacing: 2px;
-
 }
 
 .login-header {
@@ -174,13 +178,56 @@ nav {
 .menu {
   background-color: transparent;
   border: none;
-  margin-left: 5px;
-  float: right;
+  margin-left: 300px;
   display: inline-flex;
   position: relative;
   z-index: 3;
   bottom: 84px;
   left: 570px;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  background-color: #8c65a4;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 14px;
+  transition: background 0.3s;
+  text-align: start;
+}
+
+.dp-menu ul li a:hover {
+  background-color: #d3a7ef;
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+  display: none;
+  position: fixed;
+  text-align: center;
+  padding-right: 3px;
+  width: 100px;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul li a {
+  font-size: x-small;
+  display: block;
 }
 
 body {
@@ -231,7 +278,7 @@ h2 {
   align-items: stretch;
   position: relative;
   display: flex;
-  margin: -1% 2% 3% 21%;
+  margin: 5% 2% 5% 21%;
 }
 
 #text-inscreva {
