@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  margin: 6%  0% 0;
+  padding-top: 80px;
 }
 
 h2 {
@@ -10,10 +12,10 @@ h2 {
   letter-spacing: 1px;
   margin: 3%;
 }
-
+/* 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -21,9 +23,14 @@ h2 {
   row-gap: 10px;
 }
 
-/* .sub-container {
-
-} */
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 10px;
+}
 
 .dep-op {
   color: #8c65a4;
@@ -31,12 +38,94 @@ h2 {
 }
 
 .depart-fot {
-  position: relative;
   display: flex;
+  flex-direction: row;
+
+  justify-content: space-;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.depart-fot img {
+  
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+} */
+
+.container-card-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.cards img {
+  width: 200px;
+  height: 150px;
+  transition: 0.35s ease;
+}
+
+.cards img:hover {
+  transform: scale(0.6) translateY(5px);
+  cursor: pointer;
+}
+
+p {
+  margin: 10px 45px 10px 45px;
+  text-align: justify;
+}
+
+iframe {
+  margin: 10px 25px 10px 25px;
+}
+
+/* 
+.depart-fot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
   justify-content: center;
   margin: 18px;
   padding: 18px;
 }
+
+
+
+.depart-fot {
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
+  justify-content: center;
+  margin: 18px;
+  padding: 18px;
+}
+
+.depart-fot4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
+  justify-content: center;
+  margin: 18px;
+  padding: 18px;
+} */
 
 .foto {
   margin-right: 10px;
@@ -46,7 +135,12 @@ h2 {
 }
 
 h3 {
-  margin: 2% 0 2%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 3%;
 }
 
 .card-login {
@@ -183,4 +277,8 @@ h3 {
 main {
   background-color: white;
   justify-content: center;
+}
+
+.inscrevaSe {
+  margin-top: 30px;
 }

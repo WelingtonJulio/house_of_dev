@@ -1,3 +1,16 @@
+:root {
+    --purple: #8c65a4;
+    --purple-button: #a193af;
+    --purple-link: #19022e;
+    --blue-button: #3f2083;
+    --white: #ede9e9;
+    --grey: #5c5a5a99;
+    --grey-shadow: #938f93;
+    --white-text: #fff7f7;
+    --white-body: #f9f6f6;
+    --black-text: #0c0c0c;
+  }
+
 main {
     font-size: 16px;
     background-color: var(--white-body);
@@ -103,7 +116,7 @@ fieldset.grupo .campo {
 .button {
     font-size: 1.2em;
     border: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 0 0 1em;
     cursor: pointer;
 }

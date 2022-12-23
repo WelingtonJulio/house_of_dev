@@ -188,19 +188,8 @@ nav {
   display: inline-flex;
   position: relative;
   z-index: 3;
-  bottom: 50px;
-  left: 480px;
-}
-
-.menu {
-  background-color: transparent;
-  border: none;
-  margin-left: 300px;
-  display: inline-flex;
-  position: relative;
-  z-index: 3;
-  bottom: 50px;
-  left: 350px;
+  bottom: 49px;
+  left: 485px;
 }
 
 .dp-menu ul {
@@ -282,7 +271,7 @@ h2 {
   align-items: stretch;
   position: relative;
   display: flex;
-  margin: -8% 1% 3% 23%;
+  margin: -2% 2% 3% 21%;
 }
 
 #text-inscreva {

@@ -1,3 +1,16 @@
+:root {
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
+}
+
 /* CSS do paragrafo */
 .text {
   font-family: inter;
@@ -8,7 +21,7 @@
   text-align: justify;
   text-indent: 25px;
   text-align: center;
-  color: #000000;
+  color: var(--black-text);
 }
 
 /* CSS do card animado */
@@ -16,6 +29,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* CSS do titulo  */
+.title {
+  color: var(--purple);
+  font-size: 45px;
+  text-align: center;
+  margin: 10% 1% 0;
+  font-weight: 900;
+  line-height: 90px;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 8%;
 }
 
 .face {
@@ -48,7 +77,7 @@
 
 .container .card .mage1 {
   position: relative;
-  background: #707070;
+  background: var(--);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +86,7 @@
 }
 
 .container .card:hover .mage1 {
-  background-color: #8c65a4;
+  background-color: var(--purple-link);
   transform: translateY(0);
 }
 
@@ -72,14 +101,15 @@
 
 .container .card .mage1 .content h3 {
   margin: 10px;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 1.5em;
 }
 
 .container .card .mage2 {
+  text-align: justify;
   position: relative;
-  background: #fff;
+  background: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,13 +123,3 @@
   transform: translateY(0);
 }
 
-/* CSS do titulo  */
-.title {
-  font-family: inconsolata;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 90px;
-  text-align: center;
-  color: #000000;
-}
