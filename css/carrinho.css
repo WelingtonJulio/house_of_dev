@@ -1,0 +1,97 @@
+:root {
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
+}
+
+main {
+  margin-bottom: 170px;
+}
+
+h1 {
+  display: flex;
+  color: #8c65a4;
+}
+
+hr {
+  border-color: #8c65a4;
+}
+
+.carrinho-vazio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.carrinho-vazio img {
+  width: 90px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.carrinho-vazio a {
+  position: relative;
+}
+
+.carrinho-vazio  a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--purple-button);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.carrinho-vazio a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.carrinho-vazio button {
+  background-color: #8c65a4;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.carrinho-vazio button a {
+  color: var(--purple-button);
+  font-size: 16px;
+  background-color: var(--white-body);
+  border: 3px solid var(--purple);
+  border-radius: 30px 30px;
+  box-shadow: 3px 5px 3px var(--grey-shadow);
+  width: 90%;
+  height: auto;
+  align-content: center;
+  text-align: justify;
+  margin: 12% 5% 5%;
+  padding: 1.8%;
+}
