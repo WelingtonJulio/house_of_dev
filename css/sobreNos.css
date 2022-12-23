@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --purple: #8c65a4;
   --purple-button: #a193af;
@@ -9,6 +10,17 @@
   --white-text: #fff7f7;
   --white-body: #f9f6f6;
   --black-text: #0c0c0c;
+=======
+/* CSS do titulo  */
+.title {
+  font-family: inconsolata;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  color: #000000;
+>>>>>>> e53113219a0a4a019c8cb111ec71378b61115b26
 }
 
 /* CSS do paragrafo */
@@ -123,3 +135,7 @@
   transform: translateY(0);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e53113219a0a4a019c8cb111ec71378b61115b26
