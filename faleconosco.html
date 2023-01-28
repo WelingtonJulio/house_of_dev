@@ -101,7 +101,7 @@
             <div class="card-radio">
                 <form action="">
                     <h3>Escolha uma das opções: </h3>
-                    <input type="radio" name="opcao" id="elogio">
+                    <input type="radio" name="opcao" id="elogio" >
                     <label for="elogio">Elogio</label><br>
 
                     <input type="radio" name="opcao" id="sugestão">
@@ -128,54 +128,76 @@
         </div>
 
         <section>
-            <form>
-                <fieldset class="grupo">
-                    <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
-                    <div class="campo">
-                        <label for="nome"><strong>Nome</strong></label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                    </div>
+            <form id="form" class="form" method="post" name="dados">
 
-                    <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
-                    <div class="campo">
-                        <label for="sobrenome"><strong>Sobrenome</strong></label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
-                    </div>
-                </fieldset>
+                <div class="form-control">
 
-                <!-- Campo de email com-->
-                <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" placeholder="name@example.com" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Nome*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+
                 </div>
 
-                <!-- Campo de telefone com-->
-                <div class="campo">
-                    <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="telNo" id="telefone" name="telefone" placeholder="(xx) 00000-0000">
+                <div class="form-control">
+
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" placeholder="Sobrenome*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+
                 </div>
 
-                <div class="campo">
-                    <label for="assunto"><strong>Assunto</strong></label>
+                <div class="form-control">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+
+                </div>
+
+
+                <div class="form-control">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="DDD + Número*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="assunto">Assunto:</label>
                     <input type="text" id="assunto" name="assunto" placeholder="ex: produto com defeito"
                         maxlength="150">
-                </div>
-
-                <div class="">
-                    <div class="campo">
-                        <label for="assunto"><strong>Escolha um ou mais arquivos:</strong></label>
-                        <input type="file" multiple>
-                    </div>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
                 </div>
 
                 <div class="campo">
-                    <label for="texto"><strong>Mensagem: </strong></label>
-                    <textarea rows="6" style="width: 26em" id="texto" name="texto"
-                        placeholder="Digite aqui a sua mensagem"></textarea>
+                    <label for="arquivo">Anexe os arquivos:</label>
+                    <input type="file" multiple>
                 </div>
 
-                <div class="button">
-                    <button type="submit">Enviar sua mensagem</button>
+                <div class="form-control">
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem"
+                            placeholder="Digite aqui a sua mensagem"></textarea>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                </div>
+
+                </div>
+                <div class="">
+                     <button class="btn-enviar" type="submit" onclick="msg(mensagem)"><a href="#">Enviar</a></button>
                 </div>
             </form>
         </section>
@@ -245,6 +267,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/faleConosco.js"></script>
 
 </body>
 

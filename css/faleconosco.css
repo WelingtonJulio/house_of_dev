@@ -38,43 +38,84 @@ h3{
     padding: 20px 0 20px;
 }
 
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: sans-serif;
-    margin-left: 7%;
-} 
+.form {
+    padding: 5px 20px;
+  }
 
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-    font-family: sans-serif;
-    margin-left: 10%;
-} 
+.form label {
+    font-size: 18px;
+    font-weight: bolder;
+}
 
-#check{
+.form-control {
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.form-control label {
     display: inline-block;
 }
-
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
-    padding: 0;
-}
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea {
-    font-family: sans-serif;
-    font-size: 1em;
+  
+.form-control input {
+    font-size: 16px;
+    display: block;
+    background-color: var(--white);
+    text-decoration: var(--grey);
+    border: 1px solid var(--purple);
     border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--grey-shadow);
+    width: 20%;
+    height: 26px;
+    padding: 10px;
 }
 
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
-    display: table;
+.form-control i {
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    visibility: hidden;
+}
+  
+.form-control small {
+    position: absolute;
+    bottom: -18px;
+    left: 5px;
+    visibility: hidden;
 }
 
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
+.form button {
+    text-align: center;
+    background-color: var(--blue-button);
+    border: 2px solid var(--blue-button);
+    box-shadow: 3px 5px 3px var(--grey-shadow);
+    color: #fff;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+button {
+    margin-top: -500px;
+}
+
+.btn-enviar a{
+    color: white;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: all .3s;
+    margin-top: 1px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* Elementos de classe "campo" */
@@ -88,12 +129,6 @@ input, select, textarea {
     display: block;
 }
 
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
-}
-
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"], .campo input[type="email"], .campo input[type="telNo"], .campo select, .campo textarea {
     padding: 0.2em;
@@ -102,21 +137,34 @@ fieldset.grupo .campo {
     display: block;
 }
 
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
-}
-
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background: #E0E0F8;
 }
 
-/* Elemento de classe "botao" */
-.button {
-    font-size: 1.2em;
-    border: 0;
-    margin-bottom: 1em;
-    padding: 0 0 1em;
-    cursor: pointer;
+.form-control.success input {
+    border: 2px solid  #1ac65c;
 }
+
+.form-control.error input {
+    border: 2px solid #c81f0c;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #1ac65c;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #c81f0c;
+    visibility: visible;
+}
+
+.form-control.error small {
+    color: #c81f0c;
+    visibility: visible;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+
+  
