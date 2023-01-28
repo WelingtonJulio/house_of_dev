@@ -120,17 +120,17 @@ h3 {
     (--purple-button);
     display: flex;
     width: 30%;
-    margin: 90px 0px 0px 300px;
+    margin: 500px 0px 0px 300px;
 }
 
 .descricao img {
-    margin: 30px 0px 50px;
+    margin: 40px 0px 30px;
     display: flex;
 }
 
 .descricao h2 {
     font-size: 25px;
-    margin: -75px 30px 20px;
+    margin: -55px 30px 20px;
     display: flex;
 } 
 

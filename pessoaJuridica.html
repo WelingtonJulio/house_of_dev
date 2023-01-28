@@ -9,11 +9,13 @@
     <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon">
     <!--link para icone na barra de navegação-->
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/pessoaJuridica.css">
 
+    <script src="js/pessoaJuridica.js" defer></script>
+    <script src="js/script.js"  defer></script>
+    <script src="https://kit.fontawesome.com/faa243f511.js" crossorigin="anonymous"></script>
+    
     <title>Dev Juridico</title>
 
 </head>
@@ -99,117 +101,176 @@
 
     <main>
         <section>
-            <h2>Criar Conta</h2>
-            <p>Tipo de Conta: </p>
-            <div class="parag-conta">
-                <div class="tipoConta">
-                    <a href="/cadastreSe.html">
-                        <img src="/img/icon/pessoa.png" alt="img-pessoa" width="25px" height="25px">
-                    </a>
-                    <label for="pessoaFisica">Pessoa Física</label>
+            <div class="container">
+                <h2>Criar Conta</h2>
+                <p>Tipo de Conta: </p>
+            </div>
+
+                <div class="parag-conta">
+                    <div class="tipoConta">
+                        <a href="/cadastreSe.html">
+                        <img id="img-pessoaFisica" src="/img/icon/pessoa.png" alt="img-pessoa" width="25px" height="25px">
+                        </a>
+                        <label id="pessoaFisica" for="pessoaFisica">Pessoa Física</label>
+                    </div>
+
+                    <div>
+                        <a href="/pessoaJuridica.html">
+                            <img id="img-pessoaJuridica"  src="/img/icon/empresa.png" alt="img-pessoa" width="25px" height="25px">
+                        </a>
+                        <label id="pessoaJuridica" for="pessoaFisica">Pessoa Jurídica</label>
+                    </div>
                 </div>
 
-                <div>
-                    <a href="/pessoaJuridica.html">
-                        <img src="/img/icon/empresa.png" alt="img-pessoa" width="25px" height="25px">
-                    </a>
-                    <label for="pessoaFisica">Pessoa Jurídica</label>
+            <form id="form" class="form">
+
+                <div class="form-control">
+
+                    <label for="nomeFantasia"></label>
+                    <input type="text" id="nomeFantasia" placeholder="Nome fantasia*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+
                 </div>
-            </div>
 
-            <div class="cx-NomeFantasia">
-                <label for="nome"></label>
-                <input type="text" class="nomeFantasia" placeholder="Nome fantasia*" autocomplete="on">
-            </div>
+                <div class="form-control">
+                    
+                    <label for="cnpj"></label>
+                    <input type="text" id="cnpj" maxlength="20" placeholder="CNPJ XX. XXX. XXX/0001-XX.*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="cx-razaoSocial">
-                <label for="nome"></label>
-                <input type="text" id="razaoSocial" placeholder="Razão social*" autocomplete="on">
-            </div>
+                <div class="form-control">
 
-            <div class="cx-cnpj">
-                <label for="nome"></label>
-                <input type="number" id="cnpj" placeholder="CNPJ*" autocomplete="on">
-            </div>
+                    <label for="razaoSocial"></label>
+                    <input type="text" id="razaoSocial" placeholder="Razão social*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
 
-            <div class="cx-dataAbertura">
-                <label for="data"></label>
-                <input type="date" id="dataabertura" placeholder="Data de abertura da empresa*">
-            </div>
+                </div>
 
-            <div class="cx-incricaoEstadual">
-                <label for="text"></label>
-                <input type="tel" id="incricaoEstadual" placeholder="Inscrição Estadual*" autocomplete="on">
-            </div>
+                
+                <div class="form-control">
+                   
+                    <label for="dataAbertura"></label>
+                    <input type="date" id="dataAbertura" placeholder="Data de Abertura*">
+                    <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="cx-nomeResponsavel">
-                <input type="email" id="email" placeholder="Nome do responsável pela compra*">
-                <label for="email" autocomplete="on"></label>
-            </div>
+                <div class="form-control">
 
-            <div class="cx-cargoResponsavel">
-                <input type="email" id="email" placeholder="Cargo do responsável pela compra*">
-                <label for="text" maxlength="256" autocomplete="on"></label>
-            </div>
+                    <label for="incricaoEstadual"></label>
+                    <input type="text" id="incricaoEstadual" placeholder="Inscrição Estadual XXX.XXX.XXX.XXX*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="cx-telefoneCelular">
-                <input type="tel" id="telcelular" placeholder="Telefone celular*">
-                <label for="text" autocomplete="on"></label>
-            </div>
+                <div class="form-control">
 
-            <div class="cx-telefoneContato">
-                <input type="tel" id="telcontato" placeholder="Telefone para contato*">
-                <label for="text" autocomplete="on"></label>
-            </div>
+                    <label for="nomeResponsavel"></label>
+                    <input type="text" id="nomeResponsavel" placeholder="Nome Completo do responsável pela compra*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
+            
+                <div class="form-control">
 
-            <div class="cx-Email">
-                <input type="email" id="emailEmpresa" placeholder="Email*">
-                <label for="text" autocomplete="on"></label>
-            </div>
+                    <label for="telefone"></label>
+                    <input type="tel" id="telefone" placeholder="Telefone da empresa*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="cx-senha">
-                <label for="senha"></label>
-                <input type="password" id="senha" placeholder="Crie sua senha*">
-            </div>
+                <div class="form-control">
 
-            <div class="cx-confirmasenha">
-                <label for="confirmasenha"></label>
-                <input type="password" id="confiSenha" placeholder="Confirme sua senha*">
-            </div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="E-mail*">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
+            
+                <div class="form-control">
+                
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Crie sua senha*">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="campoObg">
-                <small>(*) Campos obrigatórios</small>
-            </div>
+                <div class="form-control">
+                
+                    <label for="password-confirmation"></label>
+                    <input type="password" id="password-confirmation" placeholder="Confirme sua senha">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                
+                </div>
 
-            <div class="ofertas">
-                <input type="checkbox" name="queroOfertas"> Quero receber ofertas e novidades por e-mail, SMS, Whatsapp
-                ou mensagens.
-                <br>
-            </div>
+                <div class="campoObg">
+                     <small>(*) Campos obrigatórios</small>
+                </div>
 
-            <div class="politica">
-                <input type="checkbox" name="LiAcordo"> Li e estou de acordo com as
-                <a href="/politicasPrivacidade.html">políticas da empresa e políticas de privacidade.*</a>
-            </div>
+                <div class="ofertas">
+                    <input type="checkbox" name="queroOfertas"> Quero receber ofertas e novidades por e-mail, SMS, Whatsapp ou mensagens.
+                </div>
 
-            <div class="button-cadastrar">
-                <button id="cadastrar"></button>
-                <a href="/inicio.html">Cadastrar</a>
-            </div>
+                <div class="politica">
+                    <input type="checkbox" name="liAcordo"> Li e estou de acordo com as
+                    <a href="/politicasPrivacidade.html">políticas da empresa e privacidade.*</a>
+                </div>
+
+                <ul>
+                    <li>
+                        <button class="button-cadastrar" type="submit">
+                        <span>Cadastrar</span>
+                        </button>
+                    </li>
+                </ul>
+
+            </form>
+
         </section>
     </main>
+
     <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
 
         <div class="nome-inscreva">
+            <label for="nomeInscreva"></label>
             <input type="text" name="nome" placeholder="Digite seu Nome">
         </div>
 
         <div class="e-mail-inscreva">
+            <label for="emailInscreva"></label>
             <input type="email" name="email" placeholder="Digite seu E-mail">
         </div>
 
-        <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
+        <div>
+            <ul class="ul-button-inscreva">
+                <li>
+                    <button class="button-inscreva" onclick="function displayMessage()">
+                        <span>Eu quero</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <footer>
@@ -247,9 +308,8 @@
         <div id="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
+    </footer> 
+     
 
 </body>
 

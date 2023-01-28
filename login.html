@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="/img/icon/Logo_icon.ico" type="image/x-icon">
     <!--link para icone na barra de navegação-->
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login.css">
-
+    <script src="https://kit.fontawesome.com/faa243f511.js" crossorigin="anonymous"></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/script.js"  defer></script>
+   
     <title>Login</title>
 
 </head>
@@ -99,74 +100,102 @@
 
     <main>
         <section>
-            <div class="card-login-total">
+            <div class="card-login">
                 <h2>LOGIN</h2>
-
-                <div class="card-login">
-                    <label for="Entrar"></label>
-                    <input type="text" id="nome" placeholder="E-mail, CPF ou CNPJ" autocomplete="on">
-                </div>
-
-                <div class="card-senha">
-
-                    <label for="senha" maxlength="256"></label>
-                    <input type="password" id="senha" placeholder="Senha" autocomplete="on">
-
-                    <button class="button-cadeado">
-                        <img src="/img/icon/trancar.png" alt="cadeado" alt="cadeado" width="20px" height="20px">
-                    </button>
-                </div>
-
-                <div class="link-esqueciSenha">
-                    <a href="#">Esqueci minha senha</a>
-                </div>
-
-                <div class="button-entrar">
-                    <button id="entrar">Entrar</button>
-                    <img id="img-entrar" src="/img/icon/entrar_2.png" alt="entrar_2" width="40px" height="35px">
-                </div>
-
-                <div class="rede-sociais">
-                    <h3>Quero acessar com minha rede sociais</h3>
-                </div>
-
-                <div id="acesso-redeSociais">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="/img/icon/facebook _1.png" alt="Facebook" width="8.5%">
-                    </a>
-
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="/img/icon/instagram-footer.png" alt="Instagram" width="8.5%">
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        <img src="/img/icon/linkedin-footer.png" alt="LinkedIn" width="8.5%">
-                    </a>
-
-                    <a href="https://www.twitter.com/" target="_blank">
-                        <img src="/img/icon/twitter-footer.png" alt="Twitter" width="8.5%">
-                    </a>
-
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <img src="/img/icon/youtube-footer.png" alt="YouTube" width="8.5%">
-                    </a>
-                </div>
             </div>
-        </section>
+
+                <form id="form" class="form">
+
+                    <div class="form-control">
+                        
+                        <input type="text" id="userLogin" placeholder="E-mail, CPF ou CNPJ*" autocomplete="on">
+                        <label for="userLogin"></label>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+
+                    </div>
+
+                    <div class="form-control">
+                   
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Senha*">
+                        <small>Mensagem de erro</small>
+                        
+                        <div class="cadeado">
+                            <img id="cadeado" src="/img/icon/cadeado.png" alt="cadeado"  width="25px" height="25px" onclick="cadeadoClick()"> 
+                        </div>
+                                   
+                    </div>     
+
+                    <div class="link-esqueciSenha">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <button class="button-entrar" type="submit" onclick="validar()">
+                            <span>Entrar</span>
+                            </button>
+                        </li>
+
+                        <div class="img-entrar">
+                            <img id="img-entrar" src="/img/icon/assinar-em.png" alt="entrar_2" width="40px" height="35px">
+                        </div>
+                           
+                    </ul>
+
+                    <div class="rede-sociais">
+                        <h3>Quero acessar com minha rede sociais</h3>
+                    </div>
+
+                    <div id="acesso-redeSociais">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="/img/icon/facebook _1.png" alt="Facebook" width="8.5%">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/img/icon/instagram-footer.png" alt="Instagram" width="8.5%">
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="/img/icon/linkedin-footer.png" alt="LinkedIn" width="8.5%">
+                        </a>
+
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="/img/icon/twitter-footer.png" alt="Twitter" width="8.5%">
+                        </a>
+
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="/img/icon/youtube-footer.png" alt="YouTube" width="8.5%">
+                        </a>
+                    </div>
+                </form>
+            </section>
     </main>
 
     <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
 
         <div class="nome-inscreva">
+            <label for="nomeInscreva"></label>
             <input type="text" name="nome" placeholder="Digite seu Nome">
         </div>
 
         <div class="e-mail-inscreva">
+            <label for="emailInscreva"></label>
             <input type="email" name="email" placeholder="Digite seu E-mail">
         </div>
 
-        <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
+        <div>
+            <ul class="ul-button-inscreva">
+                <li>
+                    <button class="button-inscreva" onclick="function displayMessage()">
+                        <span>Eu quero</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <footer>
@@ -204,9 +233,8 @@
         <div id="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
+    </footer> 
+     
 
 </body>
 

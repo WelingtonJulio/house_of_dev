@@ -15,6 +15,7 @@ main {
     font-size: 16px;
     background-color: var(--white-body);
     border: 3px solid var(--purple);
+    border-radius: 15px 15px;
     box-shadow: 3px 5px 3px var(--grey-shadow);
     width: 80%;
     height: auto;

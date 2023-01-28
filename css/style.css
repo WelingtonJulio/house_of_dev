@@ -34,6 +34,7 @@ header {
   display: flex;
   box-sizing: border-box;
   position: fixed;
+  z-index: 99; 
 }
 
 nav {
@@ -44,16 +45,16 @@ nav {
   float: left;
   margin-right: 55%;
   margin-bottom: -725%;
-  margin-top: 0.9%;
-  margin-left: -33%;
+  margin-top: 1%;
+  margin-left: -30%;
   display: flex;
 }
 
 .buscar-menu {
   float: left;
-  margin-right: -200%;
+  margin-right: -250%;
   margin-bottom: -200%;
-  margin-top: 4.8%;
+  margin-top: 5%;
   margin-left: -9%;
   padding: 20px 10px;
   display: flex;
@@ -74,18 +75,17 @@ nav {
   float: left;
   display: flex;
   position: relative;
-  top: 50%;
+  top: 65%;
   border: none;
   box-sizing: border-box;
-  background-color: transparent;
 }
 
 .button-buscador {
+  background-color: transparent;
   display: inline-flex;
   position: relative;
-  background-color: transparent;
   border: none;
-  top: 34px;
+  top: 35px;
   left: 510px;
   bottom: unset;
   flex: 1 1 auto;
@@ -97,9 +97,7 @@ nav {
   border: none;
   display: inline-flex;
   position: relative;
-  background-color: transparent;
-  z-index: 3;
-}
+ }
 
 .login-header {
   font-size: 12px;
@@ -110,10 +108,9 @@ nav {
   flex-direction: row;
   align-items: center;
   position: relative;
-  background-color: transparent;
-  top: -48px;
+  top: -2px;
   bottom: 20px;
-  left: 40px;
+  left: -25px;
   z-index: 3;
 }
 
@@ -134,10 +131,8 @@ nav {
   float: right;
   display: inline-flex;
   position: relative;
-  background-color: transparent;
-  z-index: 3;
-  bottom: 28px;
-  left: 139.3px;
+  bottom: 25px;
+  left: -30px;
 }
 
 .cadastro-link {
@@ -150,7 +145,6 @@ nav {
   float: right;
   display: inline-flex;
   position: relative;
-  background-color: transparent;
   top: 5px;
   bottom: 0px;
   left: 3px;
@@ -165,7 +159,7 @@ nav {
   z-index: 3;
   background-color: transparent;
   bottom: 45px;
-  left: 330px;
+  left: 180px;
 }
 
 .card-carrinho {
@@ -173,15 +167,13 @@ nav {
   margin-left: 5px;
   display: inline-flex;
   position: relative;
-  background-color: transparent;
   z-index: 3;
   float: right;
   bottom: 46px;
-  left: 340px;
+  left: 210px;
 }
 
 .menu {
-  background-color: transparent;
   border: none;
   margin-left: 5px;
   float: right;
@@ -189,7 +181,7 @@ nav {
   position: relative;
   z-index: 3;
   bottom: 49px;
-  left: 485px;
+  left: 370px;
 }
 
 .dp-menu ul {
@@ -258,86 +250,6 @@ h2 {
   margin: 4% 10% 14% 14%;
 }
 
-.inscrevaSe {
-  border: none;
-  border-radius: 10px 30px;
-  background-color: var(--purple);
-  width: 730px;
-  height: 90px;
-  letter-spacing: 1px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  position: relative;
-  display: flex;
-  margin: -2% 2% 3% 21%;
-}
-
-#text-inscreva {
-  font-size: 20px;
-  font-weight: 550;
-  color: var(--white-body);
-  text-align: center;
-  margin-top: 1%;
-  right: 25px;
-}
-
-.nome-inscreva {
-  background-color: var(--white-body);
-  box-sizing: border-box;
-  border-radius: 5px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  box-sizing: border-box;
-  width: 250px;
-  height: 35px;
-  margin-top: 1%;
-  margin-bottom: -96%;
-  margin-left: 6%;
-  margin-right: 260%;
-  padding: 1%;
-  list-style: none;
-}
-
-.e-mail-inscreva {
-  background-color: var(--white-body);
-  box-sizing: border-box;
-  border-radius: 5px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  box-sizing: border-box;
-  width: 250px;
-  height: 35px;
-  margin-top: 91.2%;
-  margin-left: 43%;
-  margin-bottom: -50px;
-  margin-right: 350%;
-  padding: 1%;
-  list-style: none;
-}
-
-#button-inscreva {
-  font-size: 18px;
-  background-color: var(--blue-button);
-  color: var(--white-text);
-  width: 110px;
-  height: 38px;
-  text-align: center;
-  border: 1px solid var(--purple-button);
-  padding: 2.9px 3px;
-  line-height: 1.5rem;
-  border-radius: 0.25rem;
-  box-sizing: border-box;
-  margin-top: 2%;
-  margin-left: 79.7%;
-  margin-bottom: -50px;
-  margin-right: 350%;
-}
 
 footer {
   width: 100%;

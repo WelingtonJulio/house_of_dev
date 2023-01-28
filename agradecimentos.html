@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/agradecimentos.css">
-
+    
     <title>Agradecimentos</title>
 
 </head>
@@ -249,19 +248,28 @@
 
     </main>
           
-
     <div class="inscrevaSe">
         <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
 
         <div class="nome-inscreva">
+            <label for="nomeInscreva"></label>
             <input type="text" name="nome" placeholder="Digite seu Nome">
         </div>
 
         <div class="e-mail-inscreva">
+            <label for="emailInscreva"></label>
             <input type="email" name="email" placeholder="Digite seu E-mail">
         </div>
 
-        <input id="button-inscreva" type="submit" name="enviar" value="Eu quero">
+        <div>
+            <ul class="ul-button-inscreva">
+                <li>
+                    <button class="button-inscreva" onclick="function displayMessage()">
+                        <span>Eu quero</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <footer>
@@ -299,11 +307,9 @@
         <div id="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
+    </footer> 
+     
 
 </body>
 
 </html>
-
