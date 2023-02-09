@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./public/assets/img/icon/Logo_icon.ico" type="image/x-icon">
+    <!--link para icone na barra de navegação-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/toast.css">
+    
+    <title>Início</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo" aria-details="logo">
+            <a href="./index.html">
+                <img class="logo__img" src="./public/assets/img/icon/logo oficial_1.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="navbar__input">
+                <form  id="buscador">
+                    <input type="text" class="navbar__input__content" placeholder="o que você procura?"
+                        aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                        <button type="submit" class="navbar__input__submit-button">
+                            <img src="./public/assets/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" viewBox="0 0 16 16">
+                        </button>
+                </form>
+            </div>
+
+
+           <section class="login__content">
+                <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login" >
+                <p>Olá, faça <strong>login</strong> ou <strong>cadastre-se</strong></p>
+           </section>
+
+           <div class="like-button">
+            <button>
+                <a href="#">
+                    <img src="./public/assets/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                </a>
+            </button>
+        </div>
+
+        <div class="card-cart" data-before="0">
+            <a href="./carrinho.html" id="link_carrinho">
+                <img src="./public/assets/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+            </a>
+        </div>
+
+        <div class="menu-toggle">
+          <img src="./public/assets/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="dp-menu">
+            <ul class="dp-menu__content">
+                <li>
+                    <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login"  width="100px" height="100px">
+                    <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
+                </li>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./faleconosco.html">CONTATO</a></li>
+                <li><a href="./agradecimentos.html">AGRADECIMENTOS</a></li>
+            </ul> 
+
+        </section>
+
+        <section class="section__department"> <!--depart-->
+            <h1> Devs! Aqui você encontra tudo o que  precisa...</h1>
+            <div class="section__department__content">
+                <div class="section__department__card">
+                    <a href="./departamentos.html">
+                        <img src="./public/assets/img/icon/eletro.png" alt="Eletrônicos" />
+                    </a>
+                </div>
+
+                <div class="section__department__card">
+                    <a href="./departamentos.html">
+                        <img src="./public/assets/img/icon/perife.png" alt="Periféricos" />
+                    </a>
+                </div>
+
+                <div class="section__department__card">
+                    <a href="./departamentos.html">
+                        <img src="./public/assets/img/icon/ergo.png" alt="Ergonomia" />
+                    </a>
+                </div>
+
+                <div class="section__department__card">
+                    <a href="./departamentos.html">
+                        <img src="./public/assets/img/icon/deco.png" alt="Decoração" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section__highlights"> <!--Destaques-->
+            <h1 class="section__title">DESTAQUES</h1>
+
+            <section class="slider-container">
+            <div class="arrowButton" aria-details="left-arrow">
+            </div>
+            <div class="slider-carrousel">
+                <div class="produto">
+                    <img src="./public/assets/img/icon/cadeira.png" alt="cadeira">
+                    <p>Cadeira Gamer Dazz Marvel <br> Homem de Ferro</p>
+                    <h5>R$ 1.999,90</h5>
+                    <h3>R$ 1.299,90</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="./public/assets/img/icon/combo.png" alt="acessorio">
+                    <p>Combo Gamer 4 em 1 ELG<br>Headset Mouse e Teclado</p>
+                    <h5>R$ 499,90</h5>
+                    <h3>R$ 319,90</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="./public/assets/img/icon/suport.png" alt="suport">
+                    <p>Suporte Aticulado ELG para<br>Monitor 17" até 29"</p>
+                    <h5>R$ 199,90</h5>
+                    <h3>R$ 134,90</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="./public/assets/img/icon/monit.png" alt="monitor" height="145px">
+                    <p>Monitor 49" Gamer Samsung<br>Curvo DQHD</p>
+                    <h5>R$ 5.999,90</h5>
+                    <h3>R$ 4.499,90</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div>
+  
+                <div class="produto">
+                    <img src="./public/assets/img/icon/apoio.png" alt="apoio de pé">
+                    <p>Apoio Ergonômico Stalo<br>Pés Preto</p>
+                    <h5>R$ 159,90</h5>
+                    <h3>R$ 84,90</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="./public/assets/img/icon/alexia.png" alt="echo dot">
+                    <p>Echo Dot 3a Geração Amazon Com Alexa, Smart Speaker,  Preto</p>
+                    <h5>R$ 349,00</h5>
+                    <h3>R$ 251,10</h3>
+                    <button class="button-Produto">Comprar</button>
+                </div> 
+
+            </div>
+            <div class="arrowButton" aria-details="right-arrow">
+                <!-- <img src="./public/assets/img/icon/arrowSeta.svg" alt="" width="30px" height="30px"> -->
+            </div>
+            </section>
+        </section>
+
+        <section class="section__products"> <!--prod-->
+            <h1 class="section__title">MAIS PROCURADOS</h1>
+            <div class="section__products__content">
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/cadeira.png" alt="cadeira">
+                    <p class="section__product__description">Cadeira Gamer Dazz Marvel <br> Homem de Ferro</p>
+                    <h3>R$ 1.999,90</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/combo.png" alt="acessorio">
+                    <p class="section__product__description">Combo Gamer 4 em 1 ELG <br> Headset Mouse e Teclado</p>
+                    <h3>R$ 499,90</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/suport.png" alt="suport">
+                    <p class="section__product__description">Suporte Aticulado ELG para<br>Monitor 17" até 29"</p>
+                    <h3>R$ 199,90</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/monit.png" alt="monitor">
+                    <p class="section__product__description">Monitor 49" Gamer Samsung<br>Curvo DQHD</p>
+                    <h3>R$ 5.999,90</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/apoio.png" alt="apoio de pé">
+                    <p class="section__product__description">Apoio Ergonômico Stalo<br>Pés Preto</p>
+                    <h3>R$ 159,90</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+
+                <div class="section__products__product">
+                    <img class="section__product__img" src="./public/assets/img/icon/alexia.png" alt="echo dot">
+                    <p class="section__product__description">Echo Dot 3a Geração Amazon<br>Com Alexa, Smart Speaker</p>
+                    <h3>R$ 349,00</h3>
+                    <button class="section__product__button">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__newsletter">
+            <p class="section__newsletter__title">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
+    
+            <form class="section__newsletter_form" onsubmit="closeToast()">
+                <div class="section__newsletter__input">
+                    <label for="Nome"></label>
+                    <input type="text" name="nome" placeholder="Digite seu Nome">
+                </div>
+        
+                <div class="section__newsletter__input">
+                    <label for="E-mail"></label>
+                    <input type="email" name="email" placeholder="Digite seu E-mail">
+                </div>
+    
+                <button class="section__newsletter__button" type="submit">
+                    <span>Eu quero</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <div class="toast">
+        <h1 class="toast__text">toast</h1>
+    </div>
+
+    <footer>
+        <aside class="aside aside-left">
+            <section class="section__address">
+                <p class="section__address__description">House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ -
+                    20081-902 </p>
+            </section>
+    
+            <section class="section__contact">
+                <a href="./faleconosco.html">Fale Conosco - </a>
+                <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+            </section>
+    
+        </aside>
+       <aside class="aside">
+        <section id="section__social-media__title__container">
+            <p class="section__social-media__title">Siga-nos nas nossas Redes Sociais:</p>
+        </section>
+        <section class="section__social-media__icons__content">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./public/assets/img/icon/facebook-footer.png" alt="Facebook"
+                    width="2.5%"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img  src="./public/assets/img/icon/instagram-footer.png"
+                    alt="Instagram" width="2.5%"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><img   src="./public/assets/img/icon/linkedin-footer.png" alt="LinkedIn"
+                    width="2.5%"></a>
+
+            <a href="https://www.twitter.com/" target="_blank"><img  src="./public/assets/img/icon/twitter-footer.png" alt="Twitter"
+                    width="2.5%"></a>
+
+            <a href="https://www.youtube.com/" target="_blank"><img  src="./public/assets/img/icon/youtube-footer.png" alt="YouTube"
+                    width="2.5%"></a>
+        </section>
+       </aside>
+
+       <!--  <div id="rodapé">
+            <p>Todos os direitos reservados para House of Dev! &#169</p>
+        </div> -->
+    </footer> 
+    <script type="module" src="scripts/js/inicio.js"></script>
+</body>
+
+</html>

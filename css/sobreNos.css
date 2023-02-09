@@ -1,0 +1,148 @@
+:root {
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+
+/* CSS do titulo  */
+.title {
+  font-family: inconsolata;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  color: #000000;
+}
+
+
+/* CSS do paragrafo */
+.text {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  text-indent: 25px;
+  text-align: center;
+  color: var(--black-text);
+}
+
+/* CSS do titulo  */
+.title {
+  color: var(--purple);
+  font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 90px;
+  margin-top: 16rem;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 8%;
+}
+
+.face {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: consolos;
+}
+
+.container {
+  width: 900px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .card {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container .card .mage1 {
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+  transition: 0.5s;
+  border-radius: 0px;
+}
+
+.container .card .mage1 {
+  position: relative;
+  background: var(--);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 50%;
+  transform: translateY(20%);
+}
+
+.container .card:hover .mage1 {
+  background-color: var(--purple-link);
+  transform: translateY(0);
+  transform: translateX(-50%);
+}
+
+.container .card .mage1 .content {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .mage1 .content {
+  opacity: 1;
+}
+
+.container .card .mage1 .content h3 {
+  margin: 10px;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .mage2 {
+  text-align: center;
+  position: relative;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 20px;
+  font-size: 1.5rem;
+  box-shadow: 0 20px 50px rgba (0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .mage2 {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 786px) {
+  .title {
+    margin-top: 10rem;
+  }
+}

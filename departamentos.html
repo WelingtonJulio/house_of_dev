@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./public/assets/img/icon/Logo_icon.ico" type="image/x-icon">
+    <!--link para icone na barra de navegação-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/departamentos.css">
+    
+    <title>Departamentos</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo" aria-details="logo">
+            <a href="./index.html">
+                <img class="logo__img" src="./public/assets/img/icon/logo oficial_1.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="navbar__input">
+                <form action="./buscar.html" method="get" id="buscador">
+                    <input type="text" class="navbar__input__content" placeholder="o que você procura?"
+                        aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                        <button type="submit" class="navbar__input__submit-button">
+                            <img src="./public/assets/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" viewBox="0 0 16 16">
+                        </button>
+                </form>
+            </div>
+
+
+           <section class="login__content">
+                <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login" >
+                <p>Olá, faça <strong>login</strong> ou <strong>cadastre-se</strong></p>
+           </section>
+
+           <div class="like-button">
+            <button>
+                <a href="#">
+                    <img src="./public/assets/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                </a>
+            </button>
+        </div>
+
+        <div class="card-cart" data-before="0">
+            <a href="./carrinho.html" id="link_carrinho">
+                <img src="./public/assets/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
+            </a>
+        </div>
+
+        <div class="menu-toggle">
+          <img src="./public/assets/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="dp-menu">
+            <ul class="dp-menu__content">
+                <li>
+                    <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login"  width="100px" height="100px">
+                    <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
+                </li>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./faleconosco.html">CONTATO</a></li>
+                <li><a href="./agradecimentos.html">AGRADECIMENTOS</a></li>
+            </ul> 
+
+        </section>
+            <h1>Departamentos</h1>
+            <section>
+                <div class="container">
+                    <div class="container-card-1">
+                        <div class="cards">
+                            <a href="./departamentos.html"> 
+                                <img src="./public/assets/img/icon/eletro.png" alt="Eletrônicos">
+                            </a>
+                        </div>
+
+                        <div class="cards">
+                            <a href="./departamentos.html">
+                                <img src="./public/assets/img/icon/perife.png" alt="Periféricos">
+                            </a>
+                        </div class="cards">
+
+                        <div class="cards">
+                            <a href="./departamentos.html">
+                                <img src="./public/assets/img/icon/ergo.png" alt="Ergonomia">
+                            </a>
+                        </div>
+
+                        <div class="cards">
+                            <a href="./departamentos.html">
+                                <img src="./public/assets/img/icon/deco.png" alt="Decoração">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div>
+                <h2>Estilo e Praticidade</h2>
+                <p>
+                    Os nossos produtos são pensandos na saúde e qualidade de trabalho dos desenvolvedores, com
+                    organização no ambiente de trabalho e as interações entre o homem e as máquinas ou equipamentos.
+                    Temos o intuito de trazer conforto aos Devs, prevenindo as doenças ocupacionais e realizar uma boa
+                    interação entre o ambiente de trabalho, as capacidades físicas e psicológicas dos programadores e a eficiência de
+                    tempo.
+                </p>
+
+                <p>
+                    Profissionais organizados conseguem distribuir melhor as tarefas, sabem dividir o trabalho em
+                    relação aos horários e o nível de prioridade, são mestres em atender prazos e ainda mantêm o local de
+                    trabalho mais limpo e organizado.
+                </p>
+
+                <p>Venha conhecer nossos produtos e descubra seu estilo.</p>
+
+                <h3>Estilo na hora de programar e Eficiência.</h3>
+
+                <iframe width="1085" height="515" src="https://www.youtube.com/embed/aRgqQe-8zYk?controls=0&amp;start=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+    </main>
+    <footer>
+        <aside class="aside aside-left">
+            <section class="section__address">
+                <p class="section__address__description">House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ -
+                    20081-902 </p>
+            </section>
+    
+            <section class="section__contact">
+                <a href="./faleconosco.html">Fale Conosco - </a>
+                <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
+            </section>
+    
+        </aside>
+       <aside class="aside">
+        <section id="section__social-media__title__container">
+            <p class="section__social-media__title">Siga-nos nas nossas Redes Sociais:</p>
+        </section>
+        <section class="section__social-media__icons__content">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./public/assets/img/icon/facebook-footer.png" alt="Facebook"
+                    width="2.5%"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img  src="./public/assets/img/icon/instagram-footer.png"
+                    alt="Instagram" width="2.5%"></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><img   src="./public/assets/img/icon/linkedin-footer.png" alt="LinkedIn"
+                    width="2.5%"></a>
+
+            <a href="https://www.twitter.com/" target="_blank"><img  src="./public/assets/img/icon/twitter-footer.png" alt="Twitter"
+                    width="2.5%"></a>
+
+            <a href="https://www.youtube.com/" target="_blank"><img  src="./public/assets/img/icon/youtube-footer.png" alt="YouTube"
+                    width="2.5%"></a>
+        </section>
+       </aside>
+
+       <!--  <div id="rodapé">
+            <p>Todos os direitos reservados para House of Dev! &#169</p>
+        </div> -->
+    </footer> 
+
+    <script type="module" src="scripts/js/menu-toggle.js"></script>
+</body>
+
+</html>

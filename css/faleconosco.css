@@ -1,0 +1,35 @@
+:root {
+    --purple: #8c65a4;
+    --purple-button: #a193af;
+    --purple-link: #19022e;
+    --blue-button: #3f2083;
+    --white: #ede9e9;
+    --grey: #5c5a5a99;
+    --grey-shadow: #938f93;
+    --white-text: #fff7f7;
+    --white-body: #f9f6f6;
+    --black-text: #0c0c0c;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section_google_map {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.section_google_map h3 {
+    text-align: center;
+    margin-bottom: .8rem;
+    color: var(--purple);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
