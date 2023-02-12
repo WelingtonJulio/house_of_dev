@@ -103,12 +103,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   cursor: pointer;
   transition: all .8s ease;
 }
 
 .section__products__product:hover {
+  transform: scale(1.02);
+}
+
+.section__products__product a {
+  color: var(--white-text);
+  text-decoration: none;
+}
+
+.section__products__product a:hover {
   transform: scale(1.02);
 }
 
@@ -272,7 +280,17 @@
   transform: scale(1.01);
   filter: brightness(1.1);
   cursor: pointer;
-  
+}
+
+.button-Produto a {
+  color: var(--white-text);
+
+}
+
+.button-Produto a:hover {
+  transform: scale(1.01);
+  filter: brightness(1.1);
+  cursor: pointer;
 }
 
 

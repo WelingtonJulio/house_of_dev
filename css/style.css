@@ -12,17 +12,16 @@
   --black-text: #0c0c0c;
   --paragraph: 1.8rem;
 
-
   /*
   * BreakPoints - Tamanho de telas
   */
 
   --lteLarge: 1010px;
   --lteMedium: 720px;
-  --lteSmall : 500px;
+  --lteSmall: 500px;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -41,7 +40,6 @@ html {
   font-size: 62.5%;
   text-decoration: none;
   display: flex;
-
 }
 
 header {
@@ -50,11 +48,9 @@ header {
   width: 100%;
   display: flex;
   box-sizing: border-box;
-
   position: fixed;
   padding: 0 2rem;
   gap: 1rem;
-
   z-index: 999;
 }
 
@@ -69,7 +65,6 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
-
   position: relative;
 }
 
@@ -90,7 +85,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 
 .navbar__input__content {
   display: flex;
@@ -113,7 +107,6 @@ header {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
-
 
 .button-buscar {
   float: left;
@@ -138,8 +131,8 @@ header {
 }
 
 .navbar__input__submit-button > img {
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
 }
 
 .login__content {
@@ -160,11 +153,19 @@ header {
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
-
-letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
   color: var(--white-text);
 }
 
+.login__content a {
+  color: var(--white-text);
+}
+
+.login__content a:hover {
+  color: var(--blue-button);
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
 
 .login-header {
   font-size: 12px;
@@ -218,15 +219,13 @@ letter-spacing: 0.05em;
 
 .like-button:hover {
   transform: scale(1.1);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-
 
 .card-cart:hover {
   transform: scale(1.1);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-
 
 .menu {
   border: none;
@@ -234,12 +233,10 @@ letter-spacing: 0.05em;
   display: inline-flex;
 }
 
-
 .menu-toggle {
   display: block;
   cursor: pointer;
 }
-
 
 /*
 * DROPDOWN AREA
@@ -251,27 +248,20 @@ letter-spacing: 0.05em;
   width: 100%;
   position: fixed;
   top: calc(80px + 38px);
-
   z-index: 999;
-  
-
   display: flex;
   opacity: 0;
   pointer-events: none;
   justify-content: space-between;
-
   gap: 2rem;
-
-  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 
 .dp-menu__actived {
   height: 100vh;
   opacity: 1;
   pointer-events: visible;
 }
-
 
 .dp-menu__content {
   display: flex;
@@ -281,9 +271,7 @@ letter-spacing: 0.05em;
   align-items: center;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
-
 }
-
 
 .dp-menu__content li {
   display: block;
@@ -304,7 +292,6 @@ letter-spacing: 0.05em;
   width: inherit;
 
   cursor: auto;
-
 }
 
 .dp-menu__content li:nth-child(1) > p {
@@ -312,9 +299,7 @@ letter-spacing: 0.05em;
 }
 
 .dp-menu__content li:nth-child(1) a {
-
-  transition: all .2s ease;
-
+  transition: all 0.2s ease;
 }
 
 .dp-menu__content li:nth-child(1) a:hover {
@@ -330,7 +315,6 @@ letter-spacing: 0.05em;
   color: inherit;
 }
 
-
 .dp-menu__content li:first-child {
   display: flex;
   flex-direction: column;
@@ -338,7 +322,6 @@ letter-spacing: 0.05em;
   background-color: var(--grey-shadow);
   border-radius: 1rem;
 }
-
 
 /*
 * Footer Container
@@ -348,13 +331,10 @@ footer {
   width: 100%;
   background-color: var(--purple);
   color: var(--white-text);
-
   display: flex;
   flex-wrap: wrap;
   padding: 5rem;
-
   margin-top: 5rem;
-
   gap: 2rem;
 }
 
@@ -396,7 +376,6 @@ footer {
   color: var(--white-text);
 }
 
-
 .section__social-media__icons__content {
   width: 100%;
   display: flex;
@@ -406,20 +385,14 @@ footer {
   width: 100%;
 }
 
-
 .section__social-media__icons__content a img {
   width: 100%;
-}
-
-.section__social-media__title__container {
-
 }
 
 .section__social-media__title {
   font-size: 2rem;
   font-weight: bold;
 }
-
 
 /*
 * visual do scrollbar do window
@@ -435,16 +408,14 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue-button); 
+  background: var(--blue-button);
 }
-
 
 /*
 * BREAKPOINTS
 */
 
 @media (max-width: 1010px) {
-
   /*
   * Menu toggle aparece
   */
@@ -457,8 +428,6 @@ footer {
     display: none;
   }
 
-
-
   .slider-container {
     max-width: 100vw;
     gap: 0;
@@ -468,7 +437,6 @@ footer {
     width: 200px;
   }
 
-
   /*
   * section products -- para de esticar e deixa center no justify content
   */
@@ -477,14 +445,11 @@ footer {
   }
 
   .section__products__content {
-    justify-content: center; 
+    justify-content: center;
   }
-
 }
 
-
 @media (max-width: 784px) {
-
   .logo__img {
     width: 60px;
     height: 60px;
@@ -515,8 +480,6 @@ footer {
     height: 20px;
   }
 
-
-
   .slider-container .slider-carrousel .produto {
     width: 180px;
   }
@@ -525,13 +488,11 @@ footer {
     object-fit: cover
   } */
 
-
   .section__newsletter {
     border-radius: none;
     width: 100%;
     height: 150px;
   }
-
 }
 
 @media (max-width: 515px) {
@@ -539,19 +500,18 @@ footer {
     width: 160px;
   }
 
-
   .section__newsletter {
     justify-content: center;
     border-radius: none;
     height: 310px;
   }
 
-  .section__newsletter_form  {
+  .section__newsletter_form {
     flex-direction: column;
   }
 }
 
-@media (max-width: 506px){
+@media (max-width: 506px) {
   .dp-menu__content li:nth-child(1) > p {
     font-size: 1.6rem;
   }
@@ -570,7 +530,6 @@ footer {
     font-size: 1.25rem;
   }
 }
-
 
 @media (max-width: 358px) {
   footer {

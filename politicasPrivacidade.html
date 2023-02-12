@@ -9,8 +9,7 @@
     <link rel="shortcut icon" href="./public/assets/img/icon/Logo_icon.ico" type="image/x-icon">
     <!--link para icone na barra de navegação-->
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
+   
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/politicaPrivacidade.css">
     
@@ -20,80 +19,48 @@
 
 <body>
     <header>
-        <nav>
-            <section>
-                <div class="card-container">
-                    <a href="/index.html" id="logo_house">
-                        <img src="./public/assets/img/icon/logo oficial_1.png" alt="logo" width="130px" height="85px">
-                    </a>
-                </div>
-
-                <div class="button-buscar">
-                    <form action="/buscar.html" method="get" id="buscador">
-                        <input type="text" class="buscar-menu" placeholder="o que você procura?" maxlength="256"
-                            aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
-                    </form>
-                </div>
-
-                <div>
-                    <button class="button-buscador">
-                        <img src="./public/assets/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar" width="30px"
-                            height="30px" viewBox="0 0 16 16">
+        <div class="logo" aria-details="logo">
+            <a href="./index.html">
+                <img class="logo__img" src="./public/assets/img/icon/logo oficial_1.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="navbar__input">
+                <form id="buscador">
+                    <input type="text" class="navbar__input__content" placeholder="o que você procura?"
+                        aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    <button type="submit" class="navbar__input__submit-button">
+                        <img src="./public/assets/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar"
+                            viewBox="0 0 16 16">
                     </button>
-                </div>
+                </form>
+            </div>
 
-                <div class="login">
-                    <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login" width="50px" height="50px">
-                </div>
 
-                <div class="login-header">
-                    <span id="text-login"> Olá, faça
-                        <a href="/login.html" class="login-link" rel="login">LOGIN</a>
-                    </span>
-                </div>
-
-                <div class="card-cadastro">
-                    <span id="cadastro">
-                        ou <a href="/cadastreSe.html" class="cadastro-link"
-                            rel="cadastro">CADASTRE-SE</a>
-                    </span>
-                </div>
-
-                <div class="card-carrinho">
-                    <a href="/carrinho.html" id="link_carrinho">
-                        <img src="./public/assets/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px" height="35px">
-                    </a>
-                </div>
-
-                <div class="button-gostar">
-                    <button class="gostar">
-                        <a href="#">
-                            <img src="./public/assets/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
-                        </a>
-                    </button>
-                </div>
-
-                <div class="card-menu">
-                    <button class="menu">
-                        <div class="dp-menu">
-                            <ul class="btn-menu">
-                                <li>
-                                    <a href="#">
-                                        <img src="./public/assets/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
-                                    </a>
-                                    <ul class="menu-list">
-                                        <li><a href="/index.html">INÍCIO</a></li>
-                                        <li><a href="/sobreNos.html">SOBRE NÓS</a></li>
-                                        <li><a href="/departamentos.html">DEPARTAMENTOS</a></li>
-                                        <li><a href="/faleconosco.html">CONTATO</a></li>
-                                        <li><a href="/agradecimentos.html">AGRADECIMENTOS</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
+            <section class="login__content">
+                <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login">
+                <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a
+                        href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
             </section>
+
+            <div class="like-button">
+                <button>
+                    <a href="#">
+                        <img src="./public/assets/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                    </a>
+                </button>
+            </div>
+
+            <div class="card-cart" data-before="0">
+                <a href="./carrinho.html" id="link_carrinho">
+                    <img src="./public/assets/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px"
+                        height="35px">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <img src="./public/assets/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+            </div>
         </nav>
     </header>
 
@@ -1315,69 +1282,51 @@
 
             - E-mail do Atendimento: housedev-contato@housedev.com
         </p>
+
     </main>
 
-    
-    <div class="inscrevaSe">
-        <p id="text-inscreva">Inscreva-se abaixo e receba ofertas, descontos e promoções</p>
-
-        <div class="nome-inscreva">
-            <label for="nomeInscreva"></label>
-            <input type="text" name="nome" placeholder="Digite seu Nome">
-        </div>
-
-        <div class="e-mail-inscreva">
-            <label for="emailInscreva"></label>
-            <input type="email" name="email" placeholder="Digite seu E-mail">
-        </div>
-
-        <div>
-            <ul class="ul-button-inscreva">
-                <li>
-                    <button class="button-inscreva" onclick="function displayMessage()">
-                        <span>Eu quero</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <footer>
-        <div class="endereco">
-            <p>House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ -
-                20081-902 </p>
-        </div>
+        <aside class="aside aside-left">
+            <section class="section__address">
+                <p class="section__address__description">
+                    House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua
+                    Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902
+                </p>
+            </section>
 
-        <div class="link-faleconosco-footer">
-            <a href="/faleconosco.html">Fale Conosco - </a>
-            <a href=mailto:agentavery@sample.com>housedev-contato@housedev.com</a>
-        </div>
+            <section class="section__contact">
+                <a href="./faleconosco.html">Fale Conosco - </a>
+                <a href="mailto:agentavery@sample.com">housedev-contato@housedev.com</a>
+            </section>
+        </aside>
+        <aside class="aside">
+            <section id="section__social-media__title__container">
+                <p class="section__social-media__title">
+                    Siga-nos nas nossas Redes Sociais:
+                </p>
+            </section>
+            <section class="section__social-media__icons__content">
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src="./public/assets/img/icon/facebook-footer.png" alt="Facebook" width="2.5%" /></a>
 
-        <div id="card-sigaNos">
-            <p id="text-sigaNos">Siga-nos nas nossas Redes Sociais:</p>
-        </div>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="./public/assets/img/icon/instagram-footer.png" alt="Instagram" width="2.5%" /></a>
 
-        <div class="card-footer">
-            <a href="https://www.facebook.com/" target="_blank"><img src="./public/assets/img/icon/facebook-footer.png" alt="Facebook"
-                    width="2.5%"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img
+                        src="./public/assets/img/icon/linkedin-footer.png" alt="LinkedIn" width="2.5%" /></a>
 
-            <a href="https://www.instagram.com/" target="_blank"><img src="./public/assets/img/icon/instagram-footer.png"
-                    alt="Instagram" width="2.5%"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img
+                        src="./public/assets/img/icon/twitter-footer.png" alt="Twitter" width="2.5%" /></a>
 
-            <a href="https://www.linkedin.com/" target="_blank"><img src="./public/assets/img/icon/linkedin-footer.png" alt="LinkedIn"
-                    width="2.5%"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img
+                        src="./public/assets/img/icon/youtube-footer.png" alt="YouTube" width="2.5%" /></a>
+            </section>
+        </aside>
 
-            <a href="https://www.twitter.com/" target="_blank"><img src="./public/assets/img/icon/twitter-footer.png" alt="Twitter"
-                    width="2.5%"></a>
-
-            <a href="https://www.youtube.com/" target="_blank"><img src="./public/assets/img/icon/youtube-footer.png" alt="YouTube"
-                    width="2.5%"></a>
-        </div>
-
-        <div id="rodapé">
+        <!--  <div id="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
-        </div>
-    </footer> 
+        </div> -->
+    </footer>
      
 
 </body>

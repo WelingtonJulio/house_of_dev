@@ -1,339 +1,243 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="shortcut icon"
-            href="./public/assets/img/icon/Logo_icon.ico"
-            type="image/x-icon"
-        />
-        <!--link para icone na barra de navegação-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/register-formulario.css" />
-        <link rel="stylesheet" href="./css/cadastreSe.css" />
-        <script
-            src="https://kit.fontawesome.com/faa243f511.js"
-            crossorigin="anonymous"
-        ></script>
+    <link rel="shortcut icon" href="./public/assets/img/icon/Logo_icon.ico" type="image/x-icon" />
+    <!--link para icone na barra de navegação-->
 
-        <title>Cadastro</title>
-    </head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/register-formulario.css" />
+    <link rel="stylesheet" href="./css/cadastreSe.css" />
+    <script src="https://kit.fontawesome.com/faa243f511.js" crossorigin="anonymous"></script>
 
-    <body>
-        <header>
-            <div class="logo" aria-details="logo">
-                <a href="./index.html">
-                    <img
-                        class="logo__img"
-                        src="./public/assets/img/icon/logo oficial_1.png"
-                        alt="logo"
-                    />
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo" aria-details="logo">
+            <a href="./index.html">
+                <img class="logo__img" src="./public/assets/img/icon/logo oficial_1.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="navbar__input">
+                <form id="buscador">
+                    <input type="text" class="navbar__input__content" placeholder="o que você procura?"
+                        aria-autocomplete="list" aria-label="o que você procura?" role="searchbox">
+                    <button type="submit" class="navbar__input__submit-button">
+                        <img src="./public/assets/img/icon/lupa-buscar.png" id="img-buscar" alt="lupa-buscar"
+                            viewBox="0 0 16 16">
+                    </button>
+                </form>
+            </div>
+
+
+            <section class="login__content">
+                <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login">
+                <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a
+                        href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
+            </section>
+
+            <div class="like-button">
+                <button>
+                    <a href="#">
+                        <img src="./public/assets/img/icon/gostar.png" alt="logo_gostar" width="32px" height="32px">
+                    </a>
+                </button>
+            </div>
+
+            <div class="card-cart" data-before="0">
+                <a href="./carrinho.html" id="link_carrinho">
+                    <img src="./public/assets/img/icon/carrinho-carrinho.png" alt="logo_carrinho" width="35px"
+                        height="35px">
                 </a>
             </div>
-            <nav class="navbar">
-                <div class="navbar__input">
-                    <form action="./buscar.html" method="get" id="buscador">
-                        <input
-                            type="text"
-                            class="navbar__input__content"
-                            placeholder="o que você procura?"
-                            aria-autocomplete="list"
-                            aria-label="o que você procura?"
-                            role="searchbox"
-                        />
-                        <button
-                            type="submit"
-                            class="navbar__input__submit-button"
-                        >
-                            <img
-                                src="./public/assets/img/icon/lupa-buscar.png"
-                                id="img-buscar"
-                                alt="lupa-buscar"
-                                viewBox="0 0 16 16"
-                            />
-                        </button>
-                    </form>
-                </div>
 
-                <section class="login__content">
-                    <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login" />
-                    <p>
-                        Olá, faça <strong>login</strong> ou
-                        <strong>cadastre-se</strong>
-                    </p>
-                </section>
+            <div class="menu-toggle">
+                <img src="./public/assets/img/icon/menu-oficial.png" alt="menu" width="43px" height="40px">
+            </div>
+        </nav>
+    </header>
 
-                <div class="like-button">
-                    <button>
-                        <a href="#">
-                            <img
-                                src="./public/assets/img/icon/gostar.png"
-                                alt="logo_gostar"
-                                width="32px"
-                                height="32px"
-                            />
-                        </a>
-                    </button>
-                </div>
+    <main>
+        <section class="dp-menu">
+            <ul class="dp-menu__content">
+                <li>
+                    <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login" width="100px" height="100px">
+                    <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a
+                            href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
+                </li>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./faleconosco.html">CONTATO</a></li>
+                <li><a href="./agradecimentos.html">AGRADECIMENTOS</a></li>
+            </ul>
 
-                <div class="card-cart" data-before="0">
-                    <a href="./carrinho.html" id="link_carrinho">
-                        <img
-                            src="./public/assets/img/icon/carrinho-carrinho.png"
-                            alt="logo_carrinho"
-                            width="35px"
-                            height="35px"
-                        />
+        </section>
+        <section class="form__container">
+            <div class="form_content">
+                <h2>Criar Conta</h2>
+                <p>Tipo de Conta: Pessoa Física</p>
+            </div>
+
+            <div class="type-account__container">
+                <div class="type-account__card">
+                    <a href="./cadastreSe.html">
+                        <img id="img-pessoaFisica" src="./public/assets/img/icon/pessoa.png" alt="img-pessoa"
+                            width="25px" height="25px" />
+
+                        <label id="pessoaFisica" for="pessoaFisica">Pessoa Física</label>
                     </a>
                 </div>
 
-                <div class="menu-toggle">
-                    <img
-                        src="./public/assets/img/icon/menu-oficial.png"
-                        alt="menu"
-                        width="43px"
-                        height="40px"
-                    />
-                </div>
-            </nav>
-        </header>
+                <div class="type-account__card">
+                    <a href="./pessoaJuridica.html">
+                        <img id="img-pessoaJuridica" src="./public/assets/img/icon/empresa.png" alt="img-pessoa"
+                            width="25px" height="25px" />
 
-        <main>
-            <section class="dp-menu">
-                <ul class="dp-menu__content">
-                    <li>
-                        <img src="./public/assets/img/icon/conecte-se.png" alt="logo_login"  width="100px" height="100px">
-                        <p>Olá, faça <a href="./login.html"><strong>login</strong></a> ou <a href="./cadastreSe.html"><strong>cadastre-se</strong></a></p>
-                    </li>
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="./sobreNos.html">SOBRE NÓS</a></li>
-                    <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                    <li><a href="./faleconosco.html">CONTATO</a></li>
-                    <li><a href="./agradecimentos.html">AGRADECIMENTOS</a></li>
-                </ul> 
-    
-            </section>
-            <section class="form__container">
-                <div class="form_content">
-                    <h2>Criar Conta</h2>
-                    <p>Tipo de Conta: Pessoa Física</p>
+                        <label id="pessoaJuridica" for="pessoaFisica">Pessoa Jurídica</label>
+                    </a>
+                </div>
+            </div>
+
+
+            <form id="form" class="form" onsubmit="return funcRegisterForm(event)">
+                <div class="form-control">
+                    <label for="username"></label>
+                    <input type="text" id="username" placeholder="Nome Completo*" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
                 </div>
 
-                <div class="type-account__container">
-                    <div class="type-account__card">
-                        <a href="./cadastreSe.html">
-                            <img
-                                id="img-pessoaFisica"
-                                src="./public/assets/img/icon/pessoa.png"
-                                alt="img-pessoa"
-                                width="25px"
-                                height="25px"
-                            />
-
-                            <label id="pessoaFisica" for="pessoaFisica"
-                                >Pessoa Física</label
-                            >
-                        </a>
-                    </div>
-
-                    <div class="type-account__card">
-                        <a href="./pessoaJuridica.html">
-                            <img
-                                id="img-pessoaJuridica"
-                                src="./public/assets/img/icon/empresa.png"
-                                alt="img-pessoa"
-                                width="25px"
-                                height="25px"
-                            />
-
-                            <label id="pessoaJuridica" for="pessoaFisica"
-                                >Pessoa Jurídica</label
-                            >
-                        </a>
-                    </div>
+                <div class="form-control">
+                    <label for="cpf"></label>
+                    <input type="text" id="cpf" maxlength="15" placeholder="CPF 000.000.000-00*" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
                 </div>
 
-                <form id="form" class="form" onsubmit="return funcRegisterForm(event)">
-                    <div class="form-control">
-                        <label for="username"></label>
-                        <input
-                            type="text"
-                            id="username"
-                            placeholder="Nome Completo*"
-                        />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="form-control">
+                    <label for="dataNascimento"></label>
+                    <input type="date" id="dataNascimento" placeholder="Data de nascimento*" />
+                    <small>Mensagem de erro</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="cpf"></label>
-                        <input
-                            type="text"
-                            id="cpf"
-                            maxlength="15"
-                            placeholder="CPF 000.000.000-00*"
-                        />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="form-control">
+                    <label for="telefone"></label>
+                    <input type="tel" id="telefone" placeholder="Telefone celular*" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="dataNascimento"></label>
-                        <input
-                            type="date"
-                            id="dataNascimento"
-                            placeholder="Data de nascimento*"
-                        />
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="form-control">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="E-mail*" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="telefone"></label>
-                        <input
-                            type="tel"
-                            id="telefone"
-                            placeholder="Telefone celular*"
-                        />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="form-control">
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Crie sua senha*" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="email"></label>
-                        <input type="email" id="email" placeholder="E-mail*" />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="form-control">
+                    <label for="password-confirmation"></label>
+                    <input type="password" id="password-confirmation" placeholder="Confirme sua senha" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="password"></label>
-                        <input
-                            type="password"
-                            id="password"
-                            placeholder="Crie sua senha*"
-                        />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="campoObg">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
 
-                    <div class="form-control">
-                        <label for="password-confirmation"></label>
-                        <input
-                            type="password"
-                            id="password-confirmation"
-                            placeholder="Confirme sua senha"
-                        />
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-check-circle"></i>
-                        <small>Mensagem de erro</small>
-                    </div>
+                <div class="ofertas">
+                    <input type="checkbox" name="queroOfertas" /> Quero
+                    receber ofertas e novidades por e-mail, SMS, Whatsapp ou
+                    mensagens.
+                </div>
 
-                    <div class="campoObg">
-                        <small>(*) Campos obrigatórios</small>
-                    </div>
-
-                    <div class="ofertas">
-                        <input type="checkbox" name="queroOfertas" /> Quero
-                        receber ofertas e novidades por e-mail, SMS, Whatsapp ou
-                        mensagens.
-                    </div>
-
-                    <div class="politica">
-                        <input type="checkbox" name="liAcordo" /> Li e estou de
-                        acordo com as
-                        <a href="./politicasPrivacidade.html"
-                            >políticas da empresa e privacidade.*</a
-                        >
-                    </div>
+                <div class="politica">
+                    <input type="checkbox" name="liAcordo" /> Li e estou de
+                    acordo com as
+                    <a href="./politicasPrivacidade.html">políticas da empresa e privacidade.*</a>
+                </div>
 
                     <ul>
                         <li>
                             <button class="button-cadastrar" type="submit">
                                 <span>Cadastrar</span>
+
                             </button>
                         </li>
                     </ul>
-                </form>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <aside class="aside aside-left">
+            <section class="section__address">
+                <p class="section__address__description">
+                    House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua
+                    Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902
+                </p>
             </section>
-        </main>
 
-        <footer>
-            <aside class="aside aside-left">
-                <section class="section__address">
-                    <p class="section__address__description">
-                        House of Dev / CNPJ: 00.000.000/0000-00 / Endereço: Rua
-                        Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902
-                    </p>
-                </section>
+            <section class="section__contact">
+                <a href="./faleconosco.html">Fale Conosco - </a>
+                <a href="mailto:agentavery@sample.com">housedev-contato@housedev.com</a>
+            </section>
+        </aside>
+        <aside class="aside">
+            <section id="section__social-media__title__container">
+                <p class="section__social-media__title">
+                    Siga-nos nas nossas Redes Sociais:
+                </p>
+            </section>
+            <section class="section__social-media__icons__content">
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src="./public/assets/img/icon/facebook-footer.png" alt="Facebook" width="2.5%" /></a>
 
-                <section class="section__contact">
-                    <a href="./faleconosco.html">Fale Conosco - </a>
-                    <a href="mailto:agentavery@sample.com"
-                        >housedev-contato@housedev.com</a
-                    >
-                </section>
-            </aside>
-            <aside class="aside">
-                <section id="section__social-media__title__container">
-                    <p class="section__social-media__title">
-                        Siga-nos nas nossas Redes Sociais:
-                    </p>
-                </section>
-                <section class="section__social-media__icons__content">
-                    <a href="https://www.facebook.com/" target="_blank"
-                        ><img
-                            src="./public/assets/img/icon/facebook-footer.png"
-                            alt="Facebook"
-                            width="2.5%"
-                    /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="./public/assets/img/icon/instagram-footer.png" alt="Instagram" width="2.5%" /></a>
 
-                    <a href="https://www.instagram.com/" target="_blank"
-                        ><img
-                            src="./public/assets/img/icon/instagram-footer.png"
-                            alt="Instagram"
-                            width="2.5%"
-                    /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img
+                        src="./public/assets/img/icon/linkedin-footer.png" alt="LinkedIn" width="2.5%" /></a>
 
-                    <a href="https://www.linkedin.com/" target="_blank"
-                        ><img
-                            src="./public/assets/img/icon/linkedin-footer.png"
-                            alt="LinkedIn"
-                            width="2.5%"
-                    /></a>
+                <a href="https://www.twitter.com/" target="_blank"><img
+                        src="./public/assets/img/icon/twitter-footer.png" alt="Twitter" width="2.5%" /></a>
 
-                    <a href="https://www.twitter.com/" target="_blank"
-                        ><img
-                            src="./public/assets/img/icon/twitter-footer.png"
-                            alt="Twitter"
-                            width="2.5%"
-                    /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img
+                        src="./public/assets/img/icon/youtube-footer.png" alt="YouTube" width="2.5%" /></a>
+            </section>
+        </aside>
 
-                    <a href="https://www.youtube.com/" target="_blank"
-                        ><img
-                            src="./public/assets/img/icon/youtube-footer.png"
-                            alt="YouTube"
-                            width="2.5%"
-                    /></a>
-                </section>
-            </aside>
-
-            <!--  <div id="rodapé">
+        <!--  <div id="rodapé">
             <p>Todos os direitos reservados para House of Dev! &#169</p>
         </div> -->
-        </footer>
+    </footer>
 
-<!--         <script src="js/script.js"></script> -->
-        <script src="scripts/js/formulario.js"></script>
-        <script src="scripts/js/menu-toggle.js"></script>    
-        <script src="scripts/js/cadastreSe.js"></script>    
-    </body>
+    <!--         <script src="js/script.js"></script> -->
+    <script src="scripts/js/formulario.js"></script>
+    <script src="scripts/js/menu-toggle.js"></script>
+    <script src="scripts/js/cadastreSe.js"></script>
+</body>
+
 </html>
