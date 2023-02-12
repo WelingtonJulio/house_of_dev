@@ -17,7 +17,6 @@ main {
   overflow-x: hidden;
 }
 
-
 /* CSS do titulo  */
 .title {
   font-family: inconsolata;
@@ -28,7 +27,6 @@ main {
   text-align: center;
   color: #000000;
 }
-
 
 /* CSS do paragrafo */
 .text {
@@ -139,7 +137,6 @@ main {
 .container .card:hover .mage2 {
   transform: translateY(0);
 }
-
 
 @media (max-width: 786px) {
   .title {

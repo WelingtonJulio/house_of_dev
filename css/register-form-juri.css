@@ -469,31 +469,31 @@ button:hover {
 
 @keyframes slidein {
   0% {
-      transform: translateX(1000px);
-      opacity: 0;
+    transform: translateX(1000px);
+    opacity: 0;
   }
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @media (max-width: 785px) {
   .form__container {
-      margin-top: calc(20rem - 10rem);
+    margin-top: calc(20rem - 10rem);
   }
 }
 
 @media (max-width: 520px) {
   .form__container {
-      width: 100%;
+    width: 100%;
   }
 
   .form-control {
-      margin-bottom: 5rem;
+    margin-bottom: 5rem;
   }
 
   .form-control small {
-      margin-top: -10rem;
+    margin-top: -10rem;
   }
 }

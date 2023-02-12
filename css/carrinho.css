@@ -11,14 +11,11 @@
   --black-text: #0c0c0c;
 }
 
-
 main {
   width: 100%;
 
   background-color: #fdfdfd;
 }
-
-
 
 .card__title {
   margin-top: 15rem;
@@ -39,8 +36,6 @@ main {
   display: flex;
   gap: 2rem;
   padding: 5rem;
-  
-
 }
 
 /*
@@ -50,10 +45,8 @@ main {
 .card__container {
   flex: 3 0 800px;
 
-
   display: flex;
   flex-direction: column;
-
 }
 
 .address__container {
@@ -79,7 +72,6 @@ main {
   background-clip: border-box;
 }
 
-
 .address__options__content {
   width: 100%;
   display: flex;
@@ -100,11 +92,9 @@ main {
 
   display: flex;
 
-
-  border: 2px solid #8C65A4;
+  border: 2px solid #8c65a4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-
 }
 
 .address__options__input__container input {
@@ -113,12 +103,10 @@ main {
 
   background-color: transparent;
 
-
   color: var(--grey-shadow);
   font-weight: 700;
   line-height: 2rem;
   font-size: 2rem;
-
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -127,15 +115,15 @@ main {
   border-bottom-right-radius: 10px;
 }
 
-.address__options__input__container input, .address__options__input__container focus {
+.address__options__input__container input,
+.address__options__input__container focus {
   border: none;
   box-shadow: 0 0 0 0;
   outline: 0;
-
 }
 
 .address__options__input__container input::placeholder {
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 2.2rem;
   font-weight: 800;
 }
@@ -146,20 +134,19 @@ main {
   width: 51px;
   height: 37px;
 
-
   border-radius: 10px;
 
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.7rem;
   text-align: center;
 
-  font-family: 'Inter';
+  font-family: "Inter";
   text-transform: uppercase;
 
   cursor: pointer;
-  transition: all .4 ease-in-out;
+  transition: all 0.4 ease-in-out;
 }
 
 .address__options__input__container > button:hover {
@@ -194,21 +181,18 @@ main {
 .remove__button img {
   width: 1.532rem;
   height: 2.7rem;
-  margin-right: .7rem;
+  margin-right: 0.7rem;
 }
 
 .remove__button h1 {
-
-
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.4rem;
   text-align: center;
 
-  color: #8C65A4;
-
+  color: #8c65a4;
 }
 
 .description__product__container {
@@ -216,10 +200,9 @@ main {
   width: 100%;
   height: 173px;
 
-
   display: flex;
 
-  border: 1px solid rgba(51, 55, 69, .2);
+  border: 1px solid rgba(51, 55, 69, 0.2);
 
   border: 3px solid var(--purple);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -240,14 +223,13 @@ main {
   font-size: 1.5rem;
 
   font-weight: 500;
-
 }
 
 .description__product__title {
- font-size: 2rem;
- color: var(--grey-shadow);
- margin-top: 1rem;
- margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--grey-shadow);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .description__product__text {
@@ -316,7 +298,6 @@ main {
   font-size: 1.8rem;
 }
 
-
 /*
 * Tudo dentro do aside right;
 */
@@ -326,7 +307,7 @@ main {
   height: 100%;
   background: var(--white-body);
   border: 3px solid var(--purple);
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -341,7 +322,6 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
 }
 
 .summary__title h1 {
@@ -349,7 +329,7 @@ main {
   color: var(--purple);
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .summary__description__container {
@@ -383,9 +363,8 @@ main {
   padding: 2rem;
   justify-content: space-between;
 
-  border-top: 1px solid rgba(55, 55, 55, .1);
+  border-top: 1px solid rgba(55, 55, 55, 0.1);
 }
-
 
 .summary__product__frete span {
   color: var(--grey-shadow);
@@ -418,7 +397,6 @@ main {
   font-size: 1.6rem;
 }
 
-
 .summary__product__term > div h1 {
   color: var(--black-text);
   min-width: 100px;
@@ -428,7 +406,7 @@ main {
 
 .summary__product__pix {
   width: 100%;
-  background-color: rgba(5, 241, 64, .3);
+  background-color: rgba(5, 241, 64, 0.3);
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -473,7 +451,7 @@ main {
   border-radius: 1rem;
 
   cursor: pointer;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .summary__buttons__container button:hover {
@@ -483,7 +461,6 @@ main {
 .summary__buttons__container button:first-child {
   background-color: var(--blue-button);
   color: var(--white-text);
-
 }
 
 .summary__buttons__container button:last-child {
@@ -491,7 +468,6 @@ main {
   background: var(--white-body);
   border: 2px solid var(--purple);
 }
-
 
 @media (max-width: 1318px) {
   .card__section__container {
@@ -502,12 +478,9 @@ main {
   .card__container {
     flex: 0;
   }
-
-
 }
 
 @media (max-width: 713px) {
-
   .description__product__container {
     flex-direction: column;
     height: 400px;
@@ -523,7 +496,6 @@ main {
     width: 100px;
     height: 100px;
   }
-
 }
 
 @media (max-width: 497px) {
@@ -548,7 +520,6 @@ main {
     min-width: auto;
     width: 100%;
   }
-
 
   .card__title {
     font-size: 3rem;

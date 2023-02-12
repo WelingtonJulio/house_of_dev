@@ -11,7 +11,7 @@
   --black-text: #0c0c0c;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,19 +27,19 @@
 }
 
 .title__page {
-  color:var(--purple);
+  color: var(--purple);
   font-size: 30px;
   font-weight: 1000;
   text-align: center;
   line-height: 1;
   letter-spacing: 1px;
   margin-top: 16rem;
-} 
+}
 
 .text-introducao {
   text-align: center;
   font-size: 18px;
-  margin: 40px ;
+  margin: 40px;
   padding: 0 20px;
 }
 
@@ -59,7 +59,8 @@
   transform: rotateY(180deg);
 }
 
-.front-card, .back-card {
+.front-card,
+.back-card {
   position: absolute;
   backface-visibility: hidden;
 }
@@ -68,7 +69,8 @@
   transform: rotateY(180deg);
 }
 
-.front-card img, .back-card img {
+.front-card img,
+.back-card img {
   border-radius: 10px 15px;
   box-shadow: 0 5px 5px var(--grey-shadow);
 }
@@ -79,7 +81,6 @@
   margin-left: 1%;
   margin-right: 4%;
 }
-
 
 @media (max-width: 786px) {
   .title__page {

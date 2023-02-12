@@ -1,19 +1,19 @@
 :root {
-    --purple: #8c65a4;
-    --purple-button: #a193af;
-    --purple-link: #19022e;
-    --blue-button: #3f2083;
-    --white: #ede9e9;
-    --grey: #5c5a5a99;
-    --grey-shadow: #938f93;
-    --white-text: #fff7f7;
-    --white-body: #f9f6f6;
-    --black-text: #0c0c0c;
+  --purple: #8c65a4;
+  --purple-button: #a193af;
+  --purple-link: #19022e;
+  --blue-button: #3f2083;
+  --white: #ede9e9;
+  --grey: #5c5a5a99;
+  --grey-shadow: #938f93;
+  --white-text: #fff7f7;
+  --white-body: #f9f6f6;
+  --black-text: #0c0c0c;
 }
 
 main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
