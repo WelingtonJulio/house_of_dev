@@ -1,32 +1,192 @@
-:root {
-    --purple: #8c65a4;
-    --purple-button: #a193af;
-    --purple-link: #19022e;
-    --blue-button: #3f2083;
-    --white: #ede9e9;
-    --grey: #5c5a5a99;
-    --grey-shadow: #938f93;
-    --white-text: #fff7f7;
-    --white-body: #f9f6f6;
-    --black-text: #0c0c0c;
-  }
-
-main {
-    font-size: 16px;
-    background-color: var(--white-body);
-    border: 3px solid var(--purple);
-    border-radius: 30px 30px;
-    box-shadow: 3px 5px 3px var(--grey-shadow);
-    width: 90%;
-    height: auto;
-    align-content: center;
+/*html{
+    font-family: 'Imprima', sans-serif;
+    font-size: 18px;
     text-align: justify;
-    margin: 12% 5% 5%;
-    padding: 1.8%;
-  }
+    text-decoration: none;
+}
 
-h3{
-    padding: 0 0 10px;
+header {
+    background-color: #8c65a4;
+    align-items: center;
+    justify-content:  baseline;
+    flex: 1 1 0%;
+    gap: 1rem;
+    margin: auto;
+    width: 100%;
+    height: 20%;
+    top: 0%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0 solid;
+    box-sizing: border-box;
+    position: fixed;
+}
+#card-container {
+    float: left;
+    margin-right: 20;
+    margin-bottom: 6px;
+    display: inline;
+    padding: 5px;
+}
+
+#buscar-menu{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 76rem;
+    box-sizing: border-box;
+    width: 600px;
+    height: 30px;
+    background-color: #ede9e9;
+    text-decoration: #5c5a5a99;
+    border: none;
+    border-radius: 5px 5px;
+    background-position: inherit;
+    flex-wrap: wrap;
+}
+
+#buttom-buscar{
+    float:left;
+    margin: 10px 40px;
+    padding: auto;
+    display: inline;
+    position: relative;
+    top:50%;
+    border:0 none;
+    box-sizing: border-box;
+}
+
+.buttom-buscador {
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    top: -45px;
+    left: -6px;
+    bottom: unset;
+    flex: 1 1 auto;
+    width: 10%;
+}
+
+#card-login {
+    font-size: 12px;
+    border: none;
+    color: #fff7f7;
+    margin-left: 5px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index:3;
+    top: -50px;
+    left: 150px;
+}   
+
+#text-login  {
+    font-size: 12px;
+    border: none;
+    color: #fff7f7;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index:3;
+    top: -46px;
+    left: 327px;
+}
+
+
+#cadastro {
+    font-size: 12px;
+    border: none;
+    color: #fff7f7;
+    letter-spacing: 1.2px;
+    margin-left: 5px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index:3;
+    top: -29px;
+    left: 450px;
+}
+
+.login {
+    font-size: 13px;
+    border: none;
+    color: #fff7f7;
+    margin-left: 5px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index:3;
+    top: -1px;
+    left: 1%;
+}
+
+.cadastro {
+    font-size: 12.5px;
+    border: none;
+    color: #fff7f7;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    z-index:3;
+}
+
+#gostar {
+        background-color: transparent;
+        border: none;
+        margin-left: 5px;
+        float: right;
+        display: inline-flex;
+        position: relative;
+        z-index:3;
+        top: -47px;
+        left: 695px;
+}
+
+#card-carrinho {
+        font-size: 10px;
+        border: none;
+        margin-left: 5px;
+        float: right;
+        display: inline-flex;
+        position: relative;
+        background-color: transparent;
+        z-index:3;
+        top: -50px;
+        left: 760px;
+}
+
+.menu-login {
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    float: right;
+    display: inline-flex;
+    position: relative;
+    z-index:3;
+    top: -53px;
+    left: 980px;
+}
+
+body {
+    background-color: #f9f6f6;
+    padding: 70px;
+    height: 2000px;
+    margin: 20px;
+
 }
 
 #texto-h3 {
@@ -35,88 +195,24 @@ h3{
     font-size: 16px;
     line-height: 1;
     letter-spacing: 1px;
-    padding: 20px 0 20px;
+    border-radius: 0%;
 }
 
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: sans-serif;
-    margin-left: 7%;
-} 
-
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-    font-family: sans-serif;
-    margin-left: 10%;
-} 
-
-#check{
-    display: inline-block;
+footer {
+    background-color: #8c65a4;
+    align-items: center;
+    justify-content:  baseline;
+    flex: 1 1 0%;
+    gap: 1rem;
+    margin: auto;
+    width: 400%;
+    height: 5%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0 solid;
+    box-sizing: border-box;
+    position: relative;
 }
-
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
-    padding: 0;
-}
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea {
-    font-family: sans-serif;
-    font-size: 1em;
-    border-radius: 5px;
-}
-
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
-    display: table;
-}
-
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
-}
-
-/* Elementos de classe "campo" */
-.campo {
-    margin-bottom: 1em;
-}
-
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    display: block;
-}
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
-}
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo input[type="telNo"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-}
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
-}
-
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
-}
-
-/* Elemento de classe "botao" */
-.button {
-    font-size: 1.2em;
-    border: 0;
-    margin-bottom: 1em;
-    padding: 0 0 1em;
-    cursor: pointer;
-}
+    
+*/
