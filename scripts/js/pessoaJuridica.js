@@ -69,7 +69,7 @@ function checkInputs() {
     if (nomeResponsavelValue === "") {
         setErrorFor(nomeResponsavel, "Dev o preenchimento desse campo é obrigatório.");
     } else if (nomeResponsavelValue.length < 6) {
-        setErrorFor(nomeResponsavel, "Dev esse campo precisa ter no mínimo 6 caracteres."); 
+        setErrorFor(nomeResponsavel, "A senha precisa ter no mínimo 6 caracteres entre símbolos, letras e números."); 
     } else {
         setSuccessFor(nomeResponsavel);
     }
