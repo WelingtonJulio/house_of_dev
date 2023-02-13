@@ -12,6 +12,7 @@ h2 {
   letter-spacing: 1px;
   margin: 3%;
 }
+
 /* 
 .container {
   display: flex;
@@ -74,9 +75,17 @@ h2 {
   cursor: pointer;
 }
 
-p {
-  margin: 10px 45px 10px 45px;
+.estilo-praticidade {
   text-align: justify;
+  margin: 2.5rem;
+}
+
+.estilo-praticidade h2 {
+  font-size: 18;
+}
+
+.estilo-praticidade p {
+  font-size: 14px;
 }
 
 /* 
