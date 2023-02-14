@@ -77,7 +77,7 @@ function checkInputs() {
     } else if (passwordValue.length < 6) {
         setErrorFor(
             password,
-            'Dev sua senha precisa ter no mínimo 6 caracteres.'
+            'Mínimo de 6 caracteres entre símbolos, letras e números.'
         )
     } else {
         setSuccessFor(password)
@@ -227,7 +227,7 @@ const funcContactForm = (e) => {
 
 
     e.preventDefault();
-    checkInputs()
+    checkInputs();
     return false;
 
 }
@@ -314,13 +314,10 @@ const funcRegisterJuriForm = (e) => {
         )
     }
 
-
     e.preventDefault();
     checkInputs()
     return false;
-
 }
-
 
 const funcLoginForm = (e) => {
     const form = document.getElementById("form");

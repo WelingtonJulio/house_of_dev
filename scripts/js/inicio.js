@@ -34,12 +34,10 @@ menusArrow.forEach((menu) => {
   })
 })
 
-
 newsLetter.addEventListener('submit', (e) => {
   e.preventDefault();
-  handleActiveToast('Obrigado por ter Enviado');
+  handleActiveToast('*****👏 PARABÉNS DEV!!! 👏***** Agora você receberá em seu e-mail nossas ofertas, descontos e promoções!!!');
 })
-
 
 const handleActiveToast = (text) => {
   toast.classList.toggle('toast__actived');
