@@ -12,7 +12,7 @@
 }
 
 /*
-* Sections in main
+    Sections in main
 */
 
 .section__title {
@@ -32,6 +32,10 @@
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
+}
+
+.section__department h1 {
+  font-size: 26px;
 }
 
 .section__department__content {
@@ -160,6 +164,7 @@
   align-items: center;
   position: relative;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 
 .section__newsletter_form {
@@ -205,7 +210,7 @@
 }
 
 /*
-* Slider/Carrousel container
+    Slider/Carrousel container
 */
 
 .slider-container {
@@ -258,7 +263,6 @@
 .slider-container .slider-carrousel .produto h3 {
   font-size: 18px;
   padding-bottom: 8px;
-
 }
 
 .slider-container .arrowButton {
@@ -266,7 +270,6 @@
   cursor: pointer;
   width: 80px;
   /* height: 80px; */
-
   background-image: url("./public/assets/img/icon/arrowSeta.svg");
   background-position: center;
   background-repeat: no-repeat;
