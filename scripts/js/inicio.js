@@ -46,5 +46,5 @@ const handleActiveToast = (text) => {
 
   setTimeout(() => {
     toast.classList.remove('toast__actived')
-   }, 2000);
+   }, 4000);
 }

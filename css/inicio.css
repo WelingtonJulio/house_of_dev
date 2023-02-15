@@ -27,7 +27,6 @@
 
 .section__department {
   margin-top: 18rem;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -242,7 +241,7 @@
   border: none;
   cursor: pointer;
   width: 80px;
-  height: 80px;
+  /* height: 80px; */
 
   background-image: url("./public/assets/img/icon/arrowSeta.svg");
   background-position: center;
