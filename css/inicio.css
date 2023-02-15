@@ -121,7 +121,12 @@
 
 .section__product__description {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.section__products__product h3 {
+  font-size: 1.8rem;
 }
 
 .section__product__description::first-letter {
@@ -232,9 +237,28 @@
   border-radius: 20px;
 }
 
+.slider-container .slider-carrousel .produto p {
+  font-size: 16px;
+  font-weight: bolder;
+  padding-bottom: 6px;
+}
+
 .slider-container .slider-carrousel .produto img {
   width: 80%;
   height: 80%;
+}
+
+.slider-container .slider-carrousel .produto h5 {
+  text-decoration: line-through;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  font-size: 12px;
+}
+
+.slider-container .slider-carrousel .produto h3 {
+  font-size: 18px;
+  padding-bottom: 8px;
+
 }
 
 .slider-container .arrowButton {
