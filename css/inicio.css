@@ -43,8 +43,8 @@
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding-top: 2rem;
+  gap: 5rem;
+  padding-top: 3rem;
 }
 
 .section__department__card {
@@ -69,15 +69,14 @@
 }
 
 .section__highlights {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 6rem;
 }
 
 .section__products {
   max-width: 1500px;
   overflow: hidden;
   min-width: 360px;
-
   margin: 0 auto;
 }
 
@@ -88,7 +87,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-
   justify-content: stretch;
 }
 
@@ -164,7 +162,7 @@
   align-items: center;
   position: relative;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .section__newsletter_form {
