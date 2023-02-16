@@ -26,8 +26,11 @@ main {
 
 .section_google_map h3 {
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2.5rem;
   color: var(--purple);
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 700;
 }
+
+
+

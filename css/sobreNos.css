@@ -17,44 +17,28 @@ main {
   overflow-x: hidden;
 }
 
-/* CSS do titulo  */
-.title {
-  font-family: inconsolata;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 90px;
-  text-align: center;
-  color: #000000;
-}
-
 /* CSS do paragrafo */
 .text {
   font-family: inter;
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
   line-height: 29px;
-  text-align: justify;
   text-indent: 25px;
   text-align: center;
   color: var(--black-text);
+  font-size: 18px;
+  margin: 0 8%;
 }
 
 /* CSS do titulo  */
 .title {
   color: var(--purple);
-  font-size: 45px;
   text-align: center;
   font-weight: 900;
   line-height: 90px;
   margin-top: 16rem;
-}
-
-.text {
-  font-size: 20px;
-  text-align: center;
-  margin: 0 8%;
+  font-family: inconsolata;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .face {

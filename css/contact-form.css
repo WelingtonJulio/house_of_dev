@@ -23,10 +23,18 @@
   align-content: center;
   justify-content: center;
   text-align: center;
-
   padding: 2rem;
-
   margin-top: 20rem;
+}
+
+.form__container h1 {
+  color: var(--purple);
+  text-align: center;
+  font-weight: 800;
+  line-height: 90px;
+  font-family: inconsolata;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .form__container__choice {
@@ -35,7 +43,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-wrap: wrap;
 }
 
@@ -47,9 +54,10 @@
   width: 80%;
 }
 
-.form__container__choice h1 {
+.form__container__choice h2 {
   font-size: 2rem;
   margin-top: -4rem;
+  margin-left: -5rem;
   font-weight: normal;
   color: var(--black-text);
   height: 100%;
