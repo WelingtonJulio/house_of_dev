@@ -281,6 +281,7 @@ header {
   width: 100%;
   cursor: pointer;
   color: var(--white-text);
+  font-size: 13px;
 }
 
 .dp-menu__content li:nth-child(1) {
@@ -290,7 +291,6 @@ header {
   align-items: center;
   height: inherit;
   width: inherit;
-
   cursor: auto;
 }
 
@@ -308,7 +308,7 @@ header {
 }
 
 .dp-menu__content li:hover {
-  filter: brightness(1.1);
+  filter: brightness(0.9);
 }
 
 .dp-menu__content li a {
@@ -319,7 +319,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--grey-shadow);
+  background-color: var(--purple-button);
   border-radius: 1rem;
 }
 
@@ -333,7 +333,7 @@ footer {
   color: var(--white-text);
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem;
+  padding: 2rem;
   margin-top: 5rem;
   gap: 2rem;
 }
@@ -372,21 +372,33 @@ footer {
   text-align: center;
 }
 
+.section__contact:hover {
+  transform: scale(0.8);
+  transition: all 0.4s ease-in;
+}
+
 .section__contact a {
   color: var(--white-text);
 }
 
+.section__contact a:hover {
+  color: var(--blue-button);
+  transform: scale(0.8);
+  transition: all 0.3s ease-in;
+}
+
 .section__social-media__icons__content {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 100%;
+  height: 50px;
+  width: 40%;
+  margin-left: 40px ;
 }
 
+
 .section__social-media__icons__content a img {
-  width: 100%;
+  width: 60%;
 }
 
 .section__social-media__title {
@@ -397,6 +409,7 @@ footer {
 /*
 * visual do scrollbar do window
 */
+
 ::-webkit-scrollbar {
   width: 15px;
   background-color: white;
